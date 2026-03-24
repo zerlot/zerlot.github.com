@@ -877,14 +877,13 @@ function saveBomItem() {
     totalMid: parseFloat(totalMid.toFixed(6))
   };
 
-  // Assign unique id
-  newItem._id = 'bom_' + (++_bomIdCounter);
-
   if (editingIndex >= 0) {
-    // Update existing
+    // Update existing — preserve original _id
+    newItem._id = BOM_DATA[editingIndex]._id;
     BOM_DATA[editingIndex] = newItem;
   } else {
-    // Add new
+    // Add new — assign unique id
+    newItem._id = 'bom_' + (++_bomIdCounter);
     BOM_DATA.push(newItem);
   }
 
