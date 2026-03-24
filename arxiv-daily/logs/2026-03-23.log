@@ -1,30 +1,21 @@
-2026-03-24 09:10:00,510 [INFO] main: ============================================================
-2026-03-24 09:10:00,510 [INFO] main: Arxiv Daily Pipeline – target date: 2026-03-23
-2026-03-24 09:10:00,510 [INFO] main: ============================================================
-2026-03-24 09:10:00,510 [INFO] main: Step 1: Fetching papers from arXiv API...
-2026-03-24 09:10:00,536 [INFO] fetch: arXiv query: (cat:cs.AR OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202603230000 TO 202603232359]
-2026-03-24 09:10:00,536 [INFO] fetch: Fetching page start=0  url=http://export.arxiv.org/api/query?search_query=%28cat%3Acs.AR+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202603230000+TO+202603232359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
-2026-03-24 09:10:00,737 [INFO] fetch: Page: got 100 entries, total_results=123, collected=100
-2026-03-24 09:10:04,238 [INFO] fetch: Fetching page start=100  url=http://export.arxiv.org/api/query?search_query=%28cat%3Acs.AR+OR+cat%3Acs.AI+OR+cat%3Acs.DC%29+AND+submittedDate%3A%5B202603230000+TO+202603232359%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending
-2026-03-24 09:10:04,300 [INFO] fetch: Page: got 23 entries, total_results=123, collected=123
-2026-03-24 09:10:04,300 [INFO] fetch: Total papers fetched for 2026-03-23: 123
-2026-03-24 09:10:04,304 [INFO] fetch: Saved raw data: /home/user/workspace/zerlot.github.com/arxiv-daily/data/raw/2026-03-23_raw.json (123 papers)
-2026-03-24 09:10:04,305 [INFO] main: Raw data saved: /home/user/workspace/zerlot.github.com/arxiv-daily/data/raw/2026-03-23_raw.json (123 papers)
-2026-03-24 09:10:04,305 [INFO] main: Step 2: Analyzing papers for relevance...
-2026-03-24 09:10:04,373 [INFO] analyze: Analysis complete: 123 total, 48 relevant, 75 low-relevance
-2026-03-24 09:10:04,379 [INFO] analyze: Saved processed data: /home/user/workspace/zerlot.github.com/arxiv-daily/data/processed/2026-03-23_processed.json
-2026-03-24 09:10:04,379 [INFO] main: Analysis complete: 48 relevant out of 123 total
-2026-03-24 09:10:04,379 [INFO] main: Step 3: Rendering daily blog page...
-2026-03-24 09:10:04,387 [INFO] render: Rendered daily page: /home/user/workspace/zerlot.github.com/arxiv-daily/2026/03/2026-03-23.html
-2026-03-24 09:10:04,387 [INFO] main: Daily page: /home/user/workspace/zerlot.github.com/arxiv-daily/2026/03/2026-03-23.html
-2026-03-24 09:10:04,387 [INFO] main: Step 3b: Rebuilding index page...
-2026-03-24 09:10:04,390 [INFO] render: Rendered index page: /home/user/workspace/zerlot.github.com/arxiv-daily/index.html (1 entries)
-2026-03-24 09:10:04,390 [INFO] main: Index page: /home/user/workspace/zerlot.github.com/arxiv-daily/index.html
-2026-03-24 09:10:04,390 [INFO] main: Step 4: SKIPPED (--no-push mode)
-2026-03-24 09:10:04,390 [INFO] main: ============================================================
-2026-03-24 09:10:04,390 [INFO] main: Pipeline complete for 2026-03-23
-2026-03-24 09:10:04,390 [INFO] main:   Total papers: 123
-2026-03-24 09:10:04,390 [INFO] main:   Relevant: 48
-2026-03-24 09:10:04,390 [INFO] main:   Daily page: /home/user/workspace/zerlot.github.com/arxiv-daily/2026/03/2026-03-23.html
-2026-03-24 09:10:04,390 [INFO] main:   Index: /home/user/workspace/zerlot.github.com/arxiv-daily/index.html
-2026-03-24 09:10:04,391 [INFO] main: ============================================================
+2026-03-24 10:15:45,199 [INFO] main: ============================================================
+2026-03-24 10:15:45,199 [INFO] main: Arxiv Daily Pipeline – target date: 2026-03-23
+2026-03-24 10:15:45,199 [INFO] main: ============================================================
+2026-03-24 10:15:45,199 [INFO] main: Step 1: Fetching papers from arXiv API...
+2026-03-24 10:15:45,200 [INFO] fetch: arXiv query: (cat:cs.AR OR cat:cs.AI OR cat:cs.DC) AND submittedDate:[202603230000 TO 202603232359]
+2026-03-24 10:15:45,200 [INFO] fetch: Fetching page start=0  url=http://export.arxiv.org/api/query?search_query=%28cat%3Acs.AR%20OR%20cat%3Acs.AI%20OR%20cat%3Acs.DC%29%20AND%20submittedDate%3A%5B202603230000%20TO%20202603232359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending
+2026-03-24 10:15:45,278 [INFO] fetch: Page: got 100 entries, total_results=123, collected=100
+2026-03-24 10:15:48,778 [INFO] fetch: Fetching page start=100  url=http://export.arxiv.org/api/query?search_query=%28cat%3Acs.AR%20OR%20cat%3Acs.AI%20OR%20cat%3Acs.DC%29%20AND%20submittedDate%3A%5B202603230000%20TO%20202603232359%5D&start=100&max_results=100&sortBy=submittedDate&sortOrder=descending
+2026-03-24 10:15:48,880 [INFO] fetch: Page: got 23 entries, total_results=123, collected=123
+2026-03-24 10:15:48,881 [INFO] fetch: Total papers fetched for 2026-03-23: 123
+2026-03-24 10:15:48,888 [INFO] main: Raw data saved: /home/user/workspace/zerlot.github.com/arxiv-daily/data/raw/2026-03-23_raw.json (123 papers)
+2026-03-24 10:15:48,888 [INFO] main: Step 2: Analyzing papers for relevance...
+2026-03-24 10:15:49,037 [INFO] analyze: Analysis complete: 123 total, 85 relevant, 38 low-relevance
+2026-03-24 10:15:49,042 [INFO] main: Analysis complete: 85 relevant out of 123 total
+2026-03-24 10:15:49,042 [INFO] main: Step 3: Rendering daily blog page...
+2026-03-24 10:15:49,043 [INFO] render: Rendered daily page: /home/user/workspace/zerlot.github.com/arxiv-daily/2026/03/2026-03-23.html
+2026-03-24 10:15:49,043 [INFO] main: Daily page: /home/user/workspace/zerlot.github.com/arxiv-daily/2026/03/2026-03-23.html
+2026-03-24 10:15:49,043 [INFO] main: Step 3b: Rebuilding index page...
+2026-03-24 10:15:49,044 [INFO] render: Rendered index page: /home/user/workspace/zerlot.github.com/arxiv-daily/index.html (5 entries)
+2026-03-24 10:15:49,044 [INFO] main: Index page: /home/user/workspace/zerlot.github.com/arxiv-daily/index.html
+2026-03-24 10:15:49,044 [INFO] main: Step 4: Committing and pushing to GitHub...
