@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Arxiv Daily] 2026-03-23 – Hardware &amp; AI Systems</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-muted: #8b949e; --accent: #58a6ff;
+  --accent2: #3fb950; --tag-bg: #1f2937; --card-bg: #161b22;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:15px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; padding: 1rem; max-width: 52rem; margin: 0 auto;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 1.3; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 .75rem; padding-bottom: .35rem;
+     border-bottom: 1px solid var(--border); }
+.meta { color: var(--text-muted); font-size: .85rem; margin-bottom: 1rem; }
+.highlight-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;
+}
+.highlight-box ul { padding-left: 1.25rem; }
+.highlight-box li { margin-bottom: .3rem; }
+.stat-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.stat {
+  background: var(--tag-bg); border-radius: 6px; padding: .3rem .65rem;
+  font-size: .82rem; white-space: nowrap;
+}
+.stat strong { color: var(--accent); }
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: .85rem;
+}
+.card-title { font-size: 1rem; font-weight: 600; line-height: 1.35; margin-bottom: .3rem; }
+.card-authors { color: var(--text-muted); font-size: .8rem; margin-bottom: .5rem; }
+.card-summary { font-size: .9rem; margin-bottom: .5rem; }
+.card-metrics { font-size: .82rem; color: var(--text-muted); }
+.card-metrics li { margin-bottom: .15rem; }
+.tags { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .5rem; }
+.tag {
+  background: var(--tag-bg); border: 1px solid var(--border);
+  border-radius: 4px; padding: .1rem .45rem; font-size: .72rem;
+  color: var(--text-muted);
+}
+.closing { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+           font-size: .9rem; color: var(--text-muted); }
+.index-item {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: .85rem 1rem; margin-bottom: .65rem;
+}
+.index-date { font-weight: 600; font-size: 1rem; }
+.index-stats { color: var(--text-muted); font-size: .82rem; }
+.back-link { display: inline-block; margin-bottom: 1rem; font-size: .9rem; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+         color: var(--text-muted); font-size: .78rem; text-align: center; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://zerlot.github.io/arxiv-daily/">&larr; Back to Index</a><h1>[Arxiv Daily] 2026-03-23 – Hardware &amp; AI Systems</h1>
+<div class="meta">cs.AR / cs.AI / cs.DC &middot; 123 papers &middot; 48 performance/systems relevant</div>
+<div class="stat-row">
+  <span class="stat">Total: <strong>123</strong></span>
+  <span class="stat">Relevant: <strong>48</strong></span>
+  <span class="stat">Hardware &amp; Accelerators: <strong>8</strong></span>
+  <span class="stat">Training &amp; Optimization: <strong>16</strong></span>
+  <span class="stat">Inference &amp; Serving: <strong>11</strong></span>
+  <span class="stat">Operators &amp; Kernels: <strong>2</strong></span>
+  <span class="stat">Frameworks &amp; Compilers: <strong>9</strong></span>
+  <span class="stat">Distributed &amp; Cluster Computing: <strong>2</strong></span>
+</div>
+<div class="highlight-box">
+<b>Top Highlights</b>
+<ul>
+  <li><a href="https://arxiv.org/abs/2603.22286v1">WorldCache: Content-Aware Caching for Accelerated Video World Models</a> — On Cosmos-Predict2.5-2B evaluated on PAI-Bench, WorldCache achieves \textbf{2.3$\times$} inference speedup while preserving \textbf{99.4\%} of base...</li>
+  <li><a href="https://arxiv.org/abs/2603.22283v1">End-to-End Training for Unified Tokenization and Latent Denoising</a> — However, training state-of-the-art LDMs requires complex staging: a tokenizer must be trained first, before the diffusion model can be trained in t...</li>
+  <li><a href="https://arxiv.org/abs/2603.22282v1">UniMotion: A Unified Framework for Motion-Text-Vision Understanding an</a> — UniMotion achieves state-of-the-art performance across seven tasks spanning any-to-any understanding, generation, and editing among the three modal...</li>
+</ul>
+</div>
+<h2>Hardware &amp; Accelerators (8)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">cs.LG</span><span class="tag">cs.RO</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22281v1">ThinkJEPA: Empowering Latent World Models with Large Vision-Language Reasoning Model</a></div>
+  <div class="card-authors">Haichao Zhang, Yijiang Li, Shwai He et al. (8)</div>
+  <div class="card-summary">Experiments on hand-manipulation trajectory prediction show that our method outperforms both a strong VLM-only baseline and a JEPA-predictor baseline, and yields more robust long-horizon rollout behavior.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.DC</span><span class="tag">hardware_architecture</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22251v1">exaCB: Reproducible Continuous Benchmark Collections at Scale Leveraging an Incremental Approach</a></div>
+  <div class="card-authors">Jayesh Badwaik, Mathis Bode, Michal Rajski et al. (4)</div>
+  <div class="card-summary">The approach is demonstrated in JUREAP, the early-access program for JUPITER, where exaCB enabled continuous benchmarking of over 70 applications at varying maturity levels, supporting cross-application analysis, performance tracking, and energy-a...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22179v1">MARCUS: An agentic, multimodal vision-language model for cardiac diagnosis and management</a></div>
+  <div class="card-authors">Jack W O&#x27;Sullivan, Mohammad Asadi, Lennart Elbe et al. (11)</div>
+  <div class="card-summary">Trained on 13.5 million images (0.25M ECGs, 1.3M echocardiogram images, 12M CMR images) and our novel expert-curated dataset spanning 1.6 million questions, MARCUS achieves state-of-the-art performance surpassing frontier models (GPT-5 Thinking, G...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CR</span><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">cs.LG</span><span class="tag">hardware_architecture</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21975v1">SecureBreak -- A dataset towards safe and secure models</a></div>
+  <div class="card-authors">Marco Arazzi, Vignesh Kumar Kembu, Antonino Nocera</div>
+  <div class="card-summary">Tests with pre-trained LLMs show improved results after fine-tuning on SecureBreak.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21854v1">Reasoning or Rhetoric? An Empirical Analysis of Moral Reasoning Explanations in Large Language Models</a></div>
+  <div class="card-authors">Aryan Kasat, Smriti Singh, Aman Chadha et al. (4)</div>
+  <div class="card-summary">Using an LLM-as-judge scoring pipeline validated across three judge models, we classify more than 600 responses from 13 LLMs spanning a range of architectures, parameter scales, and training regimes across six classical moral dilemmas, and conduct...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AR</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21792v1">Convolutions Predictable Offloading to an Accelerator: Formalization and Optimization</a></div>
+  <div class="card-authors">Benjamin Husson, Mohammed Belcaïd, Thomas Carle et al. (4)</div>
+  <div class="card-summary">Convolutional neural networks (CNNs) require a large number of multiply-accumulate (MAC) operations.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21754v1">Let&#x27;s Think with Images Efficiently! An Interleaved-Modal Chain-of-Thought Reasoning Framework with Dynamic and Precise Visual Thoughts</a></div>
+  <div class="card-authors">Xu Liu, Yongheng Zhang, Qiguang Chen et al. (6)</div>
+  <div class="card-summary">Experiments across multiple benchmarks and models demonstrate that DaP-ICoT achieves state-of-the-art performance.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21676v1">Thinking Deeper, Not Longer: Depth-Recurrent Transformers for Compositional Generalization</a></div>
+  <div class="card-authors">Hung-Hsuan Chen</div>
+  <div class="card-summary">Standard Transformers have a fixed computational depth, fundamentally limiting their ability to generalize to tasks requiring variable-depth reasoning, such as multi-hop graph traversal or nested logic.</div>
+  
+</div>
+<h2>Training &amp; Optimization (16)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">cs.GR</span><span class="tag">cs.LG</span><span class="tag">training_system</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22283v1">End-to-End Training for Unified Tokenization and Latent Denoising</a></div>
+  <div class="card-authors">Shivam Duggal, Xingjian Bai, Zongze Wu et al. (8)</div>
+  <div class="card-summary">However, training state-of-the-art LDMs requires complex staging: a tokenizer must be trained first, before the diffusion model can be trained in the frozen latent space.</div>
+  <ul class="card-metrics"><li><b>Baseline:</b> LDMs requires complex</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">training_system</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22282v1">UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation</a></div>
+  <div class="card-authors">Ziyi Wang, Xinshun Wang, Shuang Chen et al. (5)</div>
+  <div class="card-summary">UniMotion achieves state-of-the-art performance across seven tasks spanning any-to-any understanding, generation, and editing among the three modalities, with especially strong advantages on cross-modal compositional tasks.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22279v1">3D-Layout-R1: Structured Reasoning for Language-Instructed Spatial Editing</a></div>
+  <div class="card-authors">Haoyu Zhen, Xiaolong Li, Yilin Zhao et al. (8)</div>
+  <div class="card-summary">Compared to SOTA zero-shot LLMs, our best models achieve up to 20% higher mIoU, demonstrating markedly improved spatial precision.</div>
+  <ul class="card-metrics"><li><b>Baseline:</b> Chain of Thought Fine-tuning</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">cs.LG</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22097v1">SpecTM: Spectral Targeted Masking for Trustworthy Foundation Models</a></div>
+  <div class="card-authors">Syed Usama Imtiaz, Mitra Nasr Azadani, Nasrin Alamdari</div>
+  <div class="card-summary">SpecTM achieves R^2 = 0.695 (current week) and R^2 = 0.620 (8-day-ahead) predictions surpassing all baseline models by (+34% (0.51 Ridge) and +99% (SVR 0.31)) respectively.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21991v1">λ-GELU: Learning Gating Hardness for Controlled ReLU-ization in Deep Networks</a></div>
+  <div class="card-authors">Cristian Pérez-Corral, Alberto Fernández-Hernández, Jose I. Mestre et al. (5)</div>
+  <div class="card-summary">We further study a deterministic ReLU-ization strategy in which the learned gates are progressively hardened toward a principled target, enabling a post-training substitution of λ-GELU by ReLU with reduced disruption.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">physics.chem-ph</span><span class="tag">cs.AI</span><span class="tag">training_system</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21942v1">Suiren-1.0 Technical Report: A Family of Molecular Foundation Models</a></div>
+  <div class="card-authors">Junyi An, Xinyu Lu, Yun-Fei Shi et al. (8)</div>
+  <div class="card-summary">Our extensive evaluations demonstrate that Suiren-1.0 establishes state-of-the-art results across a range of tasks.</div>
+  <ul class="card-metrics"><li><b>Scale:</b> 1.8B parameters</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">training_system</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21877v1">P^2O: Joint Policy and Prompt Optimization</a></div>
+  <div class="card-authors">Xinyu Lu, Kaiqi Zhang, Jinglin Yang et al. (9)</div>
+  <div class="card-summary">Extensive experiments demonstrate that P^2O not only achieves superior performance on in-distribution datasets but also exhibits strong generalization, yielding substantial improvements on out-of-distribution benchmarks (+4.7% avg.).</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21872v1">Manifold-Aware Exploration for Reinforcement Learning in Video Generation</a></div>
+  <div class="card-authors">Mingzhe Zheng, Weijie Kong, Yue Wu et al. (12)</div>
+  <div class="card-summary">Group Relative Policy Optimization (GRPO) methods for video generation like FlowGRPO remain far less reliable than their counterparts for language models and images.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21828v1">CoRA: Boosting Time Series Foundation Models for Multivariate Forecasting through Correlation-aware Adapter</a></div>
+  <div class="card-authors">Hanyin Cheng, Xingjian Wu, Yang Shu et al. (7)</div>
+  <div class="card-summary">Extensive experiments on 10 real-world datasets demonstrate that CoRA can improve TSFMs in multivariate forecasting performance.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21728v1">EvoIdeator: Evolving Scientific Ideas through Checklist-Grounded Reinforcement Learning</a></div>
+  <div class="card-authors">Andreas Sauter, Yuyue Zhao, Jacopo Urbani et al. (8)</div>
+  <div class="card-summary">Extensive experiments demonstrate that EvoIdeator, built on Qwen3-4B, significantly outperforms much larger frontier models across key scientific metrics.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">cs.LG</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21725v1">CurvZO: Adaptive Curvature-Guided Sparse Zeroth-Order Optimization for Efficient LLM Fine-Tuning</a></div>
+  <div class="card-authors">Shuo Wang, Ziyu Chen, Ming Tang</div>
+  <div class="card-summary">It improves accuracy by up to 4.4 points and achieves up to a $2\times$ speedup, while preserving memory efficiency.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">training_system</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21698v1">A Blueprint for Self-Evolving Coding Agents in Vehicle Aerodynamic Drag Prediction</a></div>
+  <div class="card-authors">Jinhui Ren, Huaiming Li, Yabin Liu et al. (12)</div>
+  <div class="card-summary">The resulting contribution is an auditable, reusable workflow for accelerating aerodynamic design iteration while preserving decision-grade reliability, governance traceability, and safety boundaries.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">cs.GR</span><span class="tag">cs.LG</span><span class="tag">cs.MM</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21661v1">Cross-Scenario Deraining Adaptation with Unpaired Data: Superpixel Structural Priors and Multi-Stage Pseudo-Rain Synthesis</a></div>
+  <div class="card-authors">Kangbo Zhao, Miaoxin Guan, Xiang Chen et al. (5)</div>
+  <div class="card-summary">Extensive experiments on state-of-the-art models demonstrate that our approach yields remarkable PSNR gains of up to 32% to 59% in OOD domains while significantly accelerating training convergence.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21606v1">mSFT: Addressing Dataset Mixtures Overfiting Heterogeneously in Multi-task SFT</a></div>
+  <div class="card-authors">Woosung Koh, Jeyoung Jeon, Youngjin Song et al. (7)</div>
+  <div class="card-summary">Extensive evaluations demonstrate that mSFT consistently outperforms 4 baselines across 10 benchmarks and 6 base models.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">training_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21601v1">Riemannian Geometry Speaks Louder Than Words: From Graph Foundation Model to Next-Generation Graph Intelligence</a></div>
+  <div class="card-authors">Philip S. Yu, Li Sun</div>
+  <div class="card-summary">Graphs provide a natural description of the complex relationships among objects, and play a pivotal role in communications, transportation, social computing, the life sciences, etc.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">training_system</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21577v1">Mind over Space: Can Multimodal Large Language Models Mentally Navigate?</a></div>
+  <div class="card-authors">Qihui Zhu, Shouwei Ruan, Xiao Yang et al. (9)</div>
+  <div class="card-summary">Experiments demonstrate that NavMind achieves superior mental navigation capabilities, significantly outperforming frontier commercial and spatial MLLMs.</div>
+  
+</div>
+<h2>Inference &amp; Serving (11)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">cs.LG</span><span class="tag">inference_system</span><span class="tag">operator</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22286v1">WorldCache: Content-Aware Caching for Accelerated Video World Models</a></div>
+  <div class="card-authors">Umair Nawaz, Ahmed Heakl, Ufaq Khan et al. (6)</div>
+  <div class="card-summary">On Cosmos-Predict2.5-2B evaluated on PAI-Bench, WorldCache achieves \textbf{2.3$\times$} inference speedup while preserving \textbf{99.4\%} of baseline quality, substantially outperforming prior training-free caching approaches.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">quant-ph</span><span class="tag">cs.AR</span><span class="tag">inference_system</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22149v1">Low Latency GNN Accelerator for Quantum Error Correction</a></div>
+  <div class="card-authors">Alessio Cicero, Luigi Altamura, Moritz Lange et al. (5)</div>
+  <div class="card-summary">In addition, we propose several accelerator optimizations leading to the FPGA-based decoder achieving a latency smaller than $1μs$, with a lower error rate compared to the state-of-the-art.</div>
+  <ul class="card-metrics"><li><b>Hardware:</b> FPGA</li><li><b>Latency:</b> 1μs</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">cs.LG</span><span class="tag">inference_system</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21933v1">Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence</a></div>
+  <div class="card-authors">Peter Fasogbon, Ugurcan Budak, Patrice Rondao Alface et al. (4)</div>
+  <div class="card-summary">Experiments conducted on standardized test sequences defined by the ISO/IEC MPEG Common Test Conditions (CTC) demonstrate that our approach achieves substantial pruning while preserving reconstruction quality, establishing a practical and generali...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">inference_system</span><span class="tag">operator</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21879v1">SmaAT-QMix-UNet: A Parameter-Efficient Vector-Quantized UNet for Precipitation Nowcasting</a></div>
+  <div class="card-authors">Nikolas Stavrou, Siamak Mehrkanoon</div>
+  <div class="card-summary">Meanwhile, recent advances in deep data-driven models have demonstrated promising results in nowcasting tasks.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21864v1">Adaptive Video Distillation: Mitigating Oversaturation and Temporal Collapse in Few-Step Generation</a></div>
+  <div class="card-authors">Yuyang You, Yongzhi Li, Jiahui Li et al. (6)</div>
+  <div class="card-summary">Extensive experiments and ablation studies on the VBench and VBench2 benchmarks demonstrate that our method achieves stable few-step video synthesis, significantly enhancing perceptual fidelity and motion realism.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21701v1">Rethinking Token Reduction for Large Vision-Language Models</a></div>
+  <div class="card-authors">Yi Wang, Haofei Zhang, Qihan Huang et al. (10)</div>
+  <div class="card-summary">Extensive experiments on MT-VQA benchmarks and across multiple LVLM architectures demonstrate that MetaCompress achieves superior efficiency-accuracy trade-offs while maintaining strong generalization across dialogue turns.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">inference_system</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21630v1">EnterpriseLab: A Full-Stack Platform for developing and deploying agents in Enterprises</a></div>
+  <div class="card-authors">Ankush Agarwal, Harsh Vishwakarma, Suraj Nagaje et al. (4)</div>
+  <div class="card-summary">Our results demonstrate that 8B-parameter models trained within EnterpriseLab match GPT-4o&#x27;s performance on complex enterprise workflows while reducing inference costs by 8-10x, and remain robust across diverse enterprise benchmarks, including Ent...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.DC</span><span class="tag">inference_system</span><span class="tag">distributed_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21600v1">Benchmarking Message Brokers for IoT Edge Computing: A Comprehensive Performance Study</a></div>
+  <div class="card-authors">Tapajit Chandra Paul, Pawissanutt Lertpongrujikorn, Hai Duc Nguyen et al. (4)</div>
+  <div class="card-summary">Lightweight native brokers achieve sub-millisecond latency, while feature-rich enterprise platforms incur 2-3X higher overhead.</div>
+  <ul class="card-metrics"><li><b>Hardware:</b> CPU</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">physics.optics</span><span class="tag">cs.AI</span><span class="tag">cs.AR</span><span class="tag">cs.CL</span><span class="tag">cs.LG</span><span class="tag">inference_system</span><span class="tag">hardware_architecture</span><span class="tag">operator</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21576v1">PRISM: Breaking the O(n) Memory Wall in Long-Context LLM Inference via O(1) Photonic Block Selection</a></div>
+  <div class="card-authors">Hyoseok Park, Yeonsang Park</div>
+  <div class="card-summary">Recent photonic accelerators have demonstrated impressive throughput for dense attention computation; however, these approaches inherit the same O(n) memory scaling as electronic attention when applied to long contexts.</div>
+  <ul class="card-metrics"><li><b>Hardware:</b> GPU</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">cs.HC</span><span class="tag">inference_system</span><span class="tag">distributed_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21508v1">Optimizing Feature Extraction for On-device Model Inference with User Behavior Sequences</a></div>
+  <div class="card-authors">Chen Gong, Zhenzhe Zheng, Yiliu Chen et al. (6)</div>
+  <div class="card-summary">Online evaluations show that AutoFeature reduces end-to-end on-device model execution latency by 1.33x-3.93x during daytime and 1.43x-4.53x at night.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">cs.CL</span><span class="tag">inference_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21461v1">DSPA: Dynamic SAE Steering for Data-Efficient Preference Alignment</a></div>
+  <div class="card-authors">James Wedgwood, Aashiq Muhamed, Mona T. Diab et al. (4)</div>
+  <div class="card-summary">Preference alignment is usually achieved by weight-updating training on preference data, which adds substantial alignment-stage compute and provides limited mechanistic visibility.</div>
+  
+</div>
+<h2>Operators &amp; Kernels (2)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">operator</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22002v1">SegMaFormer: A Hybrid State-Space and Transformer Model for Efficient Segmentation</a></div>
+  <div class="card-authors">Duy D. Nguyen, Phat T. Tran-Truong</div>
+  <div class="card-summary">Empirically, our approach reduces parameters by up to 75x and substantially decreases FLOPs compared to current state-of-the-art models, establishing an efficient and high-performing solution for 3D medical image segmentation.</div>
+  <ul class="card-metrics"><li><b>Baseline:</b> Transformer models often</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CV</span><span class="tag">cs.AI</span><span class="tag">operator</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21565v1">Rethinking SAR ATR: A Target-Aware Frequency-Spatial Enhancement Framework with Noise-Resilient Knowledge Guidance</a></div>
+  <div class="card-authors">Yansong Lin, Zihan Cheng, Jielei Wang et al. (5)</div>
+  <div class="card-summary">The results show that DSAFNet-L achieves competitive or superior performance compared with various methods on three datasets; DSAFNet-M significantly reduces the model complexity while maintaining comparable accuracy.</div>
+  
+</div>
+<h2>Frameworks &amp; Compilers (9)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.22083v1">A Context Engineering Framework for Improving Enterprise AI Agents based on Digital-Twin MDP</a></div>
+  <div class="card-authors">Xi Yang, Aurelie Lozano, Naoki Abe et al. (9)</div>
+  <div class="card-summary">Extensive experimental results demonstrate consistent and significant improvements over baseline agents across a wide range of evaluation settings, suggesting that the framework can generalize to other agents sharing similar characteristics in ent...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21768v1">Extending Precipitation Nowcasting Horizons via Spectral Fusion of Radar Observations and Foundation Model Priors</a></div>
+  <div class="card-authors">Yuze Qin, Qingyong Li, Zhiqing Guo et al. (6)</div>
+  <div class="card-summary">Extensive experiments on the SEVIR and MeteoNet benchmarks demonstrate that PW-FouCast achieves state-of-the-art performance, effectively extending the reliable forecast horizon while maintaining structural fidelity.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21724v1">FISformer: Replacing Self-Attention with a Fuzzy Inference System in Transformer Models for Time Series Forecasting</a></div>
+  <div class="card-authors">Bulent Haznedar, Levent Karacan</div>
+  <div class="card-summary">Extensive experiments on multiple benchmark datasets demonstrate that FISFormer achieves superior forecasting accuracy, noise robustness, and interpretability compared to state-of-the-art Transformer variants, establishing fuzzy inference as an ef...</div>
+  <ul class="card-metrics"><li><b>Baseline:</b> Transformer variants</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">econ.GN</span><span class="tag">framework</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21690v1">AI Token Futures Market: Commoditization of Compute and Derivatives Contract Design</a></div>
+  <div class="card-authors">Yicai Xing</div>
+  <div class="card-summary">Simulation results show that, under an application-layer demand explosion scenario, token futures can reduce enterprise compute cost volatility by 62%-78%.</div>
+  <ul class="card-metrics"><li><b>Hardware:</b> GPU</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.NE</span><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21544v1">Evolutionary Biparty Multiobjective UAV Path Planning: Problems and Empirical Comparisons</a></div>
+  <div class="card-authors">Kesheng Chen, Wenjian Luo, Xin Lin et al. (5)</div>
+  <div class="card-summary">Unmanned aerial vehicles (UAVs) have been widely used in urban missions, and proper planning of UAV paths can improve mission efficiency while reducing the risk of potential third-party impact.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CL</span><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21524v1">CatRAG: Functor-Guided Structural Debiasing with Retrieval Augmentation for Fair LLMs</a></div>
+  <div class="card-authors">Ravi Ranjan, Utkarsh Grover, Mayur Akewar et al. (5)</div>
+  <div class="card-summary">On the Bias Benchmark for Question Answering (BBQ) across three open-source LLMs (Meta Llama-3, OpenAI GPT-OSS, and Google Gemma-3), CatRAG achieves state-of-the-art results, improving accuracy by up to 40% over the corresponding base models and b...</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.RO</span><span class="tag">cs.AI</span><span class="tag">framework</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21523v1">SafePilot: A Framework for Assuring LLM-enabled Cyber-Physical Systems</a></div>
+  <div class="card-authors">Weizhe Xu, Mengyu Liu, Fanxin Kong</div>
+  <div class="card-summary">Its effectiveness and adaptability are demonstrated through two illustrative case studies.</div>
+  <ul class="card-metrics"><li><b>Scale:</b> 10 billion parameters</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.RO</span><span class="tag">cs.AI</span><span class="tag">physics.optics</span><span class="tag">framework</span><span class="tag">distributed_system</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21496v1">A Framework for Closed-Loop Robotic Assembly, Alignment and Self-Recovery of Precision Optical Systems</a></div>
+  <div class="card-authors">Seou Choi, Sachin Vaidya, Caio Silva et al. (7)</div>
+  <div class="card-summary">Our approach integrates hierarchical computer vision systems, optimization routines, and custom-built tools to achieve this functionality.</div>
+  
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AI</span><span class="tag">framework</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21475v1">Unified-MAS: Universally Generating Domain-Specific Nodes for Empowering Automatic Multi-Agent Systems</a></div>
+  <div class="card-authors">Hehai Lin, Yu Yan, Zixuan Wang et al. (9)</div>
+  <div class="card-summary">Extensive experiments across four specialized domains demonstrate that integrating Unified-MAS into four Automatic-MAS baselines yields a better performance-cost trade-off, achieving up to a 14.2% gain while significantly reducing costs.</div>
+  
+</div>
+<h2>Distributed &amp; Cluster Computing (2)</h2>
+<div class="card">
+  <div class="tags"><span class="tag">cs.AR</span><span class="tag">distributed_system</span><span class="tag">framework</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21659v1">IMMSched: Interruptible Multi-DNN Scheduling via Parallel Multi-Particle Optimizing Subgraph Isomorphism</a></div>
+  <div class="card-authors">Boran Zhao, Hetian Liu, Zihang Yuan et al. (7)</div>
+  <div class="card-summary">Evaluations demonstrate that IMMSched achieves orders-of-magnitude reductions in scheduling latency and energy consumption, enabling real-time execution of unpredictable DNN tasks on edge accelerators.</div>
+  <ul class="card-metrics"><li><b>Hardware:</b> CPU</li></ul>
+</div>
+<div class="card">
+  <div class="tags"><span class="tag">cs.CR</span><span class="tag">cs.AI</span><span class="tag">distributed_system</span><span class="tag">hardware_architecture</span></div>
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.21654v1">Towards Secure Retrieval-Augmented Generation: A Comprehensive Review of Threats, Defenses and Benchmarks</a></div>
+  <div class="card-authors">Yanming Mu, Hao Hu, Feiyang Li et al. (10)</div>
+  <div class="card-summary">Retrieval-Augmented Generation (RAG) significantly mitigates the hallucinations and domain knowledge deficiency in large language models by incorporating external knowledge bases.</div>
+  
+</div>
+<h2>Other Papers (75)</h2>
+<details><summary>Show all low-relevance papers</summary>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22267v1">TiCo: Time-Controllable Training for Spoken Dialogue Models</a></div><div class="card-authors">Kai-Wei Chang, Wei-Chih Chen, En-Pei Hu et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22248v1">Confidence-Based Decoding is Provably Efficient for Diffusion Language Models</a></div><div class="card-authors">Changxiao Cai, Gen Li</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22231v1">One Model, Two Markets: Bid-Aware Generative Recommendation</a></div><div class="card-authors">Yanchen Jiang, Zhe Feng, Christopher P. Mah et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22228v1">SpatialReward: Verifiable Spatial Reward Modeling for Fine-Grained Spatial Consistency in Text-to-Image Generation</a></div><div class="card-authors">Sashuai Zhou, Qiang Zhou, Junpeng Ma et al. (12)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22227v1">Dyadic: A Scalable Platform for Human-Human and Human-AI Conversation Research</a></div><div class="card-authors">David M. Markowitz</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22214v1">Evaluating the Reliability and Fidelity of Automated Judgment Systems of Large Language Models</a></div><div class="card-authors">Tom Biskupski, Stephan Kleber</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22213v1">SPA: A Simple but Tough-to-Beat Baseline for Knowledge Injection</a></div><div class="card-authors">Kexian Tang, Jiani Wang, Shaowen Wang et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22195v1">CayleyPy-4: AI-Holography. Towards analogs of holographic string dualities for AI tasks</a></div><div class="card-authors">A. Chervov, F. Levkovich-Maslyuk, A. Smolensky et al. (44)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22187v1">Seeing is Improving: Visual Feedback for Iterative Text Layout Refinement</a></div><div class="card-authors">Junrong Guo, Shancheng Fang, Yadong Qu et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22186v1">Enhancing Document-Level Machine Translation via Filtered Synthetic Corpora and Two-Stage LLM Adaptation</a></div><div class="card-authors">Ireh Kim, Tesia Sker, Chanwoo Kim</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22167v1">Calibeating Made Simple</a></div><div class="card-authors">Yurong Chen, Zhiyi Huang, Michael I. Jordan et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22158v1">Multimodal Survival Analysis with Locally Deployable Large Language Models</a></div><div class="card-authors">Moritz Gögl, Christopher Yau</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22153v1">Beyond Matching to Tiles: Bridging Unaligned Aerial and Satellite Views for Vision-Only UAV Navigation</a></div><div class="card-authors">Kejia Liu, Haoyang Zhou, Ruoyu Xu et al. (6)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22152v1">More Isn&#x27;t Always Better: Balancing Decision Accuracy and Conformity Pressures in Multi-AI Advice</a></div><div class="card-authors">Yuta Tsuchiya, Yukino Baba</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22121v1">Mamba-VMR: Multimodal Query Augmentation via Generated Videos for Precise Temporal Grounding</a></div><div class="card-authors">Yunzhuo Sun, Xinyue Liu, Yanyang Li et al. (8)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22117v1">On the Direction of RLVR Updates for LLM Reasoning: Identification and Exploitation</a></div><div class="card-authors">Kexin Huang, Haoming Meng, Junkang Wu et al. (13)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22096v1">GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning</a></div><div class="card-authors">Xiao Han, Yuzheng Fan, Sendong Zhao et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22061v1">On the Failure of Topic-Matched Contrast Baselines in Multi-Directional Refusal Abliteration</a></div><div class="card-authors">Valentin Petrov</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22042v1">Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Representativeness in Hyperbolic Vision-Language Models</a></div><div class="card-authors">Hayeon Kim, Ji Ha Jang, Junghun James Kim et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22035v1">Future-Interactions-Aware Trajectory Prediction via Braid Theory</a></div><div class="card-authors">Caio Azevedo, Stefano Sabatini, Sascha Hornauer et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.22016v1">ROM: Real-time Overthinking Mitigation via Streaming Detection and Intervention</a></div><div class="card-authors">Xinyan Wang, Xiaogeng Liu, Chaowei Xiao</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21988v1">TREX: Trajectory Explanations for Multi-Objective Reinforcement Learning</a></div><div class="card-authors">Dilina Rajapakse, Juan C. Rosero, Ivana Dusparic</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21987v1">LRC-WeatherNet: LiDAR, RADAR, and Camera Fusion Network for Real-time Weather-type Classification in Autonomous Driving</a></div><div class="card-authors">Nour Alhuda Albashir, Lars Pernickel, Danial Hamoud et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21970v1">Parameter-Efficient Fine-Tuning for Medical Text Summarization: A Comparative Study of Lora, Prompt Tuning, and Full Fine-Tuning</a></div><div class="card-authors">Ulugbek Shernazarov, Rostislav Svitsov, Bin Shi</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21935v1">Chronological Contrastive Learning: Few-Shot Progression Assessment in Irreversible Diseases</a></div><div class="card-authors">Clemens Watzenböck, Daniel Aletaha, Michaël Deman et al. (12)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21925v1">Guideline-grounded retrieval-augmented generation for ophthalmic clinical decision support</a></div><div class="card-authors">Shuying Chen, Sen Cui, Zhong Cao</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21921v1">Deep Reinforcement Learning and The Tale of Two Temporal Difference Errors</a></div><div class="card-authors">Juan Sebastian Rojas, Chi-Guhn Lee</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21904v1">SHAPE: Structure-aware Hierarchical Unsupervised Domain Adaptation with Plausibility Evaluation for Medical Image Segmentation</a></div><div class="card-authors">Linkuan Zhou, Yinghao Xia, Yufei Shen et al. (9)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21884v1">Not All Layers Are Created Equal: Adaptive LoRA Ranks for Personalized Image Generation</a></div><div class="card-authors">Donald Shenaj, Federico Errica, Antonio Carta</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21867v1">Adversarial Camouflage</a></div><div class="card-authors">Paweł Borsukiewicz, Daniele Lunghi, Melissa Tessa et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21866v1">Tacit Knowledge Management with Generative AI: Proposal of the GenAI SECI Model</a></div><div class="card-authors">Naoshi Uchihira</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21853v1">Sim-to-Real of Humanoid Locomotion Policies via Joint Torque Space Perturbation Injection</a></div><div class="card-authors">Junhyeok Rui Cha, Woohyun Cha, Jaeyong Shin et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21846v1">Agentic Personas for Adaptive Scientific Explanations with Knowledge Graphs</a></div><div class="card-authors">Susana Nunes, Tiago Guerreiro, Catia Pesquita</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21844v1">On the Number of Conditional Independence Tests in Constraint-based Causal Discovery</a></div><div class="card-authors">Marc Franquesa Monés, Jiaqi Zhang, Caroline Uhler</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21840v1">Select, Label, Evaluate: Active Testing in NLP</a></div><div class="card-authors">Antonio Purificato, Maria Sofia Bucarelli, Andrea Bacciu et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21836v1">Instruction Set and Language for Symbolic Regression</a></div><div class="card-authors">Ezequiel Lopez-Rubio, Mario Pascual-Gonzalez</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21825v1">BadminSense: Enabling Fine-Grained Badminton Stroke Evaluation on a Single Smartwatch</a></div><div class="card-authors">Taizhou Chen, Kai Chen, Xingyu Liu et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21824v1">SteelDefectX: A Coarse-to-Fine Vision-Language Dataset and Benchmark for Generalizable Steel Surface Defect Detection</a></div><div class="card-authors">Shuxian Zhao, Jie Gui, Baosheng Yu et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21819v1">Ctrl-A: Control-Driven Online Data Augmentation</a></div><div class="card-authors">Jesper B. Christensen, Ciaran Bench, Spencer A. Thomas et al. (7)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21770v1">Quantifying Uncertainty in FMEDA Safety Metrics: An Error Propagation Approach for Enhanced ASIC Verification</a></div><div class="card-authors">Antonino Armato, Christian Kehl, Sebastian Fischer</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21760v1">Cycle Inverse-Consistent TransMorph: A Balanced Deep Learning Framework for Brain MRI Registration</a></div><div class="card-authors">Jiaqi Shang, Haojin Wu, Yinyi Lai et al. (6)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21745v1">The Presupposition Problem in Representation Genesis</a></div><div class="card-authors">Yiling Wu</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21736v1">The Reasoning Error About Reasoning: Why Different Types of Reasoning Require Different Representational Structures</a></div><div class="card-authors">Yiling Wu</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21735v1">Cognitive Agency Surrender: Defending Epistemic Sovereignty via Scaffolded AI Friction</a></div><div class="card-authors">Kuangzhe Xu, Yu Shen, Longjie Yan et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21720v1">SemEval-2026 Task 12: Abductive Event Reasoning: Towards Real-World Event Causal Inference for Large Language Models</a></div><div class="card-authors">Pengfei Cao, Mingxuan Yang, Yubo Chen et al. (7)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21716v1">When Exploration Comes for Free with Mixture-Greedy: Do we need UCB in Diversity-Aware Multi-Armed Bandits?</a></div><div class="card-authors">Bahar Dibaei Nia, Farzan Farnia</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21708v1">Compensating Visual Insufficiency with Stratified Language Guidance for Long-Tail Class Incremental Learning</a></div><div class="card-authors">Xi Wang, Xu Yang, Donghao Sun et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21697v1">Structured Visual Narratives Undermine Safety Alignment in Multimodal Large Language Models</a></div><div class="card-authors">Rui Yang Tan, Yujia Hu, Roy Ka-Wei Lee</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21696v1">MIND: Multi-agent inference for negotiation dialogue in travel planning</a></div><div class="card-authors">Hunmin Do, Taejun Yoon, Kiyong Jung</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21693v1">Deterministic Hallucination Detection in Medical VQA via Confidence-Evidence Bayesian Gain</a></div><div class="card-authors">Mohammad Asadi, Tahoura Nedaee, Jack W. O&#x27;Sullivan et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21692v1">Reasoning Provenance for Autonomous AI Agents: Structured Behavioral Analytics Beyond State Checkpoints and Execution Traces</a></div><div class="card-authors">Neelmani Vispute</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21687v1">Mirage The Illusion of Visual Understanding</a></div><div class="card-authors">Mohammad Asadi, Jack W. O&#x27;Sullivan, Fang Cao et al. (8)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21636v1">Silicon Bureaucracy and AI Test-Oriented Education: Contamination Sensitivity and Score Confidence in LLM Benchmarks</a></div><div class="card-authors">Yiliang Song, Hongjun An, Jiangan Chen et al. (7)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21619v1">Efficient Zero-Shot AI-Generated Image Detection</a></div><div class="card-authors">Ryosuke Sonoda, Ramya Srinivasan</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21613v1">AgenticRec: End-to-End Tool-Integrated Policy Optimization for Ranking-Oriented Recommender Agents</a></div><div class="card-authors">Tianyi Li, Zixuan Wang, Guidong Lei et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21610v1">Rule-State Inference (RSI): A Bayesian Framework for Compliance Monitoring in Rule-Governed Domains</a></div><div class="card-authors">Abdou-Raouf Atarmla</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21608v1">DiT-Flow: Speech Enhancement Robust to Multiple Distortions based on Flow Matching in Latent Space and Diffusion Transformers</a></div><div class="card-authors">Tianyu Cao, Helin Wang, Ari Frummer et al. (10)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21607v1">INTRYGUE: Induction-Aware Entropy Gating for Reliable RAG Uncertainty Estimation</a></div><div class="card-authors">Alexandra Bazarova, Andrei Volodichev, Daria Kotova et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21597v1">A Multidisciplinary AI Board for Multimodal Dementia Characterization and Risk Assessment</a></div><div class="card-authors">Sheng Liu, Long Chen, Zeyun Zhao et al. (19)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21594v1">Spatio-Temporal Attention Enhanced Multi-Agent DRL for UAV-Assisted Wireless Networks with Limited Communications</a></div><div class="card-authors">Che Chen, Lanhua Li, Shimin Gong et al. (6)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21574v1">Adaptive Robust Estimator for Multi-Agent Reinforcement Learning</a></div><div class="card-authors">Zhongyi Li, Wan Tian, Jingyu Chen et al. (11)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21566v1">CataractSAM-2: A Domain-Adapted Model for Anterior Segment Surgery Segmentation and Scalable Ground-Truth Annotation</a></div><div class="card-authors">Mohammad Eslami, Dhanvinkumar Ganeshkumar, Saber Kazeminasab et al. (11)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21564v1">Toward a Theory of Hierarchical Memory for Language Agents</a></div><div class="card-authors">Yashar Talebirad, Ali Parsaee, Csongor Y. Szepesvari et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21563v1">Counterfactual Credit Policy Optimization for Multi-Agent Collaboration</a></div><div class="card-authors">Zhongyi Li, Wan Tian, Yikun Ban et al. (7)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21558v1">Stabilizing Iterative Self-Training with Verified Reasoning via Symbolic Recursive Self-Alignment</a></div><div class="card-authors">Xinyu Zhang</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21546v1">What Do World Models Learn in RL? Probing Latent Representations in Learned Environment Simulators</a></div><div class="card-authors">Xinyu Zhang</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21541v1">Sharper Generalization Bounds for Transformer</a></div><div class="card-authors">Yawen Li, Tao Hu, Zhouhui Lian et al. (7)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21530v1">LLM-Based Test Case Generation in DBMS through Monte Carlo Tree Search</a></div><div class="card-authors">Yujia Chen, Yingli Zhou, Fangyuan Zhang et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21525v1">BOxCrete: A Bayesian Optimization Open-Source AI Model for Concrete Strength Forecasting and Mix Optimization</a></div><div class="card-authors">Bayezid Baten, M. Ayyan Iqbal, Sebastian Ament et al. (5)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21522v1">Efficient Failure Management for Multi-Agent Systems with Reasoning Trace Representation</a></div><div class="card-authors">Lingzhe Zhang, Tong Jia, Mingyu Wang et al. (12)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21502v1">Quotient Geometry, Effective Curvature, and Implicit Bias in Simple Shallow Neural Networks</a></div><div class="card-authors">Hang-Cheng Dong, Pengcheng Cheng</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21495v1">RuntimeSlicer: Towards Generalizable Unified Runtime State Representation for Failure Management</a></div><div class="card-authors">Lingzhe Zhang, Tong Jia, Weijie Hong et al. (12)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21489v1">Effective Strategies for Asynchronous Software Engineering Agents</a></div><div class="card-authors">Jiayi Geng, Graham Neubig</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21473v1">Beyond Correlation: Refutation-Validated Aspect-Based Sentiment Analysis for Explainable Energy Market Returns</a></div><div class="card-authors">Wihan van der Heever, Keane Ong, Ranjan Satapathy et al. (4)</div></div>
+<div class="card"><div class="card-title"><a href="https://arxiv.org/abs/2603.21460v1">When Documents Disagree: Measuring Institutional Variation in Transplant Guidance with Retrieval-Augmented Language Models</a></div><div class="card-authors">Yubo Li, Ramayya Krishnan, Rema Padman</div></div>
+</details>
+<div class="closing">
+<b>Patterns today:</b> Active areas include Inference &amp; Serving, Training &amp; Optimization, Hardware &amp; Accelerators, Frameworks &amp; Compilers. Notable cluster of inference/serving system work. Several new kernel/operator optimizations. 
+</div>
+
+<footer>Arxiv Daily Digest &middot; auto-generated &middot; data from <a href="https://arxiv.org">arXiv.org</a></footer>
+</body>
+</html>
