@@ -523,18 +523,24 @@ body {
   table-layout: fixed;
   width: 100%;
 }
+/* 系统 */
 .data-table.summary-table th:nth-child(1),
-.data-table.summary-table td:nth-child(1) { width: 14%; }
+.data-table.summary-table td:nth-child(1) { width: 22%; text-align: left; }
+/* 条目数 */
 .data-table.summary-table th:nth-child(2),
-.data-table.summary-table td:nth-child(2) { width: 10%; }
+.data-table.summary-table td:nth-child(2) { width: 10%; text-align: center; }
+/* 低估 */
 .data-table.summary-table th:nth-child(3),
-.data-table.summary-table td:nth-child(3) { width: 18%; }
+.data-table.summary-table td:nth-child(3) { width: 15%; text-align: right; }
+/* 高估 */
 .data-table.summary-table th:nth-child(4),
-.data-table.summary-table td:nth-child(4) { width: 18%; }
+.data-table.summary-table td:nth-child(4) { width: 15%; text-align: right; }
+/* 中位数 */
 .data-table.summary-table th:nth-child(5),
-.data-table.summary-table td:nth-child(5) { width: 22%; }
+.data-table.summary-table td:nth-child(5) { width: 20%; text-align: right; }
+/* 占比 */
 .data-table.summary-table th:nth-child(6),
-.data-table.summary-table td:nth-child(6) { width: 18%; }
+.data-table.summary-table td:nth-child(6) { width: 18%; text-align: right; }
 
 .data-table thead {
   position: sticky;
