@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Arxiv Daily] 2026-03-21 – Hardware &amp; AI Systems</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-muted: #8b949e; --accent: #58a6ff;
+  --accent2: #3fb950; --tag-bg: #1f2937; --card-bg: #161b22;
+  --orange: #d29922; --red: #f85149;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:15px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; padding: 1rem; max-width: 52rem; margin: 0 auto;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 1.3; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 .75rem; padding-bottom: .35rem;
+     border-bottom: 1px solid var(--border); }
+.meta { color: var(--text-muted); font-size: .85rem; margin-bottom: 1rem; }
+.highlight-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;
+}
+.highlight-box ul { padding-left: 1.25rem; }
+.highlight-box li { margin-bottom: .3rem; }
+.stat-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.stat {
+  background: var(--tag-bg); border-radius: 6px; padding: .3rem .65rem;
+  font-size: .82rem; white-space: nowrap;
+}
+.stat strong { color: var(--accent); }
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: .85rem;
+}
+.card-title { font-size: 1rem; font-weight: 600; line-height: 1.35; margin-bottom: .3rem; }
+.card-authors { color: var(--text-muted); font-size: .8rem; margin-bottom: .5rem; }
+.card-summary { font-size: .9rem; margin-bottom: .5rem; }
+.card-metrics { font-size: .82rem; color: var(--text-muted); }
+.card-metrics li { margin-bottom: .15rem; }
+.tags { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .5rem; }
+.tag {
+  background: var(--tag-bg); border: 1px solid var(--border);
+  border-radius: 4px; padding: .1rem .45rem; font-size: .72rem;
+  color: var(--text-muted);
+}
+.tag-hw { border-color: var(--orange); color: var(--orange); }
+.closing { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+           font-size: .9rem; color: var(--text-muted); }
+.index-item {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: .85rem 1rem; margin-bottom: .65rem;
+  transition: border-color .15s;
+}
+.index-item:hover { border-color: var(--accent); }
+.index-date { font-weight: 600; font-size: 1rem; }
+.index-stats { color: var(--text-muted); font-size: .82rem; }
+.back-link { display: inline-block; margin-bottom: 1rem; font-size: .9rem; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+         color: var(--text-muted); font-size: .78rem; text-align: center; }
+.no-papers { text-align: center; padding: 3rem 1rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://zerlot.github.io/arxiv-daily/">&larr; Index</a>
+<h1>[Arxiv Daily] 2026-03-21</h1>
+<div class="meta">Hardware &amp; AI Systems Digest &middot; cs.AR / cs.AI / cs.DC</div>
+<div class="highlight-box">
+<div class="stat-row">
+  <div class="stat">Total papers: <strong>74</strong></div>
+  <div class="stat">Performance/Systems relevant: <strong>69</strong></div>
+</div>
+<ul><li>MINISA: Minimal Instruction Set Architecture for Next-gen Reconfigurable Inference Accelerator: Our results show that MINISA reduces geometric mean off-chip instruction traffic by factors ranging from 35x to (4x10^5)x under various sizes under...</li><li>MKA: Memory-Keyed Attention for Efficient Long-Context Reasoning: We further introduce Route-Fused MKA (FastMKA), a broadcast-routed variant that fuses memory sources before attention computation for improved effi...</li><li>Democratizing AI: A Comparative Study in Deep Learning Efficiency and Future Trends in Computational Processing: Our experiments demonstrate that, on average, GPU training achieves speedups ranging from 11x to 246x depending on model complexity, with lightweig...</li></ul>
+</div>
+<h2>Hardware &amp; Accelerators (24)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20966v1">Communication Lower Bounds and Algorithms for Sketching with Random Dense Matrices</a></div>
+  <div class="card-authors">Hussam Al Daas, Grey Ballard, Laura Grigori et al.</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span><span class="tag tag-hw">CPU</span></div>
+  <div class="card-summary">Sketching is widely used in randomized linear algebra for low-rank matrix approximation, column subset selection, and many other problems, and it has gained significant traction in machine learning applications. However, sketching large matrices often necessitates distributed memory algorithms, where communication overhead becomes a critical bottleneck on modern supercomputing clusters.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU, CPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Finally, we implement our algorithms on modern state-of-the-art supercomputing infrastructures which have both CPU- and GPU-equipped systems and demonstrate their parallel scalability.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20965v1">Learning to Aggregate Zero-Shot LLM Agents for Corporate Disclosure Classification</a></div>
+  <div class="card-authors">Kemal Kirtac</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">This paper studies whether a lightweight trained aggregator can combine diverse zero-shot large language model judgments into a stronger downstream signal for corporate disclosure classification. Zero-shot LLMs can read disclosures without task-specific fine-tuning, but their predictions often vary across prompts, reasoning styles, and model families.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Results show that the trained aggregator outperforms all single agents, majority vote, confidence-weighted voting, and a FinBERT baseline.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20957v1">Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Books in Large Language Models</a></div>
+  <div class="card-authors">Xinyue Liu, Niloofar Mireshghallah, Jane C. Ginsburg et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Frontier LLM companies have repeatedly assured courts and regulators that their models do not store copies of training data. They further rely on safety alignment strategies via RLHF, system prompts, and output filters to block verbatim regurgitation of copyrighted works, and have cited the efficacy of these measures in their legal defenses against copyright infringement claims.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We show that finetuning bypasses these protections: by training models to expand plot summaries into full text, a task naturally suited for commercial writing assistants, we cause GPT-4o, Gemini-2.5-Pro, and DeepSeek-V3.1 to reproduce up to 85-90% of held-out copyrighted books, with single verbatim spans exceeding 460 words, using only semantic descriptions as prompts and no actual book text.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20953v1">Before the Tool Call: Deterministic Pre-Action Authorization for Autonomous AI Agents</a></div>
+  <div class="card-authors">Uchi Uchibeke</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">AI agents today have passwords but no permission slips. They execute tool calls (fund transfers, database queries, shell commands, sub-agent delegation) with no standard mechanism to enforce authorization before the action executes.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In a live adversarial testbed (4,437 authorization decisions across 1,151 sessions, $5,000 bounty), social engineering succeeded against the model 74.6% of the time under a permissive policy; under a restrictive OAP policy, a comparable population of attackers achieved a 0% success rate across 879 attempts.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20925v1">Profit is the Red Team: Stress-Testing Agents in Strategic Economic Interactions</a></div>
+  <div class="card-authors">Shouqiao Wang, Marcello Politi, Samuele Marro et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">As agentic systems move into real-world deployments, their decisions increasingly depend on external inputs such as retrieved content, tool outputs, and information provided by other actors. When these inputs can be strategically shaped by adversaries, the relevant security risk extends beyond a fixed library of prompt attacks to adaptive strategies that steer agents toward unfavorable outcomes.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We then distill exploit episodes into concise prompt rules for the agent, which make most previously observed failures ineffective and substantially improve target performance.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20920v1">Democratizing AI: A Comparative Study in Deep Learning Efficiency and Future Trends in Computational Processing</a></div>
+  <div class="card-authors">Lisan Al Amin, Md Ismail Hossain, Rupak Kumar Das et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span><span class="tag tag-hw">CPU</span></div>
+  <div class="card-summary">The exponential growth in data has intensified the demand for computational power to train large-scale deep learning models. However, the rapid growth in model size and complexity raises concerns about equal and fair access to computational resources, particularly under increasing energy and infrastructure constraints.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU, CPU</li><li><strong>Scale:</strong> Scale: 4 devices</li><li><strong>Speedup:</strong> 116×</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our experiments demonstrate that, on average, GPU training achieves speedups ranging from 11x to 246x depending on model complexity, with lightweight models (Conv6) showing the highest acceleration (246x), mid-sized models (VGG16, ResNet18) achieving 51-116x speedups, and complex generative models (CycleGAN) reaching 11x improvements compared to CPU training. TensorFlow comparison, we observed that TensorFlow&#x27;s kernel-fusion optimizations reduce inference latency by approximately 15%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20911v1">Do LLM-Driven Agents Exhibit Engagement Mechanisms? Controlled Tests of Information Load, Descriptive Norms, and Popularity Cues</a></div>
+  <div class="card-authors">Tai-Quan Peng, Yuan Tian, Songsong Liang et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language models make agent-based simulation more behaviorally expressive, but they also sharpen a basic methodological tension: fluent, human-like output is not, by itself, evidence for theory. We evaluate what an LLM-driven simulation can credibly support using information engagement on social media as a test case.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Engagement responds systematically to information load and descriptive norms, and sensitivity to popularity cues varies across contexts, indicating conditionality rather than rigid prompt compliance. We discuss methodological implications for simulation-based communication research, including multi-condition stress tests, explicit no-norm baselines because default prompts are not blank controls, and design choices that preserve endogenous feedback loops when studying bandwagon dynamics.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20897v1">The data heat island effect: quantifying the impact of AI data centers in a warming world</a></div>
+  <div class="card-authors">Andrea Marinoni, Pietro Lio&#x27;, Erik Cambria et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Operator/Kernel</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The strong and continuous increase of AI-based services leads to the steady proliferation of AI data centres worldwide with the unavoidable escalation of their power consumption. It is unknown how this energy demand for computational purposes will impact the surrounding environment.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We assess the impact on the communities, quantifying that more than 340 million people could be affected by this temperature increase. Our results show that the data heat island effect could have a remarkable influence on communities and regional welfare in the future, hence becoming part of the conversation around environmentally sustainable AI worldwide.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20882v1">RubricRAG: Towards Interpretable and Reliable LLM Evaluation via Domain Knowledge Retrieval for Rubric Generation</a></div>
+  <div class="card-authors">Kaustubh D. Dhole, Eugene Agichtein</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Large language models (LLMs) are increasingly evaluated and sometimes trained using automated graders such as LLM-as-judges that output scalar scores or preferences. While convenient, these approaches are often opaque: a single score rarely explains why an answer is good or bad, which requirements were missed, or how a system should be improved.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">While convenient, these approaches are often opaque: a single score rarely explains why an answer is good or bad, which requirements were missed, or how a system should be improved. We demonstrate that RubricRAG can generate more interpretable rubrics both for similarity to human-authored rubrics, and for improved downstream evaluation effectiveness.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20854v1">SozKZ: Training Efficient Small Language Models for Kazakh from Scratch</a></div>
+  <div class="card-authors">Saken Tukenov</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Kazakh, a Turkic language spoken by over 22 million people, remains underserved by existing multilingual language models, which allocate minimal capacity to low-resource languages and employ tokenizers ill-suited to agglutinative morphology. We present SozKZ, a family of Llama-architecture language models (50M-600M parameters) trained entirely from scratch on 9 billion tokens of Kazakh text with a</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 600, 3 params</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our 600M model achieves 30.3% accuracy on Kazakh cultural QA, approaching the 32.0% of Llama-3.2-1B (2x larger), and 25.5% on SIB-200 topic classification, surpassing all evaluated multilingual models up to 2B parameters. We observe consistent scaling from 50M to 600M, with MC QA accuracy rising from 22.8% to 30.3%, suggesting that further scaling remains beneficial.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20777v1">OmniPatch: A Universal Adversarial Patch for ViT-CNN Cross-Architecture Transfer in Semantic Segmentation</a></div>
+  <div class="card-authors">Aarush Aggarwal, Akshat Tomar, Amritanshu Tiwari et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Robust semantic segmentation is crucial for safe autonomous driving, yet deployed models remain vulnerable to black-box adversarial attacks when target weights are unknown. Most existing approaches either craft image-wide perturbations or optimize patches for a single architecture, which limits their practicality and transferability.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Most existing approaches either craft image-wide perturbations or optimize patches for a single architecture, which limits their practicality and transferability. We introduce OmniPatch, a training framework for learning a universal adversarial patch that generalizes across images and both ViT and CNN architectures without requiring access to target model parameters.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20673v1">PAVE: Premise-Aware Validation and Editing for Retrieval-Augmented LLMs</a></div>
+  <div class="card-authors">Tianyi Huang, Caden Yang, Emily Yin et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Retrieval-augmented language models can retrieve relevant evidence yet still commit to answers before explicitly checking whether the retrieved context supports the conclusion. We present PAVE (Premise-Grounded Answer Validation and Editing), an inference-time validation layer for evidence-grounded question answering.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In controlled ablations with a fixed retriever and backbone, PAVE outperforms simpler post-retrieval baselines in two evidence-grounded QA settings, with the largest gain reaching 32.7 accuracy points on a span-grounded benchmark.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20670v1">Towards Intelligent Geospatial Data Discovery: a knowledge graph-driven multi-agent framework powered by large language models</a></div>
+  <div class="card-authors">Ruixiang Liu, Zhenlong Li, Ali Khosravi Kazazi</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The rapid growth in the volume, variety, and velocity of geospatial data has created data ecosystems that are highly distributed, heterogeneous, and semantically inconsistent. Existing data catalogs, portals, and infrastructures still rely largely on keyword-based search with limited semantic support, which often fails to capture user intent and leads to weak retrieval performance.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Results from representative use cases and performance evaluation show that the framework substantially improves intent matching accuracy, ranking quality, recall, and discovery transparency compared with traditional systems.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20661v1">WWW.Serve: Interconnecting Global LLM Services through Decentralization</a></div>
+  <div class="card-authors">Huanyu Wang, Ziyu Xia, Zhuoming Chen et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Distributed</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span></div>
+  <div class="card-summary">Large language model (LLM) services are mostly centralized, leading to scalability bottlenecks and underutilization of substantial scattered GPU resources. While decentralization offers a promising alternative, existing frameworks primarily focus on cooperation among GPU providers while overlooking their inherent competitive dynamics, imposing substantial constraints such as excessive platform-lev</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Empirically, we show that WWW.Serve improves global SLO (service-level-objective) attainment by up to 1.5x and lowers latency by 27.6%. Its performance approaches, and in some cases surpasses, centralized scheduling, while fully preserving the benefits of decentralization.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20654v1">Modernizing Amdahl&#x27;s Law: How AI Scaling Laws Shape Computer Architecture</a></div>
+  <div class="card-authors">Chien-Ping Lu</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span></div>
+  <div class="card-summary">Classical Amdahl&#x27;s Law assumes a fixed decomposition between serial and parallel work and homogeneous replication; historically, it bounds how much parallel speedup is attainable. Modern systems instead combine specialized accelerators with programmable compute, tensor datapaths, and evolving pipelines, while empirical scaling laws shift which stages absorb marginal compute.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Classical Amdahl&#x27;s Law assumes a fixed decomposition between serial and parallel work and homogeneous replication; historically, it bounds how much parallel speedup is attainable.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20650v1">From 50% to Mastery in 3 Days: A Low-Resource SOP for Localizing Graduate-Level AI Tutors via Shadow-RAG</a></div>
+  <div class="card-authors">Zonglin Yang, J. -H. Xie, Lining Zhang et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag tag-hw">GPU</span></div>
+  <div class="card-summary">Deploying high-fidelity AI tutors in schools is often blocked by the Resource Curse -- the need for expensive cloud GPUs and massive data engineering. In this practitioner report, we present a replicable Standard Operating Procedure that breaks this barrier.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our pilot study on a full graduate-level final exam reveals a striking emergence phenomenon: while both zero-shot baselines and standard retrieval stagnate around 50-60% accuracy across model generations, the Shadow Agent, which provides structured reasoning guidance, triggers a massive capability surge in newer 32B models, boosting performance from 74% (Naive RAG) to mastery level (90%). In contrast, older models see only modest gains (~10%).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20648v1">A Multihead Continual Learning Framework for Fine-Grained Fashion Image Retrieval with Contrastive Learning and Exponential Moving Average Distillation</a></div>
+  <div class="card-authors">Ling Xiao, Toshihiko Yamasaki</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Most fine-grained fashion image retrieval (FIR) methods assume a static setting, requiring full retraining when new attributes appear, which is costly and impractical for dynamic scenarios. Although pretrained models support zero-shot inference, their accuracy drops without supervision, and no prior work explores class-incremental learning (CIL) for fine-grained FIR.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments across four datasets demonstrate that, beyond its scalability, MCL-FIR achieves a strong balance between efficiency and accuracy. It significantly outperforms CIL baselines under similar training cost, and compared with static methods, it delivers comparable performance while using only about 30% of the training cost.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20642v1">Weber&#x27;s Law in Transformer Magnitude Representations: Efficient Coding, Representational Geometry, and Psychophysical Laws in Language Models</a></div>
+  <div class="card-authors">Jon-Paul Cacioli</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">How do transformer language models represent magnitude? Recent work disagrees: some find logarithmic spacing, others linear encoding, others per-digit circular representations.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Third, causal intervention reveals a layer dissociation: early layers are functionally implicated in magnitude processing (4.1x specificity) while later layers where geometry is strongest are not causally engaged (1.2x).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20623v1">MINISA: Minimal Instruction Set Architecture for Next-gen Reconfigurable Inference Accelerator</a></div>
+  <div class="card-authors">Jianming Tong, Devansh Jain, Yujie Li et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Modern reconfigurable AI accelerators rely on rich mapping and data-layout flexibility to sustain high utilization across matrix multiplication, convolution, and emerging applications beyond AI. However, exposing this flexibility through fine-grained micro-control results in prohibitive control overhead of fetching configuration bits from off-chip memory.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our results show that MINISA reduces geometric mean off-chip instruction traffic by factors ranging from 35x to (4x10^5)x under various sizes under 50 GEMM workloads spanning AI (GPT-oss), FHE, and ZKP. This eliminates instruction-fetch stalls that consume 96.9% of micro-instruction cycles, yielding up to 31.6x end-to-end speedup for 16x256 FEATHER+.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20622v1">Incremental GNN Embedding Computation on Streaming Graphs</a></div>
+  <div class="card-authors">Qiange Wang, Haoran Lv, Yanfeng Zhang et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span><span class="tag tag-hw">GPU</span><span class="tag tag-hw">CPU</span></div>
+  <div class="card-summary">Graph Neural Network (GNN) on streaming graphs has gained increasing popularity. However, its practical deployment remains challenging, as the inference process relies on Runtime Embedding Computation (RTEC) to capture recent graph changes.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU, CPU</li><li><strong>Speedup:</strong> 145.8×</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments across diverse graph sizes and GNN models show that our method reduces computation by 64%-99% and achieves 1.7x-145.8x speedups over existing solutions.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20620v1">Reasoning Traces Shape Outputs but Models Won&#x27;t Say So</a></div>
+  <div class="card-authors">Yijie Hao, Lingjie Chen, Ali Emami et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Can we trust the reasoning traces that large reasoning models (LRMs) produce? We investigate whether these traces faithfully reflect what drives model outputs, and whether models will honestly report their influence.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">However, when asked to explain their changed answers, models overwhelmingly refuse to disclose the influence: overall non-disclosure exceeds 90% for extreme hints across 30,000 follow-up samples.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20595v1">Position: Multi-Agent Algorithmic Care Systems Demand Contestability for Trustworthy AI</a></div>
+  <div class="card-authors">Truong Thanh Hung Nguyen, Hélène Fournier, Piper Jackson et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Multi-agent systems (MAS) are increasingly used in healthcare to support complex decision-making through collaboration among specialized agents. Because these systems act as collective decision-makers, they raise challenges for trust, accountability, and human oversight.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">This position paper argues that contestability is a necessary design requirement for trustworthy multi-agent algorithmic care systems. We identify key limitations in current MAS and Explainable AI (XAI) research and present a human-in-the-loop framework that integrates structured argumentation and role-based contestation to preserve human agency, clinical responsibility, and trust in high-stakes care contexts.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20586v1">MKA: Memory-Keyed Attention for Efficient Long-Context Reasoning</a></div>
+  <div class="card-authors">Dong Liu, Yanxuan Yu, Ben Lengerich et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">As long-context language modeling becomes increasingly important, the cost of maintaining and attending to large Key/Value (KV) caches grows rapidly, becoming a major bottleneck in both training and inference. While prior works such as Multi-Query Attention (MQA) and Multi-Latent Attention (MLA) reduce memory by sharing or compressing KV features, they often trade off representation quality or inc</div>
+  <ul class="card-metrics"><li><strong>Speedup:</strong> 5×</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We further introduce Route-Fused MKA (FastMKA), a broadcast-routed variant that fuses memory sources before attention computation for improved efficiency. Experiments on different sequence lengths show that FastMKA achieves a favorable accuracy-efficiency trade-off: comparable perplexity to MLA while achieving up to 5x faster training throughput and 1.8x lower evaluation latency.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20578v1">Context Cartography: Toward Structured Governance of Contextual Space in Large Language Model Systems</a></div>
+  <div class="card-authors">Zihua Wu, Georg Gartner</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The prevailing approach to improving large language model (LLM) reasoning has centered on expanding context windows, implicitly assuming that more tokens yield better performance. However, empirical evidence - including the &quot;lost in the middle&quot; effect and long-distance relational degradation - demonstrates that contextual space exhibits structural gradients, salience asymmetries, and entropy accum</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">An analysis of four contemporary systems (Claude Code, Letta, MemOS, and OpenViking) provides interpretive evidence that these operators are converging independently across the industry. We derive testable predictions from the framework - including operator-specific ablation hypotheses - and propose a diagnostic benchmark for empirical validation.</div>
+</div>
+<h2>Training &amp; Optimization Systems (20)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20981v1">Cyber Deception for Mission Surveillance via Hypergame-Theoretic Deep Reinforcement Learning</a></div>
+  <div class="card-authors">Zelin Wan, Jin-Hee Cho, Mu Zhu et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Unmanned Aerial Vehicles (UAVs) are valuable for mission-critical systems like surveillance, rescue, or delivery. Not surprisingly, such systems attract cyberattacks, including Denial-of-Service (DoS) attacks to overwhelm the resources of mission drones (MDs).</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">This achieves a systematic way to intelligently deceive attackers. Further, the HT-DRL-based HD approach outperforms existing non-HD counterparts up to two times better in mission performance while incurring low energy consumption.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20955v1">Beyond Expression Similarity: Contrastive Learning Recovers Functional Gene Associations from Protein Interaction Structure</a></div>
+  <div class="card-authors">Jason Dury</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The Predictive Associative Memory (PAM) framework posits that useful relationships often connect items that co-occur in shared contexts rather than items that appear similar in embedding space. A contrastive MLP trained on co-occurrence annotations--Contrastive Association Learning (CAL)--has improved multi-hop passage retrieval and discovered narrative function at corpus scale in text.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">A contrastive MLP trained on co-occurrence annotations--Contrastive Association Learning (CAL)--has improved multi-hop passage retrieval and discovered narrative function at corpus scale in text. On gene perturbation data (Replogle K562 CRISPRi, 2,285 genes), CAL trained on STRING protein interactions achieves cross-boundary AUC of 0.908 where expression similarity scores 0.518.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20939v1">User Preference Modeling for Conversational LLM Agents: Weak Rewards from Retrieval-Augmented Interaction</a></div>
+  <div class="card-authors">Yuren Hao, Shuhaib Mehri, ChengXiang Zhai et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language models are increasingly used as personal assistants, yet most lack a persistent user model, forcing users to repeatedly restate preferences across sessions. We propose Vector-Adapted Retrieval Scoring (VARS), a pipeline-agnostic, frozen-backbone framework that represents each user with long-term and short-term vectors in a shared preference space and uses these vectors to bias retri</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Under frozen backbones, the main benefit of user-aware retrieval is improved interaction efficiency rather than large gains in raw task accuracy: our full VARS agent achieves the strongest overall performance, matches a strong Reflection baseline in task success, and reduces timeout rate and user effort.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20899v1">Mitigating Shortcut Reasoning in Language Models: A Gradient-Aware Training Approach</a></div>
+  <div class="card-authors">Hongyu Cao, Kunpeng Liu, Dongjie Wang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Large language models exhibit strong reasoning capabilities, yet often rely on shortcuts such as surface pattern matching and answer memorization rather than genuine logical inference. We propose Shortcut-Aware Reasoning Training (SART), a gradient-aware framework that detects and mitigates shortcut-promoting samples via ShortcutScore and gradient surgery.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on controlled reasoning benchmarks show that SART achieves +16.5% accuracy and +40.2% robustness over the strongest baseline, significantly improving generalization under distribution shifts.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20898v1">Natural Gradient Descent for Online Continual Learning</a></div>
+  <div class="card-authors">Joe Khawand, David Colliaux</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Online Continual Learning (OCL) for image classification represents a challenging subset of Continual Learning, focusing on classifying images from a stream without assuming data independence and identical distribution (i.i.d). The primary challenge in this context is to prevent catastrophic forgetting, where the model&#x27;s performance on previous tasks deteriorates as it learns new ones.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Although various strategies have been proposed to address this issue, achieving rapid convergence remains a significant challenge in the online setting. This method demonstrates substantial improvements in performance across all OCL methods, particularly when combined with existing OCL tricks, on datasets such as Split CIFAR-100, CORE50, and Split miniImageNet.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20896v1">Beyond the Birkhoff Polytope: Spectral-Sphere-Constrained Hyper-Connections</a></div>
+  <div class="card-authors">Zhaoyi Liu, Haichuan Zhang, Ang Li</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Inference</span></div>
+  <div class="card-summary">Hyper-Connections (HC) generalize residual connections into multiple streams, employing residual matrices for cross-stream feature mixing to enrich model expressivity. However, unconstrained mixing disrupts the identity mapping property intrinsic to the residual connection, causing unstable training.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">By geometrically shifting the feasible set from a rigid polytope to a spectral norm sphere, sHC allows negative entries, unlocking subtractive interactions for selective feature diversification. This shift eliminates unstable Sinkhorn projections and factorial parameterization, enabling expressive, non-degenerate residual matrices while preserving training stability.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20860v1">Restoring Neural Network Plasticity for Faster Transfer Learning</a></div>
+  <div class="card-authors">Xander Coetzer, Arné Schreuder, Anna Sergeevna Bosman</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Transfer learning with models pretrained on ImageNet has become a standard practice in computer vision. Transfer learning refers to fine-tuning pretrained weights of a neural network on a downstream task, typically unrelated to ImageNet.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our experiments show that both convolutional neural networks (CNNs) and vision transformers (ViTs) benefit from this approach, yielding higher test accuracy with faster convergence on several image classification benchmarks.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20836v1">MERIT: Multi-domain Efficient RAW Image Translation</a></div>
+  <div class="card-authors">Wenjun Huang, Shenghao Fu, Yian Jin et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">RAW images captured by different camera sensors exhibit substantial domain shifts due to varying spectral responses, noise characteristics, and tone behaviors, complicating their direct use in downstream computer vision tasks. Prior methods address this problem by training domain-specific RAW-to-RAW translators for each source-target pair, but such approaches do not scale to real-world scenarios i</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We further enhance the generator with a conditional multi-scale large kernel attention module for improved context and sensor-aware feature modeling. Extensive experiments demonstrate that MERIT outperforms prior models in both quality (5.56 dB improvement) and scalability (80% reduction in training iterations).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20833v1">Governance-Aware Vector Subscriptions for Multi-Agent Knowledge Ecosystems</a></div>
+  <div class="card-authors">Steven Johnson</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">As AI agent ecosystems grow, agents need mechanisms to monitor relevant knowledge in real time. Semantic publish-subscribe systems address this by matching new content against vector subscriptions.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We validate the mechanism on a synthetic corpus (1,000 chunks, 93 subscriptions, 5 domains): the governed mode correctly enforces all policy constraints while preserving delivery of authorized content. Ablation across five policy dimensions shows that no single dimension suffices for full compliance.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20818v1">PlanaReLoc: Camera Relocalization in 3D Planar Primitives via Region-Based Structure Matching</a></div>
+  <div class="card-authors">Hanqiao Ye, Yuzhou Liu, Yangdong Liu et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span></div>
+  <div class="card-summary">While structure-based relocalizers have long strived for point correspondences when establishing or regressing query-map associations, in this paper, we pioneer the use of planar primitives and 3D planar maps for lightweight 6-DoF camera relocalization in structured environments. Planar primitives, beyond being fundamental entities in projective geometry, also serve as region-based representations</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Through comprehensive experiments on the ScanNet and 12Scenes datasets across hundreds of scenes, our method demonstrates the superiority of planar primitives in facilitating reliable cross-modal structural correspondences and achieving effective camera relocalization without requiring realistically textured/colored maps, pose priors, or per-scene training.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20755v1">Memory-Efficient Fine-Tuning Diffusion Transformers via Dynamic Patch Sampling and Block Skipping</a></div>
+  <div class="card-authors">Sunghyun Park, Jeongho Kim, Hyoungwoo Park et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Diffusion Transformers (DiTs) have significantly enhanced text-to-image (T2I) generation quality, enabling high-quality personalized content creation. However, fine-tuning these models requires substantial computational complexity and memory, limiting practical deployment under resource constraints.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Evaluations demonstrate that our approach achieves competitive personalization performance qualitatively and quantitatively, while reducing memory usage substantially, moving toward on-device feasibility (e.g., smartphones, IoT devices) for large-scale diffusion transformers.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20724v1">Multi-RF Fusion with Multi-GNN Blending for Molecular Property Prediction</a></div>
+  <div class="card-authors">Zacharie Bugaud</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Multi-RF Fusion achieves a test ROC-AUC of 0.8476 +/- 0.0002 on ogbg-molhiv (10 seeds), placing #1 on the OGB leaderboard ahead of HyperFusion (0.8475 +/- 0.0003). The core of the method is a rank-averaged ensemble of 12 Random Forest models trained on concatenated molecular fingerprints (FCFP, ECFP, MACCS, atom pairs -- 4,263 dimensions total), blended with deep-ensembled GNN predictions at 12% w</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Multi-RF Fusion achieves a test ROC-AUC of 0.8476 +/- 0.0002 on ogbg-molhiv (10 seeds), placing #1 on the OGB leaderboard ahead of HyperFusion (0.8475 +/- 0.0003). The core of the method is a rank-averaged ensemble of 12 Random Forest models trained on concatenated molecular fingerprints (FCFP, ECFP, MACCS, atom pairs -- 4,263 dimensions total), blended with deep-ensembled GNN predictions at 12% weight.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20691v1">SWE-Next: Scalable Real-World Software Engineering Tasks for Agents</a></div>
+  <div class="card-authors">Jiarong Liang, Zhiheng Lyu, Zijie Liu et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Executable software engineering data is valuable for training SWE agents, but scaling it remains difficult for two reasons: only a small fraction of real repository changes yield verifiable, high-signal task instances, and naively building repository-specific environments quickly becomes the dominant systems cost. We present SWE-Next, an execution-grounded framework for scalable SWE task and traje</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On the data side, SWE-Next mines real merged pull requests, executes candidate base/merged commit pairs, and retains only those that produce strict test improvements without regressions, yielding self-verifying instances. Experiments show that SWE-Next improves downstream pass@1 with fewer or comparable training trajectories, indicating that its gains come not from a stronger trajectory generator, but from higher-signal execution-grounded supervision and more efficient data collection.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20688v1">Artificial Intelligence in Experimental Approaches: Growth Hacking, Lean Startup, Design Thinking, and Agile</a></div>
+  <div class="card-authors">Parisa Omidmand, Saeid Ataei</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Organizations increasingly adopt AI technologies to accelerate their performance and capacity to adapt to market dynamics. This study examines how organizations implement AI in experimental methodologies such as growth hacking, lean startup, design thinking, and agile methodology to enhance efficiency and effectiveness.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">For instance, AI-driven analytics improves decision-making in growth hacking, streamlines iterative cycles in lean startups, enhances creativity in design thinking, and optimizes task prioritization in agile methodology. Furthermore, we identified several real-world cases that successfully utilized AI in experimental strategies and improved their performance across various industries.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20667v1">REVERE: Reflective Evolving Research Engineer for Scientific Workflows</a></div>
+  <div class="card-authors">Balaji Dinesh Gangireddi, Aniketh Garikaparthi, Manasi Patwardhan et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Existing prompt-optimization techniques rely on local signals to update behavior, often neglecting broader and recurring patterns across tasks, leading to poor generalization; they further rely on full-prompt rewrites or unstructured merges, resulting in knowledge loss. These limitations are magnified in research-coding workflows, which involve heterogeneous repositories, underspecified environmen</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">REVERE, via this reflective optimization framework, improves performance over prior state-of-the-art expert-crafted instructions on research coding tasks by 4.50% on SUPER, 3.51% on ResearchCodeBench, and 4.89% on ScienceAgentBench across their respective metrics.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20656v1">Sinkhorn Based Associative Memory Retrieval Using Spherical Hellinger Kantorovich Dynamics</a></div>
+  <div class="card-authors">Aratrika Mustafi, Soumya Mukherjee</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We propose a dense associative memory for empirical measures (weighted point clouds). Stored patterns and queries are finitely supported probability measures, and retrieval is defined by minimizing a Hopfield-style log-sum-exp energy built from the debiased Sinkhorn divergence.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Under a random pattern model, we further show that these Sinkhorn basins are disjoint with high probability, implying exponential capacity in the ambient dimension. Experiments on synthetic Gaussian point-cloud memories demonstrate robust recovery from perturbed queries versus a Euclidean Hopfield-type baseline.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20637v1">AEGIS: From Clues to Verdicts -- Graph-Guided Deep Vulnerability Reasoning via Dialectics and Meta-Auditing</a></div>
+  <div class="card-authors">Sen Fang, Weiyuan Ding, Zhezhen Cao et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large Language Models (LLMs) are increasingly adopted for vulnerability detection, yet their reasoning remains fundamentally unsound. We identify a root cause shared by both major mitigation paradigms (agent-based debate and retrieval augmentation): reasoning in an ungrounded deliberative space that lacks a bounded, hypothesis-specific evidence base.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Evaluation on the rigorous PrimeVul dataset demonstrates that AEGIS establishes a new state-of-the-art, achieving 122 Pair-wise Correct Predictions. To our knowledge, this is the first approach to surpass 100 on this benchmark.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20634v1">CFNN: Continued Fraction Neural Network</a></div>
+  <div class="card-authors">Chao Wang, Xuancheng Zhou, Ruilin Hou et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Accurately characterizing non-linear functional manifolds with singularities is a fundamental challenge in scientific computing. While Multi-Layer Perceptrons (MLPs) dominate, their spectral bias hinders resolving high-curvature features without excessive parameters.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Benchmarks show CFNNs consistently outperform MLPs in precision with one to two orders of magnitude fewer parameters, exhibiting up to a 47-fold improvement in noise robustness and physical consistency.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20602v1">Interpretable Operator Learning for Inverse Problems via Adaptive Spectral Filtering: Convergence and Discretization Invariance</a></div>
+  <div class="card-authors">Hang-Cheng Dong, Pengcheng Cheng, Shuhuan Li</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Solving ill-posed inverse problems necessitates effective regularization strategies to stabilize the inversion process against measurement noise. While classical methods like Tikhonov regularization require heuristic parameter tuning, and standard deep learning approaches often lack interpretability and generalization across resolutions, we propose SC-Net (Spectral Correction Network), a novel ope</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Numerical experiments on 1D integral equations demonstrate that SC-Net: (1) achieves the theoretical minimax optimal convergence rate (O(δ^0.5) for s=p=1.5), matching theoretical lower bounds; (2) learns interpretable sharp-cutoff filters that outperform Oracle Tikhonov regularization; and (3) exhibits zero-shot super-resolution, maintaining stable reconstruction errors (approx 0.23) when trained on coarse grids (N=256) and tested on significantly finer grids (up to N=2048).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20600v1">Graph-based data-driven discovery of interpretable laws governing corona-induced noise and radio interference for high-voltage transmission lines</a></div>
+  <div class="card-authors">Hao Xu, Yuntian Chen, Chongqing Kang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The global shift towards renewable energy necessitates the development of ultrahigh-voltage (UHV) AC transmission to bridge the gap between remote energy sources and urban demand. While UHV grids offer superior capacity and efficiency, their implementation is often hindered by corona-induced audible noise (AN) and radio interference (RI).</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The framework provides mechanistic insight into how nonlinear interactions among the surface gradient, bundle number and diameter govern high-field emissions and enables accurate predictions for both corona-cage data and multicountry real UHV lines with up to 16-bundle conductors. Unlike black-box models, the discovered closed-form laws are highly portable and interpretable, allowing for rapid predictions when applied to various scenarios, thereby facilitating the engineering design process.</div>
+</div>
+<h2>Inference &amp; Serving Systems (9)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20980v1">From Causal Discovery to Dynamic Causal Inference in Neural Time Series</a></div>
+  <div class="card-authors">Valentina Kuskova, Dmitry Zaytsev, Michael Coppedge</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Time-varying causal models provide a powerful framework for studying dynamic scientific systems, yet most existing approaches assume that the underlying causal network is known a priori - an assumption rarely satisfied in real-world domains where causal structure is uncertain, evolving, or only indirectly observable. This limits the applicability of dynamic causal inference in many scientific sett</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on multi-country panel time-series data demonstrate that learned causal networks yield more stable and behaviorally meaningful dynamic causal inferences than coefficient-based or structure-free alternatives, even when forecasting performance is comparable. These results position DCNAR as a general framework for using AI as a scientific instrument for dynamic causal reasoning under structural uncertainty.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20930v1">Causally-Guided Diffusion for Stable Feature Selection</a></div>
+  <div class="card-authors">Arun Vignesh Malarkkan, Xinyuan Wang, Kunpeng Liu et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Feature selection is fundamental to robust data-centric AI, but most existing methods optimize predictive performance under a single data distribution. This often selects spurious features that fail under distribution shifts.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across both classification and regression tasks, CGDFS consistently selects more stable and transferable feature subsets, which leads to improved out-of-distribution performance and greater selection robustness compared to sparsity-based, tree-based, and stability-selection baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20885v1">Characterizing the onset and offset of motor imagery during passive arm movements induced by an upper-body exoskeleton</a></div>
+  <div class="card-authors">Kanishka Mitra, Frigyes Samuel Racz, Satyam Kumar et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Two distinct technologies have gained attention lately due to their prospects for motor rehabilitation: robotics and brain-machine interfaces (BMIs). Harnessing their combined efforts is a largely uncharted and promising direction that has immense clinical potential.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Offline decoder evaluation achieved group average onset accuracy of 60.7% and 66.6% for offset accuracy, revealing that the start and stop of MI could be identified while attached to the robot.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20869v1">ReLaMix: Residual Latency-Aware Mixing for Delay-Robust Financial Time-Series Forecasting</a></div>
+  <div class="card-authors">Tianyou Lai, Wentao Yue, Jiayi Zhou et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Financial time-series forecasting in real-world high-frequency markets is often hindered by delayed or partially stale observations caused by asynchronous data acquisition and transmission latency. To better reflect such practical conditions, we investigate a simulated delay setting where a portion of historical signals is corrupted by a Zero-Order Hold (ZOH) mechanism, significantly increasing fo</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on a large-scale second-resolution PAXGUSDT benchmark demonstrate that ReLaMix consistently achieves state-of-the-art accuracy across multiple delay ratios and prediction horizons, outperforming strong mixer and Transformer baselines with substantially fewer parameters.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20867v1">Semantic Sections: An Atlas-Native Feature Ontology for Obstructed Representation Spaces</a></div>
+  <div class="card-authors">Hossein Javidnia</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span></div>
+  <div class="card-summary">Recent interpretability work often treats a feature as a single global direction, dictionary atom, or latent coordinate shared across contexts. We argue that this ontology can fail in obstructed representation spaces, where locally coherent meanings need not assemble into one globally consistent feature.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">By contrast, section-based identity recovery is perfect on certified supports. These results support semantic sections as a better feature ontology in obstructed regimes.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20821v1">Compass: Optimizing Compound AI Workflows for Dynamic Adaptation</a></div>
+  <div class="card-authors">Milos Gravara, Juan Luis Herrera, Stefan Nastic</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Distributed</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">Compound AI is a distributed intelligence approach that represents a unified system orchestrating specialized AI/ML models with engineered software components into AI workflows. Compound AI production deployments must satisfy accuracy, latency, and cost objectives under varying loads.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across two compound AI workflows, COMPASS-V achieves 100% recall while reducing configuration evaluations by 57.5% on average compared to exhaustive search, with efficiency gains reaching 95.3% at tight accuracy thresholds. Runtime adaptation achieves 90-98% SLO compliance under dynamic load patterns, improving SLO compliance by 71.6% over static high-accuracy baselines, while simultaneously improving accuracy by 3-5% over static fast baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20711v1">RoboECC: Multi-Factor-Aware Edge-Cloud Collaborative Deployment for VLA Models</a></div>
+  <div class="card-authors">Zihao Zheng, Hangyu Cao, Jiayu Chen et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Vision-Language-Action (VLA) models are mainstream in embodied intelligence but face high inference costs. Edge-Cloud Collaborative (ECC) deployment offers an effective fix by easing edge-device computing pressure to meet real-time needs.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments demonstrate that RoboECC achieves a speedup of up to 3.28x with only 2.55x~2.62x overhead.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20684v1">Centrality-Based Pruning for Efficient Echo State Networks</a></div>
+  <div class="card-authors">Sudip Laudari</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Echo State Networks (ESNs) are a reservoir computing framework widely used for nonlinear time-series prediction. However, despite their effectiveness, the randomly initialized reservoir often contains redundant nodes, leading to unnecessary computational overhead and reduced efficiency.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In this work, we propose a graph centrality-based pruning approach that interprets the reservoir as a weighted directed graph and removes structurally less important nodes using centrality measures. Experiments on Mackey-Glass time-series prediction and electric load forecasting demonstrate that the proposed method can significantly reduce reservoir size while maintaining, and in some cases improving, prediction accuracy, while preserving the essential reservoir dynamics.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20633v1">Seed1.8 Model Card: Towards Generalized Real-World Agency</a></div>
+  <div class="card-authors">Bytedance Seed</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span></div>
+  <div class="card-summary">We present Seed1.8, a foundation model aimed at generalized real-world agency: going beyond single-turn prediction to multi-turn interaction, tool use, and multi-step execution. Seed1.8 keeps strong LLM and vision-language performance while supporting a unified agentic interface-search, code generation and execution, and GUI interaction.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We report evaluations on standard benchmarks and application-aligned workflows spanning foundational skills, multimodal understanding, and agentic behavior. Seed1.8 is released to support further research and development on interactive, real-world use cases.</div>
+</div>
+<h2>Operators &amp; Kernels (3)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20729v1">Weakly supervised multimodal segmentation of acoustic borehole images with depth-aware cross-attention</a></div>
+  <div class="card-authors">Jose Luis Lima de Jesus Silva</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Acoustic borehole images provide high-resolution borehole-wall structure, but large-scale interpretation remains difficult because dense expert annotations are rarely available and subsurface information is intrinsically multimodal. The challenge is developing weakly supervised methods combining two-dimensional image texture with depth-aligned one-dimensional well-logs.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We establish that threshold-guided learned refinement provides the most robust improvement over raw thresholding, denoised thresholding, and latent clustering baselines. Multimodal performance depends strongly on fusion strategy: direct concatenation provides limited gains, whereas depth-aware cross-attention, gated fusion, and confidence-aware modulation substantially improve agreement with the weak supervisory reference.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20702v1">Decoupling Numerical and Structural Parameters: An Empirical Study on Adaptive Genetic Algorithms via Deep Reinforcement Learning for the Large-Scale TSP</a></div>
+  <div class="card-authors">Hongyu Wang, Yuhan Jing, Yibing Shi et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Proper parameter configuration is a prerequisite for the success of Evolutionary Algorithms (EAs). While various adaptive strategies have been proposed, it remains an open question whether all control dimensions contribute equally to algorithmic scalability.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experimental results confirm the effectiveness of this approach: the learned policies outperform static baselines, reducing the optimality gap by approximately 45% on the largest tested instance (rl5915).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20662v1">Attention in Space: Functional Roles of VLM Heads for Spatial Reasoning</a></div>
+  <div class="card-authors">Xueqi Ma, Shuo Yang, Yanbei Jiang et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Despite remarkable advances in large Vision-Language Models (VLMs), spatial reasoning remains a persistent challenge. In this work, we investigate how attention heads within VLMs contribute to spatial reasoning by analyzing their functional roles through a mechanistic interpretability lens.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Intervention experiments further demonstrate their critical role in spatial reasoning: removing functional heads leads to performance degradation, while emphasizing them enhances accuracy. This study provides new interpretability driven insights into how VLMs attend to space and paves the way for enhancing complex spatial reasoning in multimodal models.</div>
+</div>
+<h2>Frameworks, Compilers &amp; Runtimes (13)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20941v1">Adviser: An Intuitive Multi-Cloud Platform for Scientific and ML Workflows</a></div>
+  <div class="card-authors">Shihan Cheng, Michael A. Laurenzano, Brian Strauch et al.</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Effectively leveraging the vast computational resources of modern cloud environments requires expertise spanning multiple technical domains: configuring scientific software with correct parameters and dependencies, navigating thousands of provider-specific instance types and pricing options, and managing parallel or distributed execution. We conduct a study indicating that the absence of these cat</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">This approach allows users to specify high-level intent, while Adviser handles resource provisioning, runtime configuration, and data movement. Using two computational glaciology codes, Icepack and PISM, we show how to use Adviser to gain scientific insight and perform rapid exploration of cost-performance tradeoffs and scaling behavior without specialized expertise in cloud or high-performance computing.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20933v1">AC4A: Access Control for Agents</a></div>
+  <div class="card-authors">Reshabh K Sharma, Dan Grossman</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large Language Model (LLM) agents combine the chat interaction capabilities of LLMs with the power to interact with external tools and APIs. This enables them to perform complex tasks and act autonomously to achieve user goals.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">This enables them to perform complex tasks and act autonomously to achieve user goals.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20919v1">Enhancing LIME using Neural Decision Trees</a></div>
+  <div class="card-authors">Mohamed Aymen Bouyahia, Argyris Kalogeratos</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Interpreting complex machine learning models is a critical challenge, especially for tabular data where model transparency is paramount. Local Interpretable Model-Agnostic Explanations (LIME) has been a very popular framework for interpretable machine learning, also inspiring many extensions.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We evaluate its effectiveness on several benchmark tabular datasets, showing consistent improvements in explanation fidelity over traditional LIME surrogates.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20851v1">Can ChatGPT Really Understand Modern Chinese Poetry?</a></div>
+  <div class="card-authors">Shanshan Wang, Derek F. Wong, Jingming Yao et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">ChatGPT has demonstrated remarkable capabilities on both poetry generation and translation, yet its ability to truly understand poetry remains unexplored. Previous poetry-related work merely analyzed experimental outcomes without addressing fundamental issues of comprehension.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Evaluation results show that ChatGPT&#x27;s interpretations align with the original poets&#x27; intents in over 73% of the cases.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20839v1">Dodgersort: Uncertainty-Aware VLM-Guided Human-in-the-Loop Pairwise Ranking</a></div>
+  <div class="card-authors">Yujin Park, Haejun Chung, Ikbeom Jang</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Pairwise comparison labeling is emerging as it yields higher inter-rater reliability than conventional classification labeling, but exhaustive comparisons require quadratic cost. We propose Dodgersort, which leverages CLIP-based hierarchical pre-ordering, a neural ranking head and probabilistic ensemble (Elo, BTL, GP), epistemic--aleatoric uncertainty decomposition, and information-theoretic pair</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In visual ranking tasks in medical imaging, historical dating, and aesthetics, Dodgersort achieves a 11--16% annotation reduction while improving inter-rater reliability.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20831v1">Error-resilient Distributed Local Verification</a></div>
+  <div class="card-authors">Paweł Garncarek, Tomasz Jurdzinski, Dariusz Kowalski et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We study verification (decision) problems for graph properties in distributed networks under the locally checkable labeling framework, where nodes use labels (proofs) and local neighborhoods to decide acceptance or rejection. Our focus is twofold.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We introduce a general algorithmic framework, called refix, that transforms a base verification algorithm for a property P operating on labels within a d-hop neighborhood into one that tolerates up to i erroneous labels within a radius d+2i, by accessing a d+2i-hop neighborhood. We demonstrate applications to cycle detection, cycle absence, and bipartiteness, and provide lower bounds relating the number of errors to the required neighborhood size.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20750v1">Modeling Epistemic Uncertainty in Social Perception via Rashomon Set Agents</a></div>
+  <div class="card-authors">Jinming Yang, Xinyu Jiang, Xinshan Jiao et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We present an LLM-driven multi-agent probabilistic modeling framework that demonstrates how differences in students&#x27; subjective social perceptions arise and evolve in real-world classroom settings, under constraints from an observed social network and limited questionnaire data. When social information is incomplete and the accuracy of perception differs between students, they can form different v</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments show that, without relying on global information, the framework reproduces several collective dynamics consistent with real-world educational settings. The code is released at https://anonymous.4open.science/r/Rashomonomon-0126.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20735v1">Optimality in Decentralized Optimization under Bandwidth Constraints</a></div>
+  <div class="card-authors">Alexander Tyurin</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We consider a realistic decentralized setup with bandwidth-constrained communication and derive optimal time complexities for non-convex stochastic parallel and asynchronous optimization (up to logarithmic factors). We develop the corresponding methods, Grace SGD and Leon SGD, for both homogeneous and heterogeneous settings.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We develop the corresponding methods, Grace SGD and Leon SGD, for both homogeneous and heterogeneous settings. Unlike previous work, our optimal bounds are characterized in terms of min-cut/max-flow quantities and rely on tools from Gomory-Hu trees and Steiner Tree Packing problems, providing tighter and more practical complexities.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20730v1">Reasoning Topology Matters: Network-of-Thought for Complex Reasoning Tasks</a></div>
+  <div class="card-authors">Fan Huang</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Existing prompting paradigms structure LLM reasoning in limited topologies: Chain-of-Thought (CoT) produces linear traces, while Tree-of-Thought (ToT) performs branching search. Yet complex reasoning often requires merging intermediate results, revisiting hypotheses, and integrating evidence from multiple sources.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across four benchmarks (GSM8K, Game of 24, HotpotQA, ProofWriter) and three models (GPT-4o-mini, Llama-3.3-70B-Instruct, Qwen2.5-72B-Instruct), we investigate when network topology outperforms chain or tree structures, whether LLM-generated heuristics can guide graph-based reasoning search, and the computation-accuracy tradeoff across topologies, evaluating each method on accuracy, topology simplicity, and token efficiency. Our results show that CoT remains effective for sequential tasks with GP</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20697v1">Satellite-to-Street: Synthesizing Post-Disaster Views from Satellite Imagery via Generative Vision Models</a></div>
+  <div class="card-authors">Yifan Yang, Lei Zou, Wendy Jepson</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">In the immediate aftermath of natural disasters, rapid situational awareness is critical. Traditionally, satellite observations are widely used to estimate damage extent.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on 300 disaster scenarios reveal a critical realism--fidelity trade-off: while diffusion-based approaches (e.g., ControlNet) achieve high perceptual realism, they often hallucinate structural details. Quantitative results show that standard ControlNet achieves the highest semantic accuracy, 0.71, whereas VLM-enhanced and MoE models excel in textural plausibility but struggle with semantic clarity.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20678v1">AI-Driven Multi-Agent Simulation of Stratified Polyamory Systems: A Computational Framework for Optimizing Social Reproductive Efficiency</a></div>
+  <div class="card-authors">Yicai Xing</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Contemporary societies face a severe crisis of demographic reproduction. Global fertility rates continue to decline precipitously, with East Asian nations exhibiting the most dramatic trends -- China&#x27;s total fertility rate (TFR) fell to approximately 1.0 in 2023, while South Korea&#x27;s dropped below 0.72.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Drawing on evolutionary psychology, behavioral ecology, social stratification theory, computational social science, algorithmic fairness, and institutional economics, we argue that SPS can improve aggregate social welfare in the Pareto sense.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20639v1">Agentic AI and the next intelligence explosion</a></div>
+  <div class="card-authors">James Evans, Benjamin Bratton, Blaise Agüera y Arcas</div>
+  <div class="tags"><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The &quot;AI singularity&quot; is often miscast as a monolithic, godlike mind. Evolution suggests a different path: intelligence is fundamentally plural, social, and relational.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Recent advances in agentic AI reveal that frontier reasoning models, such as DeepSeek-R1, do not improve simply by &quot;thinking longer&quot;.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20619v1">Where can AI be used? Insights from a deep ontology of work activities</a></div>
+  <div class="card-authors">Alice Cai, Iman YeckehZaare, Shuo Sun et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Distributed</span></div>
+  <div class="card-summary">Artificial intelligence (AI) is poised to profoundly reshape how work is executed and organized, but we do not yet have deep frameworks for understanding where AI can be used. Here we provide a comprehensive ontology of work activities that can help systematically analyze and predict uses of AI.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We find a highly uneven distribution of AI market value across activities, with the top 1.6% of activities accounting for over 60% of AI market value. Most of the market value is used in information-based activities (72%), especially creating information (36%), and only 12% is used in physical activities.</div>
+</div>
+
+<div class="closing">Emerging patterns: compiler runtime (63), framework (47), training system (31)</div>
+<footer>Arxiv Daily Digest &middot; auto-generated &middot; data from <a href="https://arxiv.org">arXiv.org</a></footer>
+</body>
+</html>
