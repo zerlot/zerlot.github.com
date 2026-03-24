@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Arxiv Daily] 2026-03-20 – Hardware &amp; AI Systems</title>
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-muted: #8b949e; --accent: #58a6ff;
+  --accent2: #3fb950; --tag-bg: #1f2937; --card-bg: #161b22;
+  --orange: #d29922; --red: #f85149;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:15px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; padding: 1rem; max-width: 52rem; margin: 0 auto;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 1.3; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 .75rem; padding-bottom: .35rem;
+     border-bottom: 1px solid var(--border); }
+.meta { color: var(--text-muted); font-size: .85rem; margin-bottom: 1rem; }
+.highlight-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;
+}
+.highlight-box ul { padding-left: 1.25rem; }
+.highlight-box li { margin-bottom: .3rem; }
+.stat-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.stat {
+  background: var(--tag-bg); border-radius: 6px; padding: .3rem .65rem;
+  font-size: .82rem; white-space: nowrap;
+}
+.stat strong { color: var(--accent); }
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-bottom: .85rem;
+}
+.card-title { font-size: 1rem; font-weight: 600; line-height: 1.35; margin-bottom: .3rem; }
+.card-authors { color: var(--text-muted); font-size: .8rem; margin-bottom: .5rem; }
+.card-summary { font-size: .9rem; margin-bottom: .5rem; }
+.card-metrics { font-size: .82rem; color: var(--text-muted); }
+.card-metrics li { margin-bottom: .15rem; }
+.tags { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .5rem; }
+.tag {
+  background: var(--tag-bg); border: 1px solid var(--border);
+  border-radius: 4px; padding: .1rem .45rem; font-size: .72rem;
+  color: var(--text-muted);
+}
+.tag-hw { border-color: var(--orange); color: var(--orange); }
+.closing { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+           font-size: .9rem; color: var(--text-muted); }
+.index-item {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: .85rem 1rem; margin-bottom: .65rem;
+  transition: border-color .15s;
+}
+.index-item:hover { border-color: var(--accent); }
+.index-date { font-weight: 600; font-size: 1rem; }
+.index-stats { color: var(--text-muted); font-size: .82rem; }
+.back-link { display: inline-block; margin-bottom: 1rem; font-size: .9rem; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+         color: var(--text-muted); font-size: .78rem; text-align: center; }
+.no-papers { text-align: center; padding: 3rem 1rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://zerlot.github.io/arxiv-daily/">&larr; Index</a>
+<h1>[Arxiv Daily] 2026-03-20</h1>
+<div class="meta">Hardware &amp; AI Systems Digest &middot; cs.AR / cs.AI / cs.DC</div>
+<div class="highlight-box">
+<div class="stat-row">
+  <div class="stat">Total papers: <strong>140</strong></div>
+  <div class="stat">Performance/Systems relevant: <strong>113</strong></div>
+</div>
+<ul><li>Dual-Domain Representation Alignment: Bridging 2D and 3D Vision via Geometry-Aware Architecture Search: By coupling the computational efficiency of VSS blocks with the semantic expressiveness of ViT modules, CA-DDKD improves the representational capac...</li><li>DGNNFlow: A Streaming Dataflow Architecture for Real-Time Edge-based Dynamic GNN Inference in HL-LHC Trigger Systems: Future HEP experiments will involve detectors that produce 10x more collision data to help unlocking physics discoveries. State-of-the-art GNN acce...</li><li>KV Cache Optimization Strategies for Scalable and Efficient LLM Inference: We further map techniques to seven practical deployment scenarios, including long-context single requests, high-throughput datacenter serving, edge...</li></ul>
+</div>
+<h2>Hardware &amp; Accelerators (48)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20533v1">Revenue-Sharing as Infrastructure: A Distributed Business Model for Generative AI Platforms</a></div>
+  <div class="card-authors">Ghislain Dorian Tchuente Mondjo</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Generative AI platforms (Google AI Studio, OpenAI, Anthropic) provide infrastructures (APIs, models) that are transforming the application development ecosystem. Recent literature distinguishes three generations of business models: a first generation modeled on cloud computing (pay-per-use), a second characterized by diversification (freemium, subscriptions), and a third, emerging generation explo</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Beyond its economic relevance, RSI has a major societal dimension: by enabling developers without initial capital to participate in the digital economy, it could unlock the &quot;latent jobs dividend&quot; in low-income countries, where mobile penetration reaches 84%, and help address local challenges in health, agriculture, and services.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20531v1">Epistemic Observability in Language Models</a></div>
+  <div class="card-authors">Tony Mason</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We find that models report highest confidence precisely when they are fabricating. Across four model families (OLMo-3, Llama-3.1, Qwen3, Mistral), self-reported confidence inversely correlates with accuracy, with AUC ranging from 0.28 to 0.36 where 0.5 is random guessing.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Per-token entropy achieves pooled AUC 0.757, outperforming all text baselines by 2.5--3.9 percentage points at every budget level tested (10%, 20%, 30%).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20514v1">Evaluating Large Language Models on Historical Health Crisis Knowledge in Resource-Limited Settings: A Hybrid Multi-Metric Study</a></div>
+  <div class="card-authors">Mohammed Rakibul Hasan</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large Language Models (LLMs) offer significant potential for delivering health information. However, their reliability in low-resource contexts remains uncertain.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We constructed a question--answer dataset from authoritative sources and assessed model outputs through semantic similarity, expert-model cross-evaluation, and Natural Language Inference (NLI). Findings highlight both the strengths and limitations of LLMs in representing epidemiological history and health crisis knowledge, underscoring their promise and risks for informing policy in resource-constrained environments.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20512v1">SkyHOST: A Unified Architecture for Cross-Cloud Hybrid Object and Stream Transfer</a></div>
+  <div class="card-authors">Muhammad Arslan Tariq, Grégoire Danoy, Pascal Bouvry</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">Cloud and big data workloads are increasingly distributing data across multiple cloud providers and regions for rapid decision-making and analytics. Traditional transfer tools are typically specialized for a single paradigm, either stream replication or bulk transfer.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We demonstrate, through an environmental monitoring use case and empirical evaluation, that SkyHOST provides operational simplicity by consolidating heterogeneous data movement patterns under a single control plane while achieving competitive throughput for cross-region transfers.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20510v1">Grounded Chess Reasoning in Language Models via Master Distillation</a></div>
+  <div class="card-authors">Zhenwei Tang, Qianfeng Wen, Seth Grief-Albert et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Language models often lack grounded reasoning capabilities in specialized domains where training data is scarce but bespoke systems excel. We introduce a general framework for distilling expert system reasoning into natural language chain-of-thought explanations, enabling compact models to acquire domain expertise and the ability to generate faithful, grounded explanations.</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 4 params</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our 4B parameter model, C1, advances from a near-zero baseline to 48.1% accuracy, outperforming all open-source models and most frontier proprietary systems. Notably, C1 surpasses its distillation teacher and generates solutions in two orders of magnitude fewer tokens than baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20508v1">Measuring Reasoning Trace Legibility: Can Those Who Understand Teach?</a></div>
+  <div class="card-authors">Dani Roytburg, Shreya Sridhar, Daphne Ippolito</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Language models are increasingly being trained to &quot;reason&quot; before answering users&#x27; queries, outputting hundreds or even thousands of tokens worth of deliberation before their final answer. While the main intention of reasoning is to improve models&#x27; ability to arrive at a correct answer, we argue that these models should be assessed for the legibility of their reasoning traces in addition to the co</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">While the main intention of reasoning is to improve models&#x27; ability to arrive at a correct answer, we argue that these models should be assessed for the legibility of their reasoning traces in addition to the correctness of their final answers.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20504v1">Meeting in the Middle: A Co-Design Paradigm for FHE and AI Inference</a></div>
+  <div class="card-authors">Bernardo Magri, Benjamin Marsh, Paul Gebheim</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Modern cloud inference creates a two sided privacy problem where users reveal sensitive inputs to providers, while providers must execute proprietary model weights inside potentially leaky execution environments. Fully homomorphic encryption (FHE) offers cryptographic guarantees but remains prohibitively expensive for modern architectures.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We argue that progress requires co-design where specializing FHE schemes/compilers for the static structure of inference circuits, while simultaneously constraining inference architectures to reduce dominant homomorphic cost drivers. We outline a meet in the middle agenda and concrete optimization targets on both axes.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20486v1">COmPOSER: Circuit Optimization of mm-wave/RF circuits with Performance-Oriented Synthesis for Efficient Realizations</a></div>
+  <div class="card-authors">Subhadip Ghosh, Surya Srikar Peri, Ramprasath S. et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">This work presents COmPOSER, an open-source, end-to-end framework for RF/mm-wave design automation that translates target specifications into optimized circuits with layouts. It unifies schematic synthesis, layout generation for actives and passives, and placement/routing, incorporating physics-based equations and machine-learning-driven electromagnetic models.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Based on post-layout validation on multiple LNAs and PAs operating at up to 60GHz in a commercial 65nm process-kit, COmPOSER meets performance targets, comparable to expert manual designs, while delivering a 100-300x productivity gain.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20462v1">Shift-Invariant Feature Attribution in the Application of Wireless Electrocardiograms</a></div>
+  <div class="card-authors">Yalemzerf Getnet, Abiy Tasissa, Waltenegus Dargie</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Assigning relevance scores to the input features of a machine learning model enables to measure the contributions of the features in achieving a correct outcome. It is regarded as one of the approaches towards developing explainable models.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Assigning relevance scores to the input features of a machine learning model enables to measure the contributions of the features in achieving a correct outcome. The purpose of this work is to achieve these goals.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20450v1">Policies Permitting LLM Use for Polishing Peer Reviews Are Currently Not Enforceable</a></div>
+  <div class="card-authors">Rounak Saha, Gurusha Juneja, Dayita Chaudhuri et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">A number of scientific conferences and journals have recently enacted policies that prohibit LLM usage by peer reviewers, except for polishing, paraphrasing, and grammar correction of otherwise human-written reviews. But, are these policies enforceable?</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">To answer this question, we assemble a dataset of peer reviews simulating multiple levels of human-AI collaboration, and evaluate five state-of-the-art detectors, including two commercial systems. We further investigate whether peer-review-specific signals, including access to the paper manuscript and the constrained domain of scientific writing, can be leveraged to improve detection.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20435v1">Deep reflective reasoning in interdependence constrained structured data extraction from clinical notes for digital health</a></div>
+  <div class="card-authors">Jingwei Huang, Kuroush Nezafati, Zhikai Chi et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Extracting structured information from clinical notes requires navigating a dense web of interdependent variables where the value of one attribute logically constrains others. Existing Large Language Model (LLM)-based extraction pipelines often struggle to capture these dependencies, leading to clinically inconsistent outputs.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We extensively evaluate the proposed method in three diverse oncology applications: (1) On colorectal cancer synoptic reporting from gross descriptions (n=217), reflective reasoning improved average F1 across eight categorical synoptic variables from 0.828 to 0.911 and increased mean correct rate across four numeric variables from 0.806 to 0.895; (2) On Ewing sarcoma CD99 immunostaining pattern identification (n=200), the accuracy improved from 0.870 to 0.927; (3) On lung cancer tumor staging (n</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20433v1">ALICE: A Multifaceted Evaluation Framework of Large Audio-Language Models&#x27; In-Context Learning Ability</a></div>
+  <div class="card-authors">Yen-Ting Piao, Jay Chiehen Liao, Wei-Tang Chien et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">While Large Audio-Language Models (LALMs) have been shown to exhibit degraded instruction-following capabilities, their ability to infer task patterns from in-context examples under audio conditioning remains unstudied. To address this gap, we present ALICE, a three-stage framework that progressively reduces textual guidance to systematically evaluate LALMs&#x27; in-context learning ability under audio</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Evaluating six LALMs across four audio understanding tasks under two output constraint categories, we uncover a consistent asymmetry across all stages and LALMs: in-context demonstrations reliably improve format compliance but fail to improve, and often degrade, the core task performance.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20432v1">Coding Agents are Effective Long-Context Processors</a></div>
+  <div class="card-authors">Weili Cao, Xunjian Yin, Bhuwan Dhingra et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large Language Models (LLMs) have demonstrated remarkable progress in scaling to access massive contexts. However, the access is via the latent and uninterpretable attention mechanisms, and LLMs fail to effective process long context, exhibiting significant performance degradation as context length increases.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across multiple benchmarks, these agents outperform published state-of-the-art by 17.3% on average.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20425v1">Leveraging Natural Language Processing and Machine Learning for Evidence-Based Food Security Policy Decision-Making in Data-Scarce Making</a></div>
+  <div class="card-authors">Karan Kumar Singh, Nikita Gajbhiye</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Food security policy formulation in data-scarce regions remains a critical challenge due to limited structured datasets, fragmented textual reports, and demographic bias in decision-making systems. This study proposes ZeroHungerAI, an integrated Natural Language Processing (NLP) and Machine Learning (ML) framework designed for evidence-based food security policy modeling under extreme data scarcit</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experimental evaluation on a 1200-sample hybrid dataset across 25 districts demonstrates superior predictive performance, achieving 91 percent classification accuracy, 0.89 precision, 0.85 recall, and an F1 score of 0.86 under imbalanced conditions. Comparative analysis shows a 13 percent performance improvement over classical SVM and 17 percent over Logistic Regression models.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20422v1">PEARL: Personalized Streaming Video Understanding Model</a></div>
+  <div class="card-authors">Yuanhong Zheng, Ruichuan An, Xiaopeng Lin et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag">Training</span></div>
+  <div class="card-summary">Human cognition of new concepts is inherently a streaming process: we continuously recognize new objects or identities and update our memories over time. However, current multimodal personalization methods are largely limited to static images or offline videos.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive evaluations across 8 offline and online models demonstrate that PEARL achieves state-of-the-art performance. Notably, it brings consistent PSVU improvements when applied to 3 distinct architectures, proving to be a highly effective and robust strategy.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20421v1">Hawkeye: Reproducing GPU-Level Non-Determinism</a></div>
+  <div class="card-authors">Erez Badash, Dan Boneh, Ilan Komargodski et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span><span class="tag tag-hw">CPU</span><span class="tag tag-hw">Hopper</span><span class="tag tag-hw">Ampere</span></div>
+  <div class="card-summary">We present Hawkeye, a system for analyzing and reproducing GPU-level arithmetic operations. Using our framework, anyone can re-execute on a CPU the exact matrix multiplication operations underlying a machine learning model training or inference workflow that was executed on an NVIDIA GPU, without any precision loss.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU, CPU, Hopper, Ampere</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We test and evaluate our framework on multiple NVIDIA GPU architectures ( Ampere, Hopper, and Lovelace) and precision types (FP16, BFP16, FP8). In all test cases, Hawkeye enables perfect reproduction of matrix multiplication on a CPU, paving the way for efficient and trustworthy third-party auditing of ML model training and inference.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20406v1">Thinking in Different Spaces: Domain-Specific Latent Geometry Survives Cross-Architecture Translation</a></div>
+  <div class="card-authors">Marcus Armstrong, Navid Ayoobi, Arjun Mukherjee</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">We investigate whether independently trained language models converge to geometrically compatible latent representations, and whether this compatibility can be exploited to correct model behavior at inference time without any weight updates. We learn a linear projection matrix that maps activation vectors from a large teacher model into the coordinate system of a smaller student model, then interv</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across a fully crossed experimental matrix of 20 heterogeneous teacher-student pairings spanning mixture-of-experts, dense, code-specialized, and synthetically trained architectures, the Ridge projection consistently achieves R^2 = 0.50 on verbal reasoning and R^2 = 0.40 on mathematical reasoning, collapsing to R^2 = -0.22 under permutation control and R^2 = 0.01 under L_1 regularization. Behavioral correction rates range from 14.0% to 50.0% on TruthfulQA (mean 25.2%) and from 8.5% to 43.3% on G</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20397v1">KV Cache Optimization Strategies for Scalable and Efficient LLM Inference</a></div>
+  <div class="card-authors">Yichun Xu, Navjot K. Khaira, Tejinder Singh</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Distributed</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">GPU</span></div>
+  <div class="card-summary">The key-value (KV) cache is a foundational optimization in Transformer-based large language models (LLMs), eliminating redundant recomputation of past token representations during autoregressive generation. However, its memory footprint scales linearly with context length, imposing critical bottlenecks on GPU memory capacity, memory bandwidth, and inference throughput as production LLMs push conte</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We further map techniques to seven practical deployment scenarios, including long-context single requests, high-throughput datacenter serving, edge devices, multi-turn conversations, and accuracy-critical reasoning, providing actionable guidance for practitioners selecting among competing approaches. Our analysis reveals that no single technique dominates across all settings; instead, the optimal strategy depends on context length, hardware constraints, and workload characteristics, pointing tow</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20392v1">SymCircuit: Bayesian Structure Inference for Tractable Probabilistic Circuits via Entropy-Regularized Reinforcement Learning</a></div>
+  <div class="card-authors">Y. Sungtaek Ju</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Probabilistic circuit (PC) structure learning is hampered by greedy algorithms that make irreversible, locally optimal decisions. We propose SymCircuit, which replaces greedy search with a learned generative policy trained via entropy-regularized reinforcement learning.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We introduce option-level REINFORCE, restricting gradient updates to structural decisions rather than all tokens, yielding an SNR (signal to noise ratio) improvement and &gt;10 times sample efficiency gain on the NLTCS dataset. On NLTCS, SymCircuit closes 93% of the gap to LearnSPN; preliminary results on Plants (69 variables) suggest scalability.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20180v1">Adaptive Greedy Frame Selection for Long Video Understanding</a></div>
+  <div class="card-authors">Yuning Huang, Fengqing Zhu</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Large vision--language models (VLMs) are increasingly applied to long-video question answering, yet inference is often bottlenecked by the number of input frames and resulting visual tokens. Naive sparse sampling can miss decisive moments, while purely relevance-driven selection frequently collapses onto near-duplicate frames and sacrifices coverage of temporally distant evidence.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on MLVU show consistent accuracy gains over uniform sampling and a strong recent baseline across frame budgets, with the largest improvements under tight budgets.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20179v1">AI Agents Can Already Autonomously Perform Experimental High Energy Physics</a></div>
+  <div class="card-authors">Eric A. Moreno, Samuel Bright-Thonney, Andrzej Novak et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Large language model-based AI agents are now able to autonomously execute substantial portions of a high energy physics (HEP) analysis pipeline with minimal expert-curated input. Given access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find that Claude Code succeeds in automating all stages of a typical analysis: event selection, background estimatio</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Rather than replacing physicists, these tools promise to offload the repetitive technical burden of analysis code development, freeing researchers to focus on physics insight, truly novel method development, and rigorous validation. Given these developments, we advocate for new strategies for how the community trains students, organizes analysis efforts, and allocates human expertise.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20161v1">Semantic Token Clustering for Efficient Uncertainty Quantification in Large Language Models</a></div>
+  <div class="card-authors">Qi Cao, Andrew Gambardella, Takeshi Kojima et al.</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language models (LLMs) have demonstrated remarkable capabilities across diverse tasks. However, the truthfulness of their outputs is not guaranteed, and their tendency toward overconfidence further limits reliability.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experimental results show that STC achieves performance comparable to state-of-the-art baselines while substantially reducing computational overhead.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20149v1">Enhancing Hyperspace Analogue to Language (HAL) Representations via Attention-Based Pooling for Text Classification</a></div>
+  <div class="card-authors">Ali Sakour, Zoalfekar Sakour</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The Hyperspace Analogue to Language (HAL) model relies on global word co-occurrence matrices to construct distributional semantic representations. While these representations capture lexical relationships effectively, aggregating them into sentence-level embeddings via standard mean pooling often results in information loss.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Empirical results demonstrate that the attention-based pooling approach achieves a test accuracy of 82.38%, yielding an absolute improvement of 6.74 percentage points over the traditional mean pooling baseline (75.64%).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20364v1">DGNNFlow: A Streaming Dataflow Architecture for Real-Time Edge-based Dynamic GNN Inference in HL-LHC Trigger Systems</a></div>
+  <div class="card-authors">Davendra Maharaj, Tu Pham, Peter Meiring et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">FPGA</span><span class="tag tag-hw">GPU</span><span class="tag tag-hw">CPU</span></div>
+  <div class="card-summary">Dynamic GNN inference has exhibited effectiveness in High Energy Physics (HEP) experiments at High Luminosity Large Hadron Collider (HL-LHC) due to strong capability to model complex particle interactions in collision events. Future HEP experiments will involve detectors that produce 10x more collision data to help unlocking physics discoveries.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> FPGA, GPU, CPU</li><li><strong>Speedup:</strong> 6.3×, 5.1×</li><li><strong>Energy:</strong> 0.22, 0.25</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Future HEP experiments will involve detectors that produce 10x more collision data to help unlocking physics discoveries. State-of-the-art GNN accelerators relied on static graph structures, but this assumption breaks down in real-time HL-LHC trigger systems and edge-based dynamic GNN models where edge embeddings change in-place based on neighbor node embeddings at runtime.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20131v1">An Agentic Multi-Agent Architecture for Cybersecurity Risk Management</a></div>
+  <div class="card-authors">Ravish Gupta, Saket Kumar, Shreeya Sharma et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Getting a real cybersecurity risk assessment for a small organization is expensive -- a NIST CSF-aligned engagement runs $15,000 on the low end, takes weeks, and depends on practitioners who are genuinely scarce. Most small companies skip it entirely.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We tested it on a 15-person HIPAA-covered healthcare company and compared outputs to independent assessments by three CISSP practitioners -- the system agreed with them 85% of the time on severity classifications, covered 92% of identified risks, and finished in under 15 minutes.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20122v1">Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Language Models</a></div>
+  <div class="card-authors">Wenjing Hong, Zhonghua Rong, Li Wang et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Large Language Models (LLMs) have been widely deployed, especially through free Web-based applications that expose them to diverse user-generated inputs, including those from long-tail distributions such as low-resource languages and encrypted private data. This open-ended exposure increases the risk of jailbreak attacks that undermine model safety alignment.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments demonstrate that EvoJail consistently discovers diverse and effective long-tail jailbreak strategies, achieving competitive performance with existing methods in both individual and ensemble level.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20111v1">Var-JEPA: A Variational Formulation of the Joint-Embedding Predictive Architecture -- Bridging Predictive and Generative Self-Supervised Learning</a></div>
+  <div class="card-authors">Moritz Gögl, Christopher Yau</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">The Joint-Embedding Predictive Architecture (JEPA) is often seen as a non-generative alternative to likelihood-based self-supervised learning, emphasizing prediction in representation space rather than reconstruction in observation space. We argue that the resulting separation from probabilistic generative modeling is largely rhetorical rather than structural: the canonical JEPA design, coupled en</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We instantiate the framework for tabular data (Var-T-JEPA) and achieve strong representation learning and downstream performance, consistently improving over T-JEPA while remaining competitive with strong raw-feature baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20105v1">The Y-Combinator for LLMs: Solving Long-Context Rot with λ-Calculus</a></div>
+  <div class="card-authors">Amartya Roy, Rasul Tutunov, Xiaotong Ji et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">LLMs are increasingly used as general-purpose reasoners, but long inputs remain bottlenecked by a fixed context window. Recursive Language Models (RLMs) address this by externalising the prompt and recursively solving subproblems.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Empirically, across four long-context reasoning tasks and nine base models, λ-RLM outperforms standard RLM in 29 of 36 model-task comparisons, improves average accuracy by up to +21.9 points across model tiers, and reduces latency by up to 4.1x.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20103v2">Spectral Alignment in Forward-Backward Representations via Temporal Abstraction</a></div>
+  <div class="card-authors">Seyed Mahdi B. Azad, Jasper Hoffmann, Iman Nematollahi et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Forward-backward (FB) representations provide a powerful framework for learning the successor representation (SR) in continuous spaces by enforcing a low-rank factorization. However, a fundamental spectral mismatch often exists between the high-rank transition dynamics of continuous environments and the low-rank bottleneck of the FB architecture, making accurate low-rank representation learning di</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Empirically, we show that this alignment is a key factor for stable FB learning, particularly at high discount factors where bootstrapping becomes error-prone. Our results identify temporal abstraction as a principled mechanism for shaping the spectral structure of the underlying MDP and enabling effective long-horizon representations in continuous control.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20007v1">Physics-Informed Long-Range Coulomb Correction for Machine-learning Hamiltonians</a></div>
+  <div class="card-authors">Yang Zhong, Xiwen Li, Xingao Gong et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Machine-learning electronic Hamiltonians achieve orders-of-magnitude speedups over density-functional theory, yet current models omit long-range Coulomb interactions that govern physics in polar crystals and heterostructures. We derive closed-form long-range Hamiltonian matrix elements in a nonorthogonal atomic-orbital basis through variational decomposition of the electrostatic energy, deriving a</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Machine-learning electronic Hamiltonians achieve orders-of-magnitude speedups over density-functional theory, yet current models omit long-range Coulomb interactions that govern physics in polar crystals and heterostructures.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19980v1">Stone-in-Waiting: A Cloud-Based Accelerator for the Quantum Approximate Optimization Algorithm</a></div>
+  <div class="card-authors">Shuai Zeng</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The Quantum Approximate Optimization Algorithm (QAOA) and its advanced variant, the Quantum Alternating Operator Ansatz (QAOA), are major research topics in the current era of Noisy Intermediate-Scale Quantum (NISQ) computing. However, the problem of initializing their parameters remains unresolved.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Internally, the accelerator builds on state-of-the-art theories and methods for parameter determination and integrates four self-developed algorithms for QAOA parameter initialization, mainly based on Bayesian methods, nearest-neighbor methods, and metric learning. Compared with the Baseline Algorithm, the generated parameters improve the score by 40.19%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19957v1">HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report Prediction</a></div>
+  <div class="card-authors">Ruicheng Yuan, Zhenxuan Zhang, Anbang Wang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Pathology reports are structured, multi-granular documents encoding diagnostic conclusions, histological grades, and ancillary test results across one or more anatomical sites; yet existing pathology vision-language models (VLMs) reduce this output to a flat label or free-form text. We present HiPath, a lightweight VLM framework built on frozen UNI2 and Qwen3 backbones that treats structured repor</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 15 params</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Trained on 749K real-world Chinese pathology cases from three hospitals, HiPath achieves 68.9% strict and 74.7% clinically acceptable accuracy with a 97.3% safety rate, outperforming all baselines under the same frozen backbone. Cross-hospital evaluation confirms generalisation with only a 3.4pp drop in strict accuracy while maintaining 97.1% safety.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19954v1">On the Ability of Transformers to Verify Plans</a></div>
+  <div class="card-authors">Yash Sarrof, Yupei Du, Katharina Stein et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Transformers have shown inconsistent success in AI planning tasks, and theoretical understanding of when generalization should be expected has been limited. We take important steps towards addressing this gap by analyzing the ability of decoder-only models to verify whether a given plan correctly solves a given planning instance.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our results identify a large class of classical planning domains for which transformers can provably learn to verify long plans, and structural properties that significantly affects the learnability of length generalizable solutions. Empirical experiments corroborate our theory.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19852v1">Failure Modes for Deep Learning-Based Online Mapping: How to Measure and Address Them</a></div>
+  <div class="card-authors">Michael Hubbertz, Qi Han, Tobias Meisen</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Deep learning-based online mapping has emerged as a cornerstone of autonomous driving, yet these models frequently fail to generalize beyond familiar environments. We propose a framework to identify and measure the underlying failure modes by disentangling two effects: Memorization of input features and overfitting to known map geometries.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Leveraging these, we formulate an MST-based sparsification strategy that reduces redundancy and improves balancing and performance while shrinking training size. Experiments on nuScenes and Argoverse 2 across multiple state-of-the-art models yield more trustworthy assessment of generalization and show that map geometry-diverse and balanced training sets lead to improved performance.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19849v1">Semantic Delta: An Interpretable Signal Differentiating Human and LLMs Dialogue</a></div>
+  <div class="card-authors">Riccardo Scantamburlo, Mauro Mezzanzana, Giacomo Buonanno et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Do LLMs talk like us? This question intrigues a multitude of scholar and it is relevant in many fields, from education to academia.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Rather than replacing existing detection techniques, the proposed zero-shot metric provides a computationally inexpensive complementary signal that can be integrated into ensemble detection systems. These finding also contribute to the broader empirical understanding of LLM behavioural mimicry and suggest that thematic distribution constitutes a quantifiable dimension along which current models fall short of human conversational dynamics.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19831v1">Gesture2Speech: How Far Can Hand Movements Shape Expressive Speech?</a></div>
+  <div class="card-authors">Lokesh Kumar, Nirmesh Shah, Ashishkumar P. Gudmalwar et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Human communication seamlessly integrates speech and bodily motion, where hand gestures naturally complement vocal prosody to express intent, emotion, and emphasis. While recent text-to-speech (TTS) systems have begun incorporating multimodal cues such as facial expressions or lip movements, the role of hand gestures in shaping prosody remains largely underexplored.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Evaluations on the PATS dataset show that Gesture2Speech outperforms state-of-the-art baselines in both speech naturalness and gesture-speech synchrony.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19811v1">Case Study: Horizontal Side-Channel Analysis Attack against Elliptic Curve Scalar Multiplication Accelerator under Laser Illumination</a></div>
+  <div class="card-authors">Dmytro Petryk, Ievgen Kabin, Peter Langendoerfer et al.</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Devices employing cryptographic approaches have to be resistant to physical attacks. Side-Channel Analysis (SCA) and Fault Injection (FI) attacks are frequently used to reveal cryptographic keys.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We assume that using a laser with a high laser beam power and concentrating on measuring and analysing only static current can improve the attack success significantly.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19807v1">Enhancing Alignment for Unified Multimodal Models via Semantically-Grounded Supervision</a></div>
+  <div class="card-authors">Jiyeong Kim, Yerim So, Hyesong Choi et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Unified Multimodal Models (UMMs) have emerged as a promising paradigm that integrates multimodal understanding and generation within a unified modeling framework. However, current generative training paradigms suffer from inherent limitations.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive evaluations on GenEval, DPGBench, and CompBench demonstrate that SeGroS significantly improves generation fidelity and cross-modal alignment across various UMM architectures.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19710v1">AIGQ: An End-to-End Hybrid Generative Architecture for E-commerce Query Recommendation</a></div>
+  <div class="card-authors">Jingcao Xu, Jianyun Zou, Renkai Yang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Pre-search query recommendation, widely known as HintQ on Taobao&#x27;s homepage, plays a vital role in intent capture and demand discovery, yet traditional methods suffer from shallow semantics, poor cold-start performance and low serendipity due to reliance on ID-based matching and co-click heuristics. To overcome these challenges, we propose AIGQ (AI-Generated Query architecture), the first end-to-e</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive offline evaluations and large-scale online A/B experiments on Taobao demonstrate that AIGQ consistently delivers substantial improvements in key business metrics across platform effectiveness and user engagement.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19676v1">ATHENA: Adaptive Test-Time Steering for Improving Count Fidelity in Diffusion Models</a></div>
+  <div class="card-authors">Mohammad Shahab Sepehri, Asal Mehradfar, Berk Tinaz et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span><span class="tag">Training</span><span class="tag tag-hw">Hardware</span></div>
+  <div class="card-summary">Text-to-image diffusion models achieve high visual fidelity but surprisingly exhibit systematic failures in numerical control when prompts specify explicit object counts. To address this limitation, we introduce ATHENA, a model-agnostic, test-time adaptive steering framework that improves object count fidelity without modifying model architectures or requiring retraining.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Text-to-image diffusion models achieve high visual fidelity but surprisingly exhibit systematic failures in numerical control when prompts specify explicit object counts. To address this limitation, we introduce ATHENA, a model-agnostic, test-time adaptive steering framework that improves object count fidelity without modifying model architectures or requiring retraining.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19664v1">The Residual Stream Is All You Need: On the Redundancy of the KV Cache in Transformer Inference</a></div>
+  <div class="card-authors">Kaleem Ullah Qasim, Jiashu Zhang, Muhammad Kafeel Shaheen et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag tag-hw">Hardware</span><span class="tag">Training</span><span class="tag">Compiler/Runtime</span><span class="tag">Operator/Kernel</span></div>
+  <div class="card-summary">The key-value (KV) cache is widely treated as essential state in transformer inference, and a large body of work engineers policies to compress, evict, or approximate its entries. We prove that this state is entirely redundant: keys and values at every layer are deterministic projections of the residual stream, and recomputing them from a single residual vector per token incurs exactly zero recons</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 4 params</li><li><strong>Speedup:</strong> 5×</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Against five eviction baselines (H2O, StreamingLLM, SnapKV, TOVA, window-only), KV-Direct maintains 100% token match at every cache budget; all baselines degrade to 5-28%. A per-operation latency analysis shows recomputation runs up to 5x faster than reading cached tensors at moderate batch sizes.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19634v1">MetaCues: Enabling Critical Engagement with Generative AI for Information Seeking and Sensemaking</a></div>
+  <div class="card-authors">Anjali Singh, Karan Taneja, Zhitong Guan et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Generative AI (GenAI) search tools are increasingly used for information seeking, yet their design tends to encourage cognitive offloading, which may lead to passive engagement, selective attention, and informational homogenization. Effective use requires metacognitive engagement to craft good prompts, verify AI outputs, and critically engage with information.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Preliminary findings regarding participants&#x27; search behavior show that MetaCues leads to increased confidence in attitudinal judgments about the search topic as well as broader inquiry, with the latter effect emerging primarily for the topic that was less controversial and with which participants had relatively less familiarity. Accordingly, we outline directions for future qualitative exploration of search interactions and inquiry patterns.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19584v1">PowerLens: Taming LLM Agents for Safe and Personalized Mobile Power Management</a></div>
+  <div class="card-authors">Xingyu Feng, Chang Sun, Yuzhu Wang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Battery life remains a critical challenge for mobile devices, yet existing power management mechanisms rely on static rules or coarse-grained heuristics that ignore user activities and personal preferences. We present PowerLens, a system that tames the reasoning power of Large Language Models (LLMs) for safe and personalized mobile power management on Android devices.</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Scale: 18 devices</li><li><strong>Energy:</strong> 38.8</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on a rooted Android device show that PowerLens achieves 81.7% action accuracy and 38.8% energy saving over stock Android, outperforming rule-based and LLM-based baselines, with high user satisfaction, fast preference convergence, and strong safety guarantees, with the system itself consuming only 0.5% of daily battery capacity.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19582v1">Evolving Embodied Intelligence: Graph Neural Network--Driven Co-Design of Morphology and Control in Soft Robotics</a></div>
+  <div class="card-authors">Jianqiang Wang, Shuaiqun Pan, Alvaro Serra-Gomez et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The intelligent behavior of robots does not emerge solely from control systems, but from the tight coupling between body and brain, a principle known as embodied intelligence. Designing soft robots that leverage this interaction remains a significant challenge, particularly when morphology and control require simultaneous optimization.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On the benchmark, our GAT-based approach achieves higher final fitness and stronger adaptability to morphological variations compared to traditional MLP-only co-design methods.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19563v1">Dual-Domain Representation Alignment: Bridging 2D and 3D Vision via Geometry-Aware Architecture Search</a></div>
+  <div class="card-authors">Haoyu Zhang, Zhihao Yu, Rui Wang et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag tag-hw">Hardware</span><span class="tag">Framework</span><span class="tag tag-hw">GPU</span></div>
+  <div class="card-summary">Modern computer vision requires balancing predictive accuracy with real-time efficiency, yet the high inference cost of large vision models (LVMs) limits deployment on resource-constrained edge devices. Although Evolutionary Neural Architecture Search (ENAS) is well suited for multi-objective optimization, its practical use is hindered by two issues: expensive candidate evaluation and ranking inco</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> GPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">By coupling the computational efficiency of VSS blocks with the semantic expressiveness of ViT modules, CA-DDKD improves the representational capacity of the shared supernet and enhances ranking consistency, enabling reliable fitness estimation during evolution without extra fine-tuning. Compared with conventional data-parallel evaluation, DMMPE improves efficiency by over 70% through concurrent multi-GPU, multi-model execution.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20327v1">Probing the Latent World: Emergent Discrete Symbols and Physical Structure in Latent Representations</a></div>
+  <div class="card-authors">Liu hung ming</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Video world models trained with Joint Embedding Predictive Architectures (JEPA) acquire rich spatiotemporal representations by predicting masked regions in latent space rather than reconstructing pixels. This removes the visual verification pathway of generative models, creating a structural interpretability gap: the encoder has learned physical structure inaccessible in any inspectable form.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">AIM symbol distributions differ significantly across all three experiments (chi^2 p &lt; 10^-4; MI 0.036--0.117 bits, NMI 1.2--3.9% of the 3-bit maximum; JSD up to 0.342; codebook active ratio 62.5%).</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19546v1">Subspace Kernel Learning on Tensor Sequences</a></div>
+  <div class="card-authors">Lei Wang, Xi Ding, Yongsheng Gao et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Learning from structured multi-way data, represented as higher-order tensors, requires capturing complex interactions across tensor modes while remaining computationally efficient. We introduce Uncertainty-driven Kernel Tensor Learning (UKTL), a novel kernel framework for M-mode tensors that compares mode-wise subspaces derived from tensor unfoldings, enabling expressive and robust similarity me</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive evaluations on action recognition benchmarks (NTU-60, NTU-120, Kinetics-Skeleton) show that UKTL achieves state-of-the-art performance, superior generalization, and meaningful mode-wise insights.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20324v1">When Agents Disagree: The Selection Bottleneck in Multi-Agent LLM Pipelines</a></div>
+  <div class="card-authors">Artem Maryanskyy</div>
+  <div class="tags"><span class="tag tag-hw">Hardware</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Multi-agent LLM pipelines produce contradictory evidence on whether team diversity improves output quality: heterogeneous Mixture-of-Agents teams outperform single models, yet homogeneous Self-MoA teams consistently win under synthesis-based aggregation. We propose a resolution by identifying the selection bottleneck -- a crossover threshold in aggregation quality that determines whether diversity</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Multi-agent LLM pipelines produce contradictory evidence on whether team diversity improves output quality: heterogeneous Mixture-of-Agents teams outperform single models, yet homogeneous Self-MoA teams consistently win under synthesis-based aggregation. In a targeted experiment spanning 42 tasks across 7 categories (N=210), a diverse team with judge-based selection achieves a win rate of 0.810 against a single-model baseline, while a homogeneous team scores 0.512 -- near chance (Glass&#x27;s $Δ= 2</div>
+</div>
+<h2>Training &amp; Optimization Systems (21)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20526v1">Does This Gradient Spark Joy?</a></div>
+  <div class="card-authors">Ian Osband</div>
+  <div class="tags"><span class="tag">Training</span></div>
+  <div class="card-summary">Policy gradient computes a backward pass for every sample, even though the backward pass is expensive and most samples carry little learning value. The Delightful Policy Gradient (DG) provides a forward-pass signal of learning value: delight, the product of advantage and surprisal (negative log-probability).</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On MNIST and transformer token reversal, the Kondo gate skips most backward passes while retaining nearly all of DG&#x27;s learning quality, with gains that grow as problems get harder and backward passes become more expensive. Because the gate tolerates approximate delight, a cheap forward pass can screen samples before expensive backpropagation, suggesting a speculative-decoding-for-training paradigm.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20521v1">Delightful Distributed Policy Gradient</a></div>
+  <div class="card-authors">Ian Osband</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Distributed reinforcement learning trains on data from stale, buggy, or mismatched actors, producing actions with high surprisal (negative log-probability) under the learner&#x27;s policy. The core difficulty is not surprising data per se, but negative learning from surprising data.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Under contaminated sampling, the cosine similarity between the standard policy gradient and the true gradient collapses, while DG&#x27;s grows as the policy improves. On MNIST with simulated staleness, DG without off-policy correction outperforms importance-weighted PG with exact behavior probabilities.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20466v1">Diffutron: A Masked Diffusion Language Model for Turkish Language</a></div>
+  <div class="card-authors">Şuayp Talha Kocabay, Talha Rüzgar Akkuş</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Masked Diffusion Language Models (MDLMs) have emerged as a compelling non-autoregressive alternative to standard large language models; however, their application to morphologically rich languages remains limited. In this paper, we introduce Diffutron, a masked diffusion language model specifically designed for Turkish.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experimental results across comprehensive benchmarks demonstrate that, despite its compact size, our model achieves competitive performance compared to existing multi-billion-parameter baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20408v1">Meta-Learning for Repeated Bayesian Persuasion</a></div>
+  <div class="card-authors">Ata Poyraz Turna, Asrin Efe Yorulmaz, Tamer Başar</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Classical Bayesian persuasion studies how a sender influences receivers through carefully designed signaling policies within a single strategic interaction. In many real-world environments, such interactions are repeated across multiple games, creating opportunities to exploit structural similarity across tasks.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We show that our proposed meta-persuasion algorithms achieve provably sharper regret rates under natural notions of task similarity, improving upon the best-known convergence rates for both OBP and MPP. Finally, we complement our theoretical analysis with numerical experiments that highlight our regret improvements and the benefits of meta-learning in repeated persuasion environments.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20193v1">From Masks to Pixels and Meaning: A New Taxonomy, Benchmark, and Metrics for VLM Image Tampering</a></div>
+  <div class="card-authors">Xinyi Shang, Yi Tang, Jiacheng Cui et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Existing tampering detection benchmarks largely rely on object masks, which severely misalign with the true edit signal: many pixels inside a mask are untouched or only trivially modified, while subtle yet consequential edits outside the mask are treated as natural. We reformulate VLM image tampering from coarse region labels to a pixel-grounded, meaning and language-aware task.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our framework advances the field from masks to pixels, meanings and language descriptions, establishing a rigorous standard for tamper localization, semantic classification and description. Code and benchmark data are available at https://github.com/VILA-Lab/PIXAR.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20116v1">Chain-of-Adaptation: Surgical Vision-Language Adaptation with Reinforcement Learning</a></div>
+  <div class="card-authors">Jiajie Li, Chenhui Xu, Meihuan Liu et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Conventional fine-tuning on domain-specific datasets can inadvertently alter a model&#x27;s pretrained multimodal priors, leading to reduced generalization. To address this, we propose Chain-of-Adaptation (CoA), an adaptation framework designed to integrate domain knowledge while maintaining the model&#x27;s inherent reasoning and perceptual capabilities.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on standard surgical benchmarks, under both in-distribution and out-of-distribution settings, demonstrate that CoA achieves higher accuracy, stronger generalization, and more stable behavior than supervised fine-tuning.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20112v1">Demonstration of Adapt4Me: An Uncertainty-Aware Authoring Environment for Personalizing Automatic Speech Recognition to Non-normative Speech</a></div>
+  <div class="card-authors">Niclas Pokel, Yiming Zhao, Pehuén Moure et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Personalizing Automatic Speech Recognition (ASR) for non-normative speech remains challenging because data collection is labor-intensive and model training is technically complex. To address these limitations, we propose Adapt4Me, a web-based decentralized environment that operationalizes Bayesian active learning to enable end-to-end personalization without expert supervision.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The app exposes data selection, adaptation, and validation to lay users through a three-stage human-in-the-loop workflow: (1) rapid profiling via greedy phoneme sampling to capture speaker-specific acoustics; (2) backend personalization using Variational Inference Low-Rank Adaptation (VI-LoRA) to enable fast, incremental updates; and (3) continuous improvement, where users guide model refinement by resolving visualized model uncertainty via low-friction top-k corrections.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20100v1">An Empirical Study of SFT-DPO Interaction and Parameterization in Small Language Models</a></div>
+  <div class="card-authors">Yuming Feng, Christy Yang</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Direct Preference Optimization (DPO) is widely used after supervised fine-tuning (SFT) to align language models, yet empirical behavior under small backbones and modest data is under-specified. We systematically compare SFT-only, DPO-only, and staged SFT-to-DPO training alongside full fine-tuning (FFT) versus LoRA on a GPT-2-scale decoder, evaluating paraphrase detection and Shakespearean sonnet c</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In contrast, parameterization dominates: FFT consistently outperforms LoRA at matched training depth, and LoRA does not reduce wall-clock time on our hardware.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20063v1">Fine-tuning Timeseries Predictors Using Reinforcement Learning</a></div>
+  <div class="card-authors">Hugo Cazaux, Ralph Rudd, Hlynur Stefánsson et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">This chapter presents three major reinforcement learning algorithms used for fine-tuning financial forecasters. We propose a clear implementation plan for backpropagating the loss of a reinforcement learning task to a model trained using supervised learning, and compare the performance before and after the fine-tuning.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We find an increase in performance after fine-tuning, and transfer learning properties to the models, indicating the benefits of fine-tuning. We also highlight the tuning process and empirical results for future implementation by practitioners.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20046v1">Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs</a></div>
+  <div class="card-authors">Wenjian Zhang, Kongcheng Zhang, Jiaxin Qi et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Reinforcement Learning (RL) with rubric-based rewards has recently shown remarkable progress in enhancing general reasoning capabilities of Large Language Models (LLMs), yet still suffers from ineffective exploration confined to curent policy distribution. In fact, RL optimization can be viewed as steering the policy toward an ideal distribution that maximizes the rewards, while effective explorat</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Additionally, we introduce a bonus reward to incentivize responses with greater potential for improvement under such guidance. Extensive experiments across various benchmarks demonstrate that HeRL achieves superior performance gains over baselines, and can further benefit from experience guided self-improvement at test time.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20020v1">Detached Skip-Links and R-Probe: Decoupling Feature Aggregation from Gradient Propagation for MLLM OCR</a></div>
+  <div class="card-authors">Ziye Yuan, Ruchang Yao, Chengxin Zheng et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Multimodal large language models (MLLMs) excel at high-level reasoning yet fail on OCR tasks where fine-grained visual details are compromised or misaligned. We identify an overlooked optimization issue in multi-layer feature fusion.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across multiple ViT backbones and multimodal benchmarks, and at scales up to 7M training samples, our approach consistently improves OCR-centric benchmarks and delivers clear gains on general multimodal tasks.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19987v1">Breaking the Capability Ceiling of LLM Post-Training by Reintroducing Markov States</a></div>
+  <div class="card-authors">Yurun Yuan, Tengyang Xie</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Reinforcement learning (RL) has become a standard paradigm for post-training and aligning Large Language Models (LLMs), yet recent evidence suggests it faces a persistent &quot;capability ceiling&quot;: unlike classical RL systems that discover novel strategies, RL for LLMs often acts as a mere refiner of patterns already latent in pre-trained weights. In this work, we identify a fundamental structural bott</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Empirically, we show that introducing Markov states consistently breaks the performance boundaries of standard RL post-training across a suite of complex logic puzzles. Our findings suggest that moving beyond &quot;history-as-state&quot; modeling in favor of structured Markovian representations is essential for unlocking open-ended discovery and genuinely new reasoning capabilities in Generative AI.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20354v1">Leum-VL Technical Report</a></div>
+  <div class="card-authors">Yuxuan He, Chaiming Huang, Yifan Wu et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span></div>
+  <div class="card-summary">A short video succeeds not simply because of what it shows, but because of how it schedules attention -- yet current multimodal models lack the structural grammar to parse or produce this organization. Existing models can describe scenes, answer event-centric questions, and read on-screen text, but they are far less reliable at identifying timeline-grounded units such as hooks, cut rationales, sho</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Leum-VL-8B achieves 70.8 on VideoMME (w/o subtitles), 70.0 on MVBench, and 61.6 on MotionBench, while remaining competitive on general multimodal evaluations such as MMBench-EN.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19880v1">What If Consensus Lies? Selective-Complementary Reinforcement Learning at Test Time</a></div>
+  <div class="card-authors">Dong Yan, Jian Liang, Yanbo Wang et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Training</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Test-Time Reinforcement Learning (TTRL) enables Large Language Models (LLMs) to enhance reasoning capabilities on unlabeled test streams by deriving pseudo-rewards from majority voting consensus. However, existing TTRL methods rely exclusively on positive pseudo-labeling strategies.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on multiple reasoning benchmarks demonstrate that SCRL achieves substantial improvements over baselines, while maintaining robust generalization and training stability under constrained rollout budgets.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19825v1">FrameNet Semantic Role Classification by Analogy</a></div>
+  <div class="card-authors">Van-Duy Ngo, Stergos Afantenos, Emiliano Lorini et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">In this paper, we adopt a relational view of analogies applied to Semantic Role Classification in FrameNet. We define analogies as formal relations over the Cartesian product of frame evoking lexical units (LUs) and frame element (FEs) pairs, which we use to construct a new dataset.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">This approach allows us to surpass previous state-of-the-art results while maintaining computational efficiency and frugality.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19788v1">Learning Hierarchical Orthogonal Prototypes for Generalized Few-Shot 3D Point Cloud Segmentation</a></div>
+  <div class="card-authors">Yifei Zhao, Fanyu Zhao, Zhongyuan Zhang et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Generalized few-shot 3D point cloud segmentation aims to adapt to novel classes from only a few annotations while maintaining strong performance on base classes, but this remains challenging due to the inherent stability-plasticity trade-off: adapting to novel classes can interfere with shared representations and cause base-class forgetting. We present HOP3D, a unified framework that learns hierar</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on ScanNet200 and ScanNet++ demonstrate that HOP3D consistently outperforms state-of-the-art baselines under both 1-shot and 5-shot settings.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19685v1">A Subgoal-driven Framework for Improving Long-Horizon LLM Agents</a></div>
+  <div class="card-authors">Taiyi Wang, Sian Gooding, Florian Hartmann et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language model (LLM)-based agents have emerged as powerful autonomous controllers for digital environments, including mobile interfaces, operating systems, and web browsers. Web navigation, for example, requires handling dynamic content and long sequences of actions, making it particularly challenging.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The real-time planning mechanism improves proprietary models such as Gemini by approximately a 10% absolute increase in success rate (SR) on the WebArena-Lite benchmark. Meanwhile, applying MiRA to the open Gemma3-12B model increases its success rate from 6.4% to 43.0%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19649v1">PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization</a></div>
+  <div class="card-authors">Renhong Huang, Ning Tang, Jiarong Xu et al.</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Social platforms serve as central hubs for information exchange, where user behaviors and platform interventions jointly shape opinions. However, intervention policies like recommendation and content filtering, can unintentionally amplify echo chambers and polarization, posing significant societal risks.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">PolicySim models the bidirectional dynamics between user behavior and platform interventions through two key components: (1) a user agent module refined via supervised fine-tuning (SFT) and direct preference optimization (DPO) to achieve platform-specific behavioral realism; and (2) an adaptive intervention module that employs a contextual bandit with message passing to capture dynamic network structures.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19615v1">CAF-Score: Calibrating CLAP with LALMs for Reference-free Audio Captioning Evaluation</a></div>
+  <div class="card-authors">Insung Lee, Taeyoung Jeong, Haejun Yoo et al.</div>
+  <div class="tags"><span class="tag">Training</span></div>
+  <div class="card-summary">While Large Audio-Language Models (LALMs) have advanced audio captioning, robust evaluation remains difficult. Reference-based metrics are expensive and often fail to assess acoustic fidelity, while Contrastive Language-Audio Pretraining (CLAP)-based approaches frequently overlook syntactic errors and fine-grained details.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on the BRACE benchmark demonstrate that our approach achieves the highest correlation with human judgments, even outperforming reference-based baselines in challenging scenarios.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19594v1">ARMOR: Adaptive Resilience Against Model Poisoning Attacks in Continual Federated Learning for Mobile Indoor Localization</a></div>
+  <div class="card-authors">Danish Gufran, Akhil Singampalli, Sudeep Pasricha</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Indoor localization has become increasingly essential for applications ranging from asset tracking to delivering personalized services. Federated learning (FL) offers a privacy-preserving approach by training a centralized global model (GM) using distributed data from mobile devices without sharing raw data.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experimental evaluations in real-world conditions indicate that ARMOR achieves notable improvements, with up to 8.0x reduction in mean error and 4.97x reduction in worst-case error compared to state-of-the-art indoor localization frameworks, demonstrating strong resilience against model corruption tested using real-world data and mobile devices.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19579v1">PA2D-MORL: Pareto Ascent Directional Decomposition based Multi-Objective Reinforcement Learning</a></div>
+  <div class="card-authors">Tianmeng Hu, Biao Luo</div>
+  <div class="tags"><span class="tag">Training</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Multi-objective reinforcement learning (MORL) provides an effective solution for decision-making problems involving conflicting objectives. However, achieving high-quality approximations to the Pareto policy set remains challenging, especially in complex tasks with continuous or high-dimensional state-action space.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">However, achieving high-quality approximations to the Pareto policy set remains challenging, especially in complex tasks with continuous or high-dimensional state-action space. In this paper, we propose the Pareto Ascent Directional Decomposition based Multi-Objective Reinforcement Learning (PA2D-MORL) method, which constructs an efficient scheme for multi-objective problem decomposition and policy improvement, leading to a superior approximation of Pareto policy set.</div>
+</div>
+<h2>Inference &amp; Serving Systems (18)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20562v1">Permutation-Consensus Listwise Judging for Robust Factuality Evaluation</a></div>
+  <div class="card-authors">Tianyi Huang, Nathan Huang, Justin Tang et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language models (LLMs) are now widely used as judges, yet their decisions can change under presentation choices that should be irrelevant. We study one such source of instability: candidate-order sensitivity in listwise factuality evaluation, where several answers can look similarly polished while differing sharply in hallucination risk.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On RewardBench 2 Factuality, PCFJudge improves over direct judging by up to 7 absolute points.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20513v1">ReBOL: Retrieval via Bayesian Optimization with Batched LLM Relevance Observations and Query Reformulation</a></div>
+  <div class="card-authors">Anton Korikov, Scott Sanner</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">LLM-reranking is limited by the top-k documents retrieved by vector similarity, which neither enables contextual query-document token interactions nor captures multimodal relevance distributions. While LLM query reformulation attempts to improve recall by generating improved or additional queries, it is still followed by vector similarity retrieval.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">While LLM query reformulation attempts to improve recall by generating improved or additional queries, it is still followed by vector similarity retrieval. ReBOL consistently achieves higher recall and competitive rankings, for example compared to the best LLM reranker on the Robust04 dataset with 46.5% vs.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20505v1">Efficient Counterfactual Reasoning in ProbLog via Single World Intervention Programs</a></div>
+  <div class="card-authors">Saimun Habib, Vaishak Belle, Fengxiang He</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Probabilistic Logic Programming (PLP) languages, like ProbLog, naturally support reasoning under uncertainty, while maintaining a declarative and interpretable framework. Meanwhile, counterfactual reasoning (i.e., answering ``what if&#x27;&#x27; questions) is critical for ensuring AI systems are robust and trustworthy; however, integrating this capability into PLP can be computationally prohibitive and unst</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our method achieves a 35% reduction in inference time versus existing methods in extensive experiments.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20442v1">Detecting Neurovascular Instability from Multimodal Physiological Signals Using Wearable-Compatible Edge AI: A Responsible Computational Framework</a></div>
+  <div class="card-authors">Truong Quynh Hoa, Hoang Dinh Cuong, Truong Xuan Khanh</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We propose Melaguard, a multimodal ML framework (Transformer-lite, 1.2M parameters, 4-head self-attention) for detecting neurovascular instability (NVI) from wearable-compatible physiological signals prior to structural stroke pathology. The model fuses heart rate variability (HRV), peripheral perfusion index, SpO2, and bilateral phase coherence into a composite NVI Score, designed for edge infere</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 1.2 params</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Three-stage independent validation: (1) synthetic benchmark (n=10,000), AUC=0.88 [0.83-0.92]; (2) clinical cohort PhysioNet CVES (n=172; 84 stroke, 88 control) - Transformer-lite achieves AUC=0.755 [0.630-0.778], outperforming LSTM (0.643), Random Forest (0.665), SVM (0.472); HRV-SDNN discriminates stroke (p=0.011); (3) PPG pipeline PhysioNet BIDMC (n=53) -- pulse rate r=0.748 and HRV surrogate r=0.690 vs. Multimodal fusion consistently outperforms single-modality baselines.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20357v1">Memory poisoning and secure multi-agent systems</a></div>
+  <div class="card-authors">Vicenç Torra, Maria Bras-Amorós</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Memory poisoning attacks for Agentic AI and multi-agent systems (MAS) have recently caught attention. It is partially due to the fact that Large Language Models (LLMs) facilitate the construction and deployment of agents.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">These latter risks are not so much studied in the literature and are difficult to formalize and solve. Thus, we contribute to the construction of agents that are secure by design.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19979v1">X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving</a></div>
+  <div class="card-authors">Chaoda Zheng, Sean Li, Jinhao Deng et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span></div>
+  <div class="card-summary">Scalable and reliable evaluation is increasingly critical in the end-to-end era of autonomous driving, where vision--language--action (VLA) policies directly map raw sensor streams to driving actions. Yet, current evaluation pipelines still rely heavily on real-world road testing, which is costly, biased toward limited scenario coverage, and difficult to reproduce.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments show that X-World achieves high-quality multi-view video generation with (i) strong view consistency across cameras, (ii) stable temporal dynamics over long rollouts, and (iii) high controllability with strict action following and faithful adherence to optional scene controls.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19970v1">Graph2TS: Structure-Controlled Time Series Generation via Quantile-Graph VAEs</a></div>
+  <div class="card-authors">Shaoshuai Du, Joze M. Rozanec, Andy Pimentel et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Although recent generative models can produce time series with close marginal distributions, they often face a fundamental tension between preserving global temporal structure and modeling stochastic local variations, particularly for highly volatile signals with weak or irregular periodicity. Direct distribution matching in such settings can amplify noise or suppress meaningful temporal patterns.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on diverse datasets, including sunspot, electricity load, ECG, and EEG signals, demonstrate improved distributional fidelity, temporal alignment, and representativeness compared to diffusion- and GAN-based baselines, highlighting structure-controlled and cross-modal generation as a promising direction for time-series modeling.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19918v1">Learning Like Humans: Analogical Concept Learning for Generalized Category Discovery</a></div>
+  <div class="card-authors">Jizhou Han, Chenhao Ding, Yuhang He et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Generalized Category Discovery (GCD) seeks to uncover novel categories in unlabeled data while preserving recognition of known categories, yet prevailing visual-only pipelines and the loose coupling between supervised learning and discovery often yield brittle boundaries on fine-grained, look-alike categories. We introduce the Analogical Textual Concept Generator (ATCG), a plug-and-play module tha</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across six benchmarks, ATCG consistently improves overall, known-class, and novel-class performance, with the largest gains on fine-grained data.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19896v1">Utility-Guided Agent Orchestration for Efficient LLM Tool Use</a></div>
+  <div class="card-authors">Boyan Liu, Gongming Zhao, Hongli Xu</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Tool-using large language model (LLM) agents often face a fundamental tension between answer quality and execution cost. Fixed workflows are stable but inflexible, while free-form multi-step reasoning methods such as ReAct may improve task performance at the expense of excessive tool calls, longer trajectories, higher token consumption, and increased latency.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Fixed workflows are stable but inflexible, while free-form multi-step reasoning methods such as ReAct may improve task performance at the expense of excessive tool calls, longer trajectories, higher token consumption, and increased latency.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19787v1">Kumo: A Security-Focused Serverless Cloud Simulator</a></div>
+  <div class="card-authors">Wei Shao, Khaled Khasawneh, Setareh Rafatirad et al.</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Serverless computing abstracts infrastructure management but also obscures system-level behaviors that can introduce security risks. Prior work has shown that serverless platforms are vulnerable to attacks exploiting shared execution environments, including attacker--victim co-location and denial-of-service through resource contention, yet analyzing these risks on production platforms is difficult</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Through two case studies, we show that scheduler choice is a first-order factor for co-location attacks, inducing orders-of-magnitude differences under identical workloads, while Denial-of-Service behavior is largely governed by system-level factors such as service time, queuing policy, and cluster capacity once contention dominates. These results highlight the need to distinguish scheduler-driven isolation risks from broader resource exhaustion vulnerabilities and position Kumo as a flexible fo</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20336v1">GEM: A Native Graph-based Index for Multi-Vector Retrieval</a></div>
+  <div class="card-authors">Yao Tian, Zhoujin Tian, Xi Zhao et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">In multi-vector retrieval, both queries and data are represented as sets of high-dimensional vectors, enabling finer-grained semantic matching and improving retrieval quality over single-vector approaches. However, its practical adoption is held back by the lack of effective indexing algorithms.</div>
+  <ul class="card-metrics"><li><strong>Speedup:</strong> 16×</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across in-domain, out-of-domain, and multi-modal benchmarks, GEM achieves up to 16x speedup over state-of-the-art methods while matching or improving accuracy.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19757v1">Uncertainty-aware Prototype Learning with Variational Inference for Few-shot Point Cloud Segmentation</a></div>
+  <div class="card-authors">Yifei Zhao, Fanyu Zhao, Yinsheng Li</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Few-shot 3D semantic segmentation aims to generate accurate semantic masks for query point clouds with only a few annotated support examples. Existing prototype-based methods typically construct compact and deterministic prototypes from the support set to guide query segmentation.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on the widely used ScanNet and S3DIS benchmarks show that our UPL achieves consistent state-of-the-art performance under different settings while providing reliable uncertainty estimation.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19715v1">Stepwise: Neuro-Symbolic Proof Search for Automated Systems Verification</a></div>
+  <div class="card-authors">Baoding He, Zenan Li, Wei Sun et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Formal verification via interactive theorem proving is increasingly used to ensure the correctness of critical systems, yet constructing large proof scripts remains highly manual and limits scalability. Advances in large language models (LLMs), especially in mathematical reasoning, make their integration into software verification increasingly promising.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On seL4, the system proves up to 77.6% of the theorems, substantially surpassing previous LLM-based approaches and standalone Sledgehammer, while solving significantly more multi-step proofs.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19677v1">GoAgent: Group-of-Agents Communication Topology Generation for LLM-based Multi-Agent Systems</a></div>
+  <div class="card-authors">Hongjiang Chen, Xin Zheng, Yixin Liu et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language model (LLM)-based multi-agent systems (MAS) have demonstrated exceptional capabilities in solving complex tasks, yet their effectiveness depends heavily on the underlying communication topology that coordinates agent interactions. Within these systems, successful problem-solving often necessitates task-specific group structures to divide and conquer subtasks.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on six benchmarks demonstrate the state-of-the-art performance of GoAgent with 93.84% average accuracy while reducing token consumption by about 17%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19643v1">OmniDiT: Extending Diffusion Transformer to Omni-VTON Framework</a></div>
+  <div class="card-authors">Weixuan Zeng, Pengcheng Wei, Huaiqing Wang et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Despite the rapid advancement of Virtual Try-On (VTON) and Try-Off (VTOFF) technologies, existing VTON methods face challenges with fine-grained detail preservation, generalization to complex scenes, complicated pipeline, and efficient inference. To tackle these problems, we propose OmniDiT, an omni Virtual Try-On framework based on the Diffusion Transformer, which combines try-on and try-off task</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">To relieve the bottleneck of long sequence computation, we are the first to introduce Shifted Window Attention into the diffusion model, thus achieving a linear complexity. To remedy the performance degradation caused by local window attention, we utilize multiple timestep prediction and an alignment loss to improve generation fidelity.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19639v1">HyEvo: Self-Evolving Hybrid Agentic Workflows for Efficient Reasoning</a></div>
+  <div class="card-authors">Beibei Xu, Yutong Ye, Chuyun Shen et al.</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">Although agentic workflows have demonstrated strong potential for solving complex tasks, existing automated generation methods remain inefficient and underperform, as they rely on predefined operator libraries and homogeneous LLM-only workflows in which all task-level computation is performed through probabilistic inference. To address these limitations, we propose HyEvo, an automated workflow-gen</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Comprehensive experiments show that HyEvo consistently outperforms existing methods across diverse reasoning and coding benchmarks, while reducing inference cost and execution latency by up to 19× and 16×, respectively, compared to the state-of-the-art open-source baseline.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19565v1">PFM-VEPAR: Prompting Foundation Models for RGB-Event Camera based Pedestrian Attribute Recognition</a></div>
+  <div class="card-authors">Minghe Xu, Rouying Wu, ChiaWei Chu et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Inference</span><span class="tag">Operator/Kernel</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Event-based pedestrian attribute recognition (PAR) leverages motion cues to enhance RGB cameras in low-light and motion-blur scenarios, enabling more accurate inference of attributes like age and emotion. However, existing two-stream multimodal fusion methods introduce significant computational overhead and neglect the valuable guidance from contextual samples.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments on multiple benchmark datasets fully validate the effectiveness of the proposed RGB-Event PAR framework. The source code of this paper will be released on https://github.com/Event-AHU/OpenPAR</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19559v1">Optimal Scalar Quantization for Matrix Multiplication: Closed-Form Density and Phase Transition</a></div>
+  <div class="card-authors">Calvin Ang, Sungyoon Kim, Mert Pilanci</div>
+  <div class="tags"><span class="tag">Inference</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">We study entrywise scalar quantization of two matrices prior to multiplication. Given Ain R^m× k and Bin R^k× n, we quantize entries of A and B independently using scalar quantizers with K_X and K_Y levels per entry, and form widehat C=widehat A,widehat B.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We then specialize to correlated Gaussian multiplicative pairs, obtaining a closed-form optimal point density [ λ^star(u) propto exp!left(-u^26right)bigl((1-ρ^2)+ρ^2u^2bigr)^1/3, qquad u=xσ_X, ] with the same form for y/σ_Y, and prove a correlation-driven phase transition: the density is unimodal at the origin for |ρ|leq 1/3 and becomes bimodal for |ρ|&gt;1/3 with peaks at u_peak=pm3-1/ρ^2. We show our method&#x27;s applicability</div>
+</div>
+<h2>Operators &amp; Kernels (3)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20192v1">LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation</a></div>
+  <div class="card-authors">Jiazheng Xing, Fei Du, Hangjie Yuan et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Recent advances in diffusion models have significantly improved text-to-video generation, enabling personalized content creation with fine-grained control over both foreground and background elements. However, precise face-attribute alignment across subjects remains challenging, as existing methods lack explicit mechanisms to ensure intra-group consistency.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Recent advances in diffusion models have significantly improved text-to-video generation, enabling personalized content creation with fine-grained control over both foreground and background elements. Comprehensive evaluations on our benchmark demonstrate that LumosX achieves state-of-the-art performance in fine-grained, identity-consistent, and semantically aligned personalized multi-subject video generation.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19608v1">FB-CLIP: Fine-Grained Zero-Shot Anomaly Detection with Foreground-Background Disentanglement</a></div>
+  <div class="card-authors">Ming Hu, Yongsheng Huo, Mingyu Dou et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Fine-grained anomaly detection is crucial in industrial and medical applications, but labeled anomalies are often scarce, making zero-shot detection challenging. While vision-language models like CLIP offer promising solutions, they struggle with foreground-background feature entanglement and coarse textual semantics.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In the visual modality, multi-view soft separation along identity, semantic, and spatial dimensions, together with background suppression, reduces interference and improves discriminability. Experiments show that FB-CLIP effectively distinguishes anomalies from complex backgrounds, achieving accurate fine-grained anomaly detection and localization under zero-shot settings.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19599v1">Physics-Informed Neural Network with Adaptive Clustering Learning Mechanism for Information Popularity Prediction</a></div>
+  <div class="card-authors">Guangyin Jin, Xiaohan Ni, Yanjie Song et al.</div>
+  <div class="tags"><span class="tag">Operator/Kernel</span><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">With society entering the Internet era, the volume and speed of data and information have been increasing. Predicting the popularity of information cascades can help with high-value information delivery and public opinion monitoring on the internet platforms.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The current state-of-the-art models for predicting information popularity utilize deep learning methods such as graph convolution networks (GCNs) and recurrent neural networks (RNNs) to capture early cascades and temporal features to predict their popularity increments. Extensive experimental results on three real-world datasets demonstrate that our model significantly outperforms other state-of-the-art methods in predicting information popularity.</div>
+</div>
+<h2>Frameworks, Compilers &amp; Runtimes (23)</h2>
+<div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20537v1">LLM-Driven Heuristic Synthesis for Industrial Process Control: Lessons from Hot Steel Rolling</a></div>
+  <div class="card-authors">Nima H. Siboni, Seyedreza Kiamousavi, Emad Scharifi</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Industrial process control demands policies that are interpretable and auditable, requirements that black-box neural policies struggle to meet. We study an LLM-driven heuristic synthesis framework for hot steel rolling, in which a language model iteratively proposes and refines human-readable Python controllers using rich behavioral feedback from a physics-based simulator.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our second contribution is a principled budget allocation strategy for LLM-driven heuristic search: we show that Luby-style universal restarts -- originally developed for randomized algorithms -- transfer directly to this setting, eliminating the need for problem-specific budget tuning. A single 160-iteration Luby campaign approaches the hindsight-optimal budget allocation derived from 52 ad-hoc runs totalling 730 iterations.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20534v1">An Industrial-Scale Retrieval-Augmented Generation Framework for Requirements Engineering: Empirical Evaluation with Automotive Manufacturing Data</a></div>
+  <div class="card-authors">Muhammad Khalid, Yilmaz Uygun</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Requirements engineering in Industry 4.0 faces critical challenges with heterogeneous, unstructured documentation spanning technical specifications, supplier lists, and compliance standards. While retrieval-augmented generation (RAG) shows promise for knowledge-intensive tasks, no prior work has evaluated RAG on authentic industrial RE workflows using comprehensive production-grade performance met</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Through controlled comparisons with BERT-based and ungrounded LLM approaches, the framework achieves 98.2% extraction accuracy with complete traceability, outperforming baselines by 24.4% and 19.6%, respectively. Hybrid semantic-lexical retrieval achieves MRR of 0.847.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20470v1">DiffGraph: An Automated Agent-driven Model Merging Framework for In-the-Wild Text-to-Image Generation</a></div>
+  <div class="card-authors">Zhuoling Li, Hossein Rahmani, Jiarui Zhang et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The rapid growth of the text-to-image (T2I) community has fostered a thriving online ecosystem of expert models, which are variants of pretrained diffusion models specialized for diverse generative abilities. Yet, existing model merging methods remain limited in fully leveraging abundant online expert resources and still struggle to meet diverse in-the-wild user needs.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Then, DiffGraph dynamically activates specific subgraphs based on user needs, enabling flexible combinations of different experts to achieve user-desired generation.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20449v1">Solver-Aided Verification of Policy Compliance in Tool-Augmented LLM Agents</a></div>
+  <div class="card-authors">Cailin Winston, Claris Winston, René Just</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">Tool-augmented Large Language Models (TaLLMs) extend LLMs with the ability to invoke external tools, enabling them to interact with real-world environments. However, a major limitation in deploying TaLLMs in sensitive applications such as customer service and business process automation is a lack of reliable compliance with domain-specific operational policies regarding tool-use and agent behavior</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">These results suggest that integrating formal reasoning into TaLLM execution can improve tool-call policy compliance and overall reliability.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20396v1">Compression is all you need: Modeling Mathematics</a></div>
+  <div class="card-authors">Vitaly Aksenov, Eve Bodnia, Michael H. Freedman et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Human mathematics (HM), the mathematics humans discover and value, is a vanishingly small subset of formal mathematics (FM), the totality of all valid deductions. We argue that HM is distinguished by its compressibility through hierarchically nested definitions, lemmas, and theorems.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">In the free abelian monoid A_n, a logarithmically sparse macro set achieves exponential expansion of expressivity.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20390v1">CAMA: Exploring Collusive Adversarial Attacks in c-MARL</a></div>
+  <div class="card-authors">Men Niu, Xinxin Fan, Quanliang Jing et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Cooperative multi-agent reinforcement learning (c-MARL) has been widely deployed in real-world applications, such as social robots, embodied intelligence, UAV swarms, etc. Nevertheless, many adversarial attacks still exist to threaten various c-MARL systems.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Finally, multi-facet experiments on four SMAC II maps are performed, and experimental results showcase the three collusive attacks have an additive adversarial synergy, strengthening attack outcome while maintaining high stealthiness and stability over long horizons. Our work fills the gap for collusive adversarial learning in c-MARL.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20380v1">ALARA for Agents: Least-Privilege Context Engineering Through Portable Composable Multi-Agent Teams</a></div>
+  <div class="card-authors">Christopher J. Agostino, Nayan D&#x27;Souza</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Industry practitioners and academic researchers regularly use multi-agent systems to accelerate their work, yet the frameworks through which these systems operate do not provide a simple, unified mechanism for scalably managing the critical aspects of the agent harness, impacting both the quality of individual human-agent interactions and the capacity for practitioners to coordinate toward common</div>
+  <ul class="card-metrics"><li><strong>Scale:</strong> Model: 35 params</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Applying the ALARA principle from radiation safety (exposures kept as low as reasonably achievable) to agent context, we introduce a declarative context-agent-tool (CAT) data layer expressed through interrelated files that scope each agent&#x27;s tool access and context to the minimum its role requires, and npcsh, a command-line shell for executing it.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20181v1">Improving Generalization on Cybersecurity Tasks with Multi-Modal Contrastive Learning</a></div>
+  <div class="card-authors">Jianan Huang, Rodolfo V. Valentim, Luca Vassio et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">The use of ML in cybersecurity has long been impaired by generalization issues: Models that work well in controlled scenarios fail to maintain performance in production. The root cause often lies in ML algorithms learning superficial patterns (shortcuts) rather than underlying cybersecurity concepts.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The methodology appears to reduce shortcut learning over baselines on both benchmarks. We release our synthetic benchmark and source code as open source.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20172v1">Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thought Evaluation</a></div>
+  <div class="card-authors">Richard J. Young</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Recent work on chain-of-thought (CoT) faithfulness reports single aggregate numbers (e.g., DeepSeek-R1 acknowledges hints 39% of the time), implying that faithfulness is an objective, measurable property of a model. This paper demonstrates that it is not.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Recent work on chain-of-thought (CoT) faithfulness reports single aggregate numbers (e.g., DeepSeek-R1 acknowledges hints 39% of the time), implying that faithfulness is an objective, measurable property of a model. On identical data, these classifiers produce overall faithfulness rates of 74.4%, 82.6%, and 69.7%, respectively, with non-overlapping 95% confidence intervals.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20365v1">Comprehensive Description of Uncertainty in Measurement for Representation and Propagation with Scalable Precision</a></div>
+  <div class="card-authors">Ali Darijani, Jürgen Beyerer, Zahra Sadat Hajseyed Nasrollah et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Probability theory has become the predominant framework for quantifying uncertainty across scientific and engineering disciplines, with a particular focus on measurement and control systems. However, the widespread reliance on simple Gaussian assumptions--particularly in control theory, manufacturing, and measurement systems--can result in incomplete representations and multistage lossy approximat</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">The paper presents practical applications within manufacturing and measurement contexts especially circular factory, demonstrating how the GMMs framework supports accurate representation and propagation of measurement uncertainty and offers improved accuracy--compared to the traditional Gaussian framework--while keeping the computations tractable.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20151v1">Design-OS: A Specification-Driven Framework for Engineering System Design with a Control-Systems Design Case</a></div>
+  <div class="card-authors">H. Sinan Bank, Daniel R. Herber, Thomas H. Bradley</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Engineering system design -- whether mechatronic, control, or embedded -- often proceeds in an ad hoc manner, with requirements left implicit and traceability from intent to parameters largely absent. Existing specification-driven and systematic design methods mostly target software, and AI-assisted tools tend to enter the workflow at solution generation rather than at problem framing.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">A blank template and the full design-case artifacts are shared in a public repository to support reproducibility and reuse. The workflow makes the design process visible and auditable, and extends specification-driven orchestration of AI from software to physical engineering system design.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20075v1">Agentic Harness for Real-World Compilers</a></div>
+  <div class="card-authors">Yingwei Zheng, Cong Li, Shaohua Li et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Compilers are critical to modern computing, yet fixing compiler bugs is difficult. While recent large language model (LLM) advancements enable automated bug repair, compiler bugs pose unique challenges due to their complexity, deep cross-domain expertise requirements, and sparse, non-descriptive bug reports, necessitating compiler-specific tools.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Our evaluation demonstrates a performance decline of 60% in frontier models when tackling compiler bugs compared with common software bugs. Our minimal agent llvm-autofix-mini also outperforms the state-of-the-art by approximately 22%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20059v1">DIAL-KG: Schema-Free Incremental Knowledge Graph Construction via Dynamic Schema Induction and Evolution-Intent Assessment</a></div>
+  <div class="card-authors">Weidong Bao, Yilin Wang, Ruyu Gao et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Knowledge Graphs (KGs) are foundational to applications such as search, question answering, and recommendation. Conventional knowledge graph construction methods are predominantly static, rely ing on a single-step construction from a fixed corpus with a prede f ined schema.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Extensive experiments demon strate that our framework achieves state-of-the-art (SOTA) performance in the quality of both the constructed graph and the induced schemas.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19974v1">Trojan&#x27;s Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance</a></div>
+  <div class="card-authors">Fazhong Liu, Zhuoyan Chen, Tu Lan et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Autonomous coding agents are increasingly integrated into software development workflows, offering capabilities that extend beyond code suggestion to active system interaction and environment management. OpenClaw, a representative platform in this emerging paradigm, introduces an extensible skill ecosystem that allows third-party developers to inject behavioral guidance through lifecycle hooks dur</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Across 52 natural user prompts and six state-of-the-art LLM backends, our attacks achieve success rates from 16.0% to 64.2%, with the majority of malicious actions executed autonomously without user confirmation. Furthermore, 94% of our malicious skills evade detection by existing static and LLM-based scanners.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19921v1">Span-Level Machine Translation Meta-Evaluation</a></div>
+  <div class="card-authors">Stefano Perrella, Eric Morales Agostinho, Hugo Zaragoza</div>
+  <div class="tags"><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Machine Translation (MT) and automatic MT evaluation have improved dramatically in recent years, enabling numerous novel applications. Automatic evaluation techniques have evolved from producing scalar quality scores to precisely locating translation errors and assigning them error categories and severity levels.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Machine Translation (MT) and automatic MT evaluation have improved dramatically in recent years, enabling numerous novel applications.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19897v2">Revealing Domain-Spatiality Patterns for Configuration Tuning: Domain Knowledge Meets Fitness Landscapes</a></div>
+  <div class="card-authors">Yulong Ye, Hongyuan Liang, Chao Jiang et al.</div>
+  <div class="tags"><span class="tag">Resource Mgmt</span><span class="tag">Compiler/Runtime</span><span class="tag tag-hw">CPU</span></div>
+  <div class="card-summary">Configuration tuning for better performance is crucial in quality assurance. Yet, there has long been a mystery on tuners&#x27; effectiveness, due to the black-box nature of configurable systems.</div>
+  <ul class="card-metrics"><li><strong>Hardware:</strong> CPU</li></ul>
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">the difficulty of tuning) compared to resource options (e.g., cpu-independent of x264); (3) Workload effects on landscape structure are not uniformly tied to type or scale. Both contribute to landscape variations, but their impact is system-dependent.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20351v1">MANA: Towards Efficient Mobile Ad Detection via Multimodal Agentic UI Navigation</a></div>
+  <div class="card-authors">Yizhe Zhao, Yongjian Fu, Zihao Feng et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Mobile advertising dominates app monetization but introduces risks ranging from intrusive user experience to malware delivery. Existing detection methods rely either on static analysis, which misses runtime behaviors, or on heuristic UI exploration, which struggles with sparse and obfuscated ads.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We implement and evaluate MANA on commercial smartphones over 200 apps, achieving state-of-the-art accuracy and efficiency. Compared to baselines, it improves detection accuracy by 30.5%-56.3% and reduces exploration steps by 29.7%-63.3%.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19828v2">FormalEvolve: Neuro-Symbolic Evolutionary Search for Diverse and Prover-Effective Autoformalization</a></div>
+  <div class="card-authors">Haijian Lu, Wei Wang, Jing Liu</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span><span class="tag">Resource Mgmt</span></div>
+  <div class="card-summary">Autoformalization aims to translate natural-language mathematics into compilable, machine-checkable statements. However, semantic consistency does not imply prover effectiveness: even semantically consistent formalizations can differ substantially in proof-search cost and success rate.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">On CombiBench and ProofNet, under a strict generator-call budget of T = 100, FormalEvolve reaches semantic hit rates (SH@100) of 58.0% and 84.9%, and reduces cross-problem concentration of semantic successes(lower Gini). Under a fixed prover budget, FormalEvolve also improves downstream proving performance on CombiBench.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.20340v1">ContractSkill: Repairable Contract-Based Skills for Multimodal Web Agents</a></div>
+  <div class="card-authors">Zijian Lu, Yiping Zuo, Yupeng Nie et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Despite rapid progress in multimodal GUI agents, reusable skill acquisition remains difficult because on-demand generated skills often leave action semantics, state assumptions, and success criteria implicit. This makes them brittle to execution errors, hard to verify, and difficult to repair.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Experiments on VisualWebArena and MiniWoB with GLM-4.6V and Qwen3.5-Plus show that ContractSkill improves self-generated skills from 9.4% and 10.9% to 28.1% and 37.5% on VisualWebArena, and from 66.5% and 60.5% to 77.5% and 81.0% on MiniWoB.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19782v1">Embodied Science: Closing the Discovery Loop with Agentic Embodied AI</a></div>
+  <div class="card-authors">Xiang Zhuang, Chenyi Zhou, Kehua Feng et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Artificial intelligence has demonstrated remarkable capability in predicting scientific properties, yet scientific discovery remains an inherently physical, long-horizon pursuit governed by experimental cycles. Most current computational approaches are misaligned with this reality, framing discovery as isolated, task-specific predictions rather than continuous interaction with the physical world.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">We propose a unified Perception-Language-Action-Discovery (PLAD) framework, wherein embodied agents perceive experimental environments, reason over scientific knowledge, execute physical interventions, and internalize outcomes to drive subsequent exploration. By grounding computational reasoning in robust physical feedback, this approach bridges the gap between digital prediction and empirical validation, offering a roadmap for autonomous discovery systems in the life and chemical sciences.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19739v1">MOSS-TTSD: Text to Spoken Dialogue Generation</a></div>
+  <div class="card-authors">Yuqian Zhang, Donghua Yu, Zhengyuan Lin et al.</div>
+  <div class="tags"><span class="tag">Compiler/Runtime</span><span class="tag">Framework</span></div>
+  <div class="card-summary">Spoken dialogue generation is crucial for applications like podcasts, dynamic commentary, and entertainment content, but poses significant challenges compared to single-utterance text-to-speech (TTS). Key requirements include accurate turn-taking, cross-turn acoustic consistency, and long-form stability, which current models often fail to address due to a lack of dialogue context modeling.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Both objective and subjective evaluation results show that MOSS-TTSD surpasses strong open-source and proprietary baselines in dialogue synthesis.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19722v1">FedRG: Unleashing the Representation Geometry for Federated Learning with Noisy Clients</a></div>
+  <div class="card-authors">Tian Wen, Zhiqin Yang, Yonggang Zhang et al.</div>
+  <div class="tags"><span class="tag">Distributed</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Federated learning (FL) suffers from performance degradation due to the inevitable presence of noisy annotations in distributed scenarios. Existing approaches have advanced in distinguishing noisy samples from the dataset for label correction by leveraging loss values.</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">Lastly, we employ an additional personalized noise absorption matrix on noisy labels to achieve robust optimization. Extensive experimental results demonstrate that method~significantly outperforms state-of-the-art methods for FL with data heterogeneity under diverse noisy clients scenarios.</div>
+</div><div class="card">
+  <div class="card-title"><a href="https://arxiv.org/abs/2603.19583v1">Skilled AI Agents for Embedded and IoT Systems Development</a></div>
+  <div class="card-authors">Yiming Li, Yuhan Cheng, Mingchen Ma et al.</div>
+  <div class="tags"><span class="tag">Framework</span><span class="tag">Compiler/Runtime</span></div>
+  <div class="card-summary">Large language models (LLMs) and agentic systems have shown promise for automated software development, but applying them to hardware-in-the-loop (HIL) embedded and Internet-of-Things (IoT) systems remains challenging due to the tight coupling between software logic and physical hardware behavior. Code that compiles successfully may still fail when deployed on real devices because of timing constr</div>
+  
+  <div class="card-summary" style="margin-top:.4rem;font-size:.85rem;color:var(--accent2);">IoT-SkillsBench spans three representative embedded platforms, 23 peripherals, and 42 tasks across three difficulty levels, where each task is evaluated under three agent configurations (no-skills, LLM-generated skills, and human-expert skills) and validated through real hardware execution. Across 378 hardware validated experiments, we show that concise human-expert skills with structured expert knowledge enable near-perfect success rates across platforms.</div>
+</div>
+
+<div class="closing">Emerging patterns: compiler runtime (104), framework (70), hardware architecture (48)</div>
+<footer>Arxiv Daily Digest &middot; auto-generated &middot; data from <a href="https://arxiv.org">arXiv.org</a></footer>
+</body>
+</html>
