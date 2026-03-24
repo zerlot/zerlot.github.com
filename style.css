@@ -518,6 +518,18 @@ body {
   font-size: 13px;
   white-space: nowrap;
 }
+.data-table.summary-table {
+  min-width: 0;
+  table-layout: auto;
+}
+.data-table.summary-table th:first-child,
+.data-table.summary-table td:first-child {
+  width: 16%;
+}
+.data-table.summary-table th:not(:first-child),
+.data-table.summary-table td:not(:first-child) {
+  width: auto;
+}
 
 .data-table thead {
   position: sticky;

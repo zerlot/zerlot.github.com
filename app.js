@@ -283,7 +283,7 @@ function kpiCard(label, value, delta, type) {
 
 function renderSystemSummaryTable(totals) {
   var systems = Object.keys(totals);
-  var html = '<div class="table-wrapper"><table class="data-table"><thead><tr>' +
+  var html = '<div class="table-wrapper"><table class="data-table summary-table"><thead><tr>' +
     '<th>系统</th><th class="price-cell">条目数</th>' +
     '<th class="price-cell">低估（亿）</th><th class="price-cell">高估（亿）</th>' +
     '<th class="price-cell">中位数（亿）</th><th class="price-cell">占比</th>' +
