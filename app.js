@@ -55,7 +55,18 @@ function loadBomFromStorage() {
       if (Array.isArray(parsed) && parsed.length > 0) {
         // Replace BOM_DATA contents
         BOM_DATA.length = 0;
-        parsed.forEach(function(item) { BOM_DATA.push(item); });
+        parsed.forEach(function(item) {
+          // Ensure totalLow/High/Mid are recalculated for data integrity
+          var pL = parseFloat(item.priceLow) || 0;
+          var pH = parseFloat(item.priceHigh) || 0;
+          var pM = parseFloat(item.priceMid) || 0;
+          var q  = parseInt(item.qty, 10) || 0;
+          if (!pM && pL > 0 && pH > 0) { pM = (pL + pH) / 2; item.priceMid = pM; }
+          item.totalLow  = parseFloat((pL * q / 10000).toFixed(6));
+          item.totalHigh = parseFloat((pH * q / 10000).toFixed(6));
+          item.totalMid  = parseFloat((pM * q / 10000).toFixed(6));
+          BOM_DATA.push(item);
+        });
         return true;
       }
     }
