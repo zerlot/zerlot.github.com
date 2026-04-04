@@ -612,14 +612,23 @@ function renderBomTable(data) {
     { key: 'totalMid', label: '小计(亿)' }
   ];
 
-  var html = '<table class="data-table"><thead><tr>';
+  var colWidths = {
+    system: '8%', sub: '7%', name: '15%', spec: '14%', unit: '5%',
+    priceLow: '10%', priceHigh: '10%', priceMid: '9%', qty: '5%', totalMid: '9%'
+  };
+  var html = '<table class="data-table"><colgroup>';
+  cols.forEach(function(col) {
+    html += '<col style="width:' + colWidths[col.key] + '">';
+  });
+  html += '<col style="width:8%">';
+  html += '</colgroup><thead><tr>';
   cols.forEach(function(col) {
     var sorted = bomSortCol === col.key;
     var arrow = sorted ? (bomSortDir === 'asc' ? '▲' : '▼') : '▲';
     html += '<th class="' + (sorted ? 'sorted' : '') + '" data-col="' + col.key + '">' +
       col.label + '<span class="sort-icon">' + arrow + '</span></th>';
   });
-  html += '<th style="width:70px">操作</th>';
+  html += '<th>操作</th>';
   html += '</tr></thead><tbody>';
 
   tagged.forEach(function(entry) {
@@ -1131,7 +1140,9 @@ function renderSupplierSections() {
           '<span class="sub-group-name">' + sub + '</span>' +
           '<span class="sub-group-count">' + suppliers.length + '</span>' +
         '</div>' +
-        '<div class="table-wrapper"><table class="data-table"><thead><tr>' +
+        '<div class="table-wrapper"><table class="data-table supplier-table">' +
+        '<colgroup><col style="width:18%"><col style="width:12%"><col style="width:12%"><col style="width:38%"><col style="width:20%"></colgroup>' +
+        '<thead><tr>' +
           '<th>供应商</th><th>国产/进口</th><th>国家/地区</th><th>主要产品</th><th>价格区间</th>' +
         '</tr></thead>' +
         '<tbody id="sub-body-' + subKey + '"' + (isCollapsed ? ' style="display:none"' : '') + '>';

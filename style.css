@@ -517,6 +517,7 @@ body {
   border-collapse: collapse;
   font-size: 13px;
   white-space: nowrap;
+  table-layout: fixed;
 }
 .data-table.summary-table {
   min-width: 0;
@@ -561,6 +562,8 @@ body {
   cursor: pointer;
   user-select: none;
   transition: color var(--transition);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .data-table th:hover { color: var(--accent); }
 .data-table th .sort-icon { font-size: 10px; margin-left: 4px; opacity: 0.5; }
@@ -570,6 +573,8 @@ body {
   padding: 9px 14px;
   border-bottom: 1px solid var(--border);
   color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .data-table tr:hover td { background: var(--bg-card-hover); }
 
