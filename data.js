@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-03-30',
+    updated: '2026-04-06',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -169,11 +169,11 @@ const RESEARCH_DATA = {
       {
         name: 'NVIDIA B200 8卡服务器',
         bomPrice: '200–350万元/台',
-        researchPrice: '约280–370万元（~$40K/卡SXM；制造成本$6,400/卡,毛利84%）',
+        researchPrice: '约280–370万元（~$40K/卡SXM；关税后出口中国需25%额外税）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
-        trend: '平稳',
-        trendNote: 'B200云租$6.03/hr(on-demand)/$2.25/hr(spot)；HBM3e占BOM 45%($2,900)；FP4推理性价比优于H100',
-        source: 'Spheron 2026-03-19, Silicon Analysts 2026-03-02'
+        trend: '上升',
+        trendNote: 'Blackwell供应整体涨价15-23%(Fusion Worldwide 2026-03-25)；交货期3-7个月；关税导致H200出口中国需25%附加税；Blackwell更先进型号仍受出口管制',
+        source: 'Fusion Worldwide 2026-03-25, Spheron 2026-03-19, TechCrunch 2026-01-15'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -241,11 +241,11 @@ const RESEARCH_DATA = {
       {
         name: 'NVIDIA Vera Rubin NVL72/NVL144/NVL576',
         bomPrice: '——（下一代参考）',
-        researchPrice: 'VR200 NVL72: $5M-$7M(含$1M存储)；VR300 NVL144: $7M-$8.8M',
+        researchPrice: 'VR200 NVL72: $5M-$7M(含$1M存储)；VR300 NVL144: $7M-$8.8M；Kyber NVL576: 600kW/2027',
         suppliers: ['Supermicro', 'HPE', 'Azure', 'Nebius', 'CoreWeave', 'AWS', 'Google Cloud', 'OCI'],
         trend: '上升',
-        trendNote: 'Tom\'s Hardware确认VR200报价$5-7M(较此前$3.5-4M大幅上修+43-75%)；VR300 NVL144报价$7-8.8M；含$1M 3D NAND存储；H2 2026部署；VR300需等2028H2(Rubin Ultra未tape-out)',
-        source: 'Tom\'s Hardware 2026-03-24'
+        trendNote: 'VR200 NVL72报价$5-7M已确认；VR(NVL144) 3.6 exaFLOPS FP4，功耗~120-130kW/柜兼容Oberon架构；Kyber NVL576 2027年600kW/柜(Rubin Ultra)；$1T订单管道中已囊括Vera Rubin承诺量',
+        source: 'Tom\'s Hardware 2026-03-24, Introl 2025-09, Swfte AI 2026-03-10'
       },
       {
         name: 'NVIDIA Groq 3 LPU（推理协处理器）',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-03-30',
+    updated: '2026-04-06',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -268,17 +268,17 @@ const RESEARCH_DATA = {
         researchPrice: '国产150–350万元/台；进口300–600万元/台',
         suppliers: ['Trane（特灵）','Carrier（开利）','York（约克）','格力','美的','海尔'],
         trend: '上升',
-        trendNote: 'AI数据中心建设浪潮，交货期6-12个月；Vertiv年初至今股价+64%反映液冷需求',
-        source: '格力官方授权商2026价格表, 特灵HSAG发布, MarketWatch'
+        trendNote: 'AI数据中心需求旺盛；交货期6-12个月；Vertiv新推CoolChip CDU 600(600kW液对液)，进一步扩充液冷组合',
+        source: '格力官方授权商2026价格表, Vertiv CoolChip新品2025-06'
       },
       {
         name: '液冷CDU 1-2MW',
         bomPrice: '100–300万元/台',
-        researchPrice: '进口约$2-4K/kW(含安装)；国产约1100元/kW；DCX新品600kW-2.6MW ECDU',
-        suppliers: ['Vertiv（维谛）','CoolIT','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
+        researchPrice: '进口约$500-800/kW(CDU设备本身)；含安装约$2-4K/kW；国产约1100元/kW',
+        suppliers: ['Vertiv（维谛）','CoolIT(Ecolab收购)','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
         trend: '上升',
-        trendNote: 'Vertiv YTD+64%领涨液冷板块；DCX推出600kW至2.6MW ECDU系列；全球液冷市场2026年$60亿→2035年$271亿(CAGR 18.2%)',
-        source: 'GM Insights, Fact.MR, DCX官网, MarketWatch Vertiv'
+        trendNote: '重大并购：Ecolab以$47.5亿收购CoolIT Systems(2026-03-20宣布，Q3 2026关闭)；CoolIT含OMNI冷板(针对NVIDIA GB200/GB300优化)及CHx CDU系列(最高1500kW)；全球液冷市场2025年$5.8亿→2034年$364亿(CAGR 22.7%)',
+        source: 'Futurum 2026-04-02, Market Intelo 2026-03-31, GM Insights'
       },
       {
         name: 'NVL72机柜液冷组件套件',
@@ -320,25 +320,25 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-03-30',
+    updated: '2026-04-06',
     items: [
       {
         name: '110kV主变压器 63MVA',
         bomPrice: '800–1500万元/台',
-        researchPrice: '国产400–700万元/台；外资800–1400万元/台',
+        researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2019年价格上涨77%+',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '铜/硅钢涨价推动，出口额同比+36%；AI数据中心大功率需求拉动',
-        source: '覆盘网, 华创证券'
+        trendNote: '全球性变压器严重短缺：美国50%以上数据中心建设因变压器等电力设备短缺被延迟/取消(Bloomberg 2026-04)；高功率变压器交货期已拉长至5年(2020年前为24-30个月)；中国进口量从2022年<1500台激增至2025年>8000台；价格自2019年累计上涨77%',
+        source: 'Tom\'s Hardware 2026-04-03, Bloomberg 2026-04-01, Electrical Trader 2026-02'
       },
       {
         name: '干式变压器 2500kVA',
         bomPrice: '40–80万元/台',
-        researchPrice: '国产20–35万元/台；外资40–70万元/台',
+        researchPrice: '国产20–35万元/台；外资40–70万元/台；配电变压器自2019年涨78-95%',
         suppliers: ['特变电工','山东达驰','ABB/日立能源','金盘科技','扬电科技'],
         trend: '上升',
-        trendNote: '铜价上涨影响显著（铜+硅钢占成本80%）',
-        source: '博达干变价格解析, 行业参考'
+        trendNote: '铜价+硅钢占成本80%；电力变压器全球短缺延伸至中低压领域；配电变压器交货期平均128周(Q2 2025)；AI数据中心扩张加速需求',
+        source: '博达干变价格解析, Electrical Trader 2026-02, Power Magazine 2026-01'
       },
       {
         name: '柴油发电机组 2-3MW',
@@ -361,11 +361,11 @@ const RESEARCH_DATA = {
       {
         name: '磷酸铁锂储能(BESS)',
         bomPrice: '2000–8000万元/套',
-        researchPrice: '电芯接近0.40元/Wh(314Ah头部)；2h系统均价0.61+元/Wh(较上周0.66下修)；碳酸锂跌至~15.5万/吨(-13.9%)',
+        researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；4月预测0.38-0.43元/Wh(Tier1)；2h系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
-        trend: '下降',
-        trendNote: '碳酸锂本周跌至~15.5万元/吨(较上周~18万跌13.9%)；314Ah电芯接近0.40元/Wh(较1月涨30%+但趋稳)；2h系统均价下修至0.61+元/Wh；宁德Q1 2026国内EV电池份额50.1%(5年新高)',
-        source: 'Trading Economics 碳酸锂, Energy-Storage.News 2026-03, CATL Q1 2026'
+        trend: '上升',
+        trendNote: '碳酸锂强力反弹：3月30日单日暴涨4.69%至16.75万元/吨；4月已升至~15.85-16.0万/吨(较上周15.5万涨+8%，超10%阈值)；较年初涨40%+；4月电芯预测均价0.38-0.40元/Wh，Tier1最高0.43/Wh；SPIC 12GWh集采中标价0.499-0.546元/Wh(AC侧)',
+        source: 'Jintion Battery 2026-04-01, Trading Economics 2026-04-03, LinkedIn SPIR 2026-04-02'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -380,7 +380,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-03-30',
+    updated: '2026-04-06',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -403,11 +403,11 @@ const RESEARCH_DATA = {
       {
         name: '800G光模块',
         bomPrice: '1–2万元/个',
-        researchPrice: '2026预测$350–500；出货量上调至37M',
-        suppliers: ['中际旭创','新易盛','Coherent','光迅科技'],
+        researchPrice: '800G SR8/DR8约$360-380；800G LR8约$420-450；E-Power/Raytel联合推出800G OSFP/QSFP-DD',
+        suppliers: ['中际旭创','新易盛','Coherent','光迅科技','E-Power(EPOW)','Raytel'],
         trend: '下降',
-        trendNote: '2026出货量上调37M；高盛上调中际旭创目标价至791元；NVIDIA为800G增加订单量',
-        source: '高盛/中际旭创, Cignal AI, ip-fiber.com'
+        trendNote: '800G接近$0.5/Gbps即开始向1.6T过渡；E-Power与Raytel战略联盟联合推出800G+1.6T美国AI模块(2026-03-27)；中际旭创股价628元区间',
+        source: 'Hytoptodevice 2026-01, StockTitan/EPOW 2026-03-27'
       },
       {
         name: 'DAC高速铜缆',
@@ -421,11 +421,11 @@ const RESEARCH_DATA = {
       {
         name: '1.6T光模块（下一代）',
         bomPrice: '——（未列入当前BOM）',
-        researchPrice: '导入期$1500–2500；2026预计销售超$20亿；正式进入规模量产商用',
-        suppliers: ['中际旭创','新易盛','AOI','剑桥科技','光迅科技','C-Light'],
+        researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
+        suppliers: ['中际旭创','新易盛','AOI','剑桥科技','光迅科技','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: '1.6T正式进入规模量产商用(C-Light确认)；CAGR 11.7%；CPO功耗较传统降3.5x；GTC 2026硅光互联路线',
-        source: 'C-Light.com 2026-03, LinkedIn 1.6T报告, Naddod, StorageReview GTC 2026'
+        trendNote: '1.6T已进入规模量产商用；E-Power/Raytel推出1.6T DR8/LPO模块针对美国AI市场；Silicon Photonics占1.6T约60%份额(vs 800G的40-45%)；800G价格接近$0.5/Gbps触发大规模向1.6T迁移',
+        source: 'Hytoptodevice 2026-01, StockTitan/EPOW 2026-03-27, C-Light 2026-03'
       }
     ]
   }
@@ -1969,6 +1969,25 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-04-06',
+    version: 'v1.9',
+    author: '自动调研(周报)',
+    summary: '第4次周度调研更新：美国50%数据中心建设延迟/取消(变压器短缺)；碳酸锂反弹+8%超阈值；Ecolab $47.5亿收购CoolIT；Blackwell供应涨价15-23%；1.6T模块继续渗透',
+    changes: [
+      { category: '计算设备', detail: 'Blackwell GPU供应整体涨价15-23%(Fusion Worldwide 2026-03-25)，交货期3-7个月', priceChange: '+15-23%' },
+      { category: '计算设备', detail: 'H200出口中国需25%附加关税(1月15日正式实施)；Blackwell更先进型号仍受管制', priceChange: '政策' },
+      { category: '计算设备', detail: 'Vera Rubin NVL144兼容Oberon架构，功耗~120-130kW/柜；Kyber NVL576 2027年600kW路线图', priceChange: '更新' },
+      { category: '散热冷却', detail: 'Ecolab以$47.5亿收购CoolIT Systems(2026-03-20宣布，Q3 2026关闭)，液冷行业重大整合', priceChange: '并购' },
+      { category: '散热冷却', detail: '全球AI数据中心液冷市场2025年$5.8亿→2034年$364亿(CAGR 22.7%)；CDU市场$2.54亿→2034年$73.8亿', priceChange: '更新' },
+      { category: '电力系统', detail: '美国50%以上数据中心建设因变压器/电池短缺被延迟或取消(Bloomberg 2026-04)', priceChange: '重大风险' },
+      { category: '电力系统', detail: '高功率变压器交货期拉长至最长5年(2020年前24-30个月)；价格自2019年累计涨77%', priceChange: '+77%累计' },
+      { category: '电力系统', detail: '碳酸锂强力反弹：3月30日单日涨4.69%至16.75万元/吨；4月约15.85万/吨(较上周+8%，超10%阈值)', priceChange: '+8%' },
+      { category: '电力系统', detail: '4月储能电芯预测：均价0.38-0.40元/Wh，Tier1最高0.43/Wh；2h系统DC侧0.48-0.50元/Wh', priceChange: '更新' },
+      { category: '网络设备', detail: 'E-Power与Raytel联盟推出800G OSFP/QSFP-DD + 1.6T DR8/LPO美国AI市场模块', priceChange: '新品' },
+      { category: '网络设备', detail: '800G价格接近$0.5/Gbps触发大规模1.6T迁移；1.6T硅光子占比约60%', priceChange: '趋势' }
+    ]
+  },
   {
     date: '2026-03-30',
     version: 'v1.8',
