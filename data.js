@@ -375,6 +375,15 @@ const RESEARCH_DATA = {
         trend: '上升',
         trendNote: 'GTC 2026 NVIDIA DSX架构强化800V路线；SuperX Panama-800VDC(98.5%/3.6MW)；Eaton+NVIDIA 800V参考架构',
         source: 'Engineering.com, CNESA, StorageReview GTC 2026'
+      },
+      {
+        name: '固态变压器 SST（下一代·观察项）',
+        bomPrice: '——（暂未纳入BOM）',
+        researchPrice: '国产2.4MW单柜约80–150万元；进口2–5MW约250–500万元；效率98%+；省45%铜材',
+        suppliers: ['四方股份(10kV/2.4MW量产)','台达(集装箱式SST)','金盘科技(样机)','新风光(样机)','SolarEdge+Infineon(2-5MW/99%)','阳光电源','可立克(高频变压器)'],
+        trend: '上升',
+        trendNote: '【2027年观察落地】SST可将10/35kV中压交流直接转为800V直流，省去3级变换链，效率98%+。NVIDIA 2025年底白皮书将SST列为AIDC 800VDC理想电源方案；字节跳动AIDC招标首次引入800V HVDC；四方股份10kV→800VDC 2.4MW已量产；国盛/中金预判2027年起小范围试点，2028年规模化；当前障碍：无完整DC案例、110kV输入版本尚无量产、SiC器件成本高。2026年为样机/联研关键年。',
+        source: '新浪财经 2026-04-03, NVIDIA SST白皮书 2025-12, SolarEdge+Infineon 2025-11, 国盛证券/中金研报, MarketsandMarkets 2026-03-30'
       }
     ]
   },
