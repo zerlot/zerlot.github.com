@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 模型周报仪表盘 | 2026年4月9日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo-text">AI 模型周报</span>
+        </div>
+        <span class="header-date">2026年4月9日 · 第15期</span>
+      </div>
+      <div class="header-right">
+        <span class="badge badge-live">本周更新</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Key Changes Summary -->
+    <section class="section" id="summary">
+      <h2 class="section-title">本周关键变动</h2>
+      <div class="changes-grid">
+        <div class="change-card change-real">
+          <div class="change-icon">🔴</div>
+          <div class="change-body">
+            <span class="change-tag tag-breaking">重大变动</span>
+            <h3>GPT-4o 全面退役</h3>
+            <p>OpenAI 于 4月3日 正式从所有 ChatGPT 套餐中移除 GPT-4o，API Standard 部署已于 3月31日关停。迁移至 GPT-5.x 系列。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🟢</div>
+          <div class="change-body">
+            <span class="change-tag tag-new">新模型</span>
+            <h3>GPT-5.4 mini / nano 发布</h3>
+            <p>3月17日发布。mini: $0.75/$4.50，400K 上下文；nano: $0.20/$1.25。面向高性价比推理场景。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🟢</div>
+          <div class="change-body">
+            <span class="change-tag tag-new">新模型</span>
+            <h3>MiniMax M2.7 发布</h3>
+            <p>3月18日。229B/10B MoE，$0.30/$1.20，SWE-bench 78%，100 TPS。性价比极高：仅为 Claude Opus 4.6 的 1/17。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🔵</div>
+          <div class="change-body">
+            <span class="change-tag tag-update">价格变动</span>
+            <h3>Claude 4.6 取消长上下文加价</h3>
+            <p>3月中旬，Anthropic 宣布 Opus 4.6 和 Sonnet 4.6 的 1M 上下文窗口不再额外收费，统一按标准费率计价。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🔵</div>
+          <div class="change-body">
+            <span class="change-tag tag-update">平台变动</span>
+            <h3>Gemini API 免费层限制收紧</h3>
+            <p>4月1日起，Google 免费层仅限 Flash 模型，Pro 需付费。新账户需预付费。强制月度消费上限。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🟢</div>
+          <div class="change-body">
+            <span class="change-tag tag-new">新能力</span>
+            <h3>Claude Computer Use 上线</h3>
+            <p>3月23日，Claude Code 和 Cowork 支持操控用户电脑：打开文件、浏览器、运行开发工具。Pro/Max macOS 可用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spin vs Real -->
+    <section class="section" id="spin">
+      <h2 class="section-title">实质变动 vs 营销包装</h2>
+      <div class="spin-table-wrap">
+        <table class="spin-table">
+          <thead>
+            <tr><th>声称</th><th>判定</th><th>分析</th></tr>
+          </thead>
+          <tbody>
+            <tr class="spin-real">
+              <td>Gemini 3.1 Pro "13/16 基准测试领先"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>ARC-AGI-2 77.1%（上代翻倍），GPQA 94.3% 均为第三方可验证分数。$2/$12 定价确实低于同级竞品。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>MiniMax M2.7 "比 Opus 便宜50倍"</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>对比的是旧版 Opus 4.1（$15/M）。对比当前 Opus 4.6（$5/M），实际便宜 17 倍 input / 21 倍 output。仍然极具性价比。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>GPT-5.4 "Computer Use 原生支持"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>OSWorld-Verified 和 WebArena Verified 基准测试均为记录高分。确实是 OpenAI 首个原生 Computer Use 旗舰模型。</td>
+            </tr>
+            <tr class="spin-spin">
+              <td>Claude Mythos "10万亿参数"</td>
+              <td><span class="verdict verdict-spin">❌ 营销</span></td>
+              <td>仅来自第三方博客炒作，Anthropic 官方未确认模型名、参数量或发布时间。目前仍为"内部测试中"的传闻。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>DeepSeek V3.2 "比 GPT-5 便宜 95%"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>$0.28/$0.42 vs GPT-5 $1.25/$10。input 便宜 4.5x，output 便宜 24x。MoE 架构+中国运营成本确实支撑低价。</td>
+            </tr>
+            <tr class="spin-spin">
+              <td>DeepSeek V4 "即将发布"</td>
+              <td><span class="verdict verdict-spin">❌ 拖延</span></td>
+              <td>原定2月中旬发布，截至3月23日仍未公开。多次跳票，无确切时间表。但2月11日已悄悄将现有模型上下文扩展到 1M。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>Kimi K2.5 "Agent Swarm 100个子代理"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>SWE-Bench 多语言超越 GPT-5.2 和 Gemini 3 Pro。Agent Swarm 可同时执行 1500 个工具操作，4.5x 加速。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>Zhipu GLM-5.1 "最新旗舰"</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>$1.40/$4.40 定价比 GLM-5 涨 40%，但基准提升幅度不明确。GLM-4.7 仍是性价比最优选。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Main Comparison Table -->
+    <section class="section" id="comparison">
+      <h2 class="section-title">全模型对比表</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="openai">OpenAI</button>
+        <button class="filter-btn" data-filter="anthropic">Anthropic</button>
+        <button class="filter-btn" data-filter="google">Google</button>
+        <button class="filter-btn" data-filter="cn-open">国产/开源</button>
+      </div>
+      <div class="table-wrap">
+        <table class="compare-table" id="compareTable">
+          <thead>
+            <tr>
+              <th class="sticky-col">模型</th>
+              <th>厂商</th>
+              <th>发布日期</th>
+              <th>类型</th>
+              <th>Input<br><small>$/1M tok</small></th>
+              <th>Output<br><small>$/1M tok</small></th>
+              <th>上下文<br><small>窗口</small></th>
+              <th>GPQA<br><small>Diamond</small></th>
+              <th>SWE-bench</th>
+              <th>工具/Agent</th>
+              <th>Computer Use</th>
+              <th>开源</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- OpenAI -->
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5.4 Pro</td>
+              <td>OpenAI</td><td>2026.03</td><td>旗舰推理</td>
+              <td class="num">$30.00</td><td class="num">$180.00</td><td>1.1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5.4 Thinking</td>
+              <td>OpenAI</td><td>2026.03.05</td><td>深度推理</td>
+              <td class="num">$2.50</td><td class="num">$15.00</td><td>1M</td>
+              <td>92.8%</td><td>74.9%</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5.4 mini</td>
+              <td>OpenAI</td><td>2026.03.17</td><td>高效推理</td>
+              <td class="num">$0.75</td><td class="num">$4.50</td><td>400K</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5.4 nano</td>
+              <td>OpenAI</td><td>2026.03.17</td><td>轻量</td>
+              <td class="num">$0.20</td><td class="num">$1.25</td><td>—</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5</td>
+              <td>OpenAI</td><td>2025.08</td><td>通用</td>
+              <td class="num">$1.25</td><td class="num">$10.00</td><td>128K</td>
+              <td>89.4%</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-5 mini</td>
+              <td>OpenAI</td><td>2025.08</td><td>高效</td>
+              <td class="num">$0.25</td><td class="num">$2.00</td><td>128K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="openai">
+              <td class="sticky-col model-name">GPT-4o</td>
+              <td>OpenAI</td><td>2024.05</td><td>多模态</td>
+              <td class="num">$2.50</td><td class="num">$10.00</td><td>128K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-deprecated">已退役</span></td>
+            </tr>
+            <!-- Anthropic -->
+            <tr data-vendor="anthropic">
+              <td class="sticky-col model-name">Claude Opus 4.6</td>
+              <td>Anthropic</td><td>2026.02.05</td><td>旗舰推理</td>
+              <td class="num">$5.00</td><td class="num">$25.00</td><td>1M</td>
+              <td>91.3%</td><td>74%+</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="anthropic">
+              <td class="sticky-col model-name">Claude Sonnet 4.6</td>
+              <td>Anthropic</td><td>2026.02.17</td><td>均衡</td>
+              <td class="num">$3.00</td><td class="num">$15.00</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="anthropic">
+              <td class="sticky-col model-name">Claude Haiku 4.5</td>
+              <td>Anthropic</td><td>2025.11</td><td>快速</td>
+              <td class="num">$1.00</td><td class="num">$5.00</td><td>200K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <!-- Google -->
+            <tr data-vendor="google">
+              <td class="sticky-col model-name">Gemini 3.1 Pro</td>
+              <td>Google</td><td>2026.02.19</td><td>旗舰推理</td>
+              <td class="num">$2.00</td><td class="num">$12.00</td><td>1M</td>
+              <td>94.3%</td><td>63.8%</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="google">
+              <td class="sticky-col model-name">Gemini 3.1 Flash-Lite</td>
+              <td>Google</td><td>2026.03</td><td>轻量</td>
+              <td class="num">$0.25</td><td class="num">$1.50</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="google">
+              <td class="sticky-col model-name">Gemini 3 Flash</td>
+              <td>Google</td><td>2025.12</td><td>高效</td>
+              <td class="num">$0.50</td><td class="num">$3.00</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="google">
+              <td class="sticky-col model-name">Gemini 2.0 Flash</td>
+              <td>Google</td><td>2024.12</td><td>高效</td>
+              <td class="num">$0.10</td><td class="num">$0.40</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-deprecated">6月关停</span></td>
+            </tr>
+            <!-- DeepSeek -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">DeepSeek V3.2</td>
+              <td>DeepSeek</td><td>2025.12</td><td>通用</td>
+              <td class="num">$0.14</td><td class="num">$0.28</td><td>164K</td>
+              <td>75.1%</td><td>59.3%</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">DeepSeek V3.2 Speciale</td>
+              <td>DeepSeek</td><td>2025.12</td><td>旗舰</td>
+              <td class="num">$0.40</td><td class="num">$1.20</td><td>164K</td>
+              <td>87.1%</td><td>89.6%</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">DeepSeek V4</td>
+              <td>DeepSeek</td><td>—</td><td>多模态</td>
+              <td class="num">—</td><td class="num">—</td><td>—</td>
+              <td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td>
+              <td><span class="status status-pending">跳票中</span></td>
+            </tr>
+            <!-- Qwen -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">Qwen 3.5</td>
+              <td>Alibaba</td><td>2026.02.17</td><td>通用Agent</td>
+              <td class="num">—</td><td class="num">—</td><td>—</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">Qwen3-Max-Thinking</td>
+              <td>Alibaba</td><td>2026.01.27</td><td>多模态推理</td>
+              <td class="num">—</td><td class="num">—</td><td>—</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <!-- GLM -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">GLM-5.1</td>
+              <td>Zhipu AI</td><td>2026.03</td><td>旗舰</td>
+              <td class="num">$1.40</td><td class="num">$4.40</td><td>128K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">GLM-5</td>
+              <td>Zhipu AI</td><td>2026.02</td><td>高级</td>
+              <td class="num">$1.00</td><td class="num">$3.20</td><td>128K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">GLM-4.7</td>
+              <td>Zhipu AI</td><td>2025</td><td>高性价比</td>
+              <td class="num">$0.60</td><td class="num">$2.20</td><td>200K</td>
+              <td>—</td><td>73.8%</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">GLM-4.7-Flash</td>
+              <td>Zhipu AI</td><td>2025</td><td>免费</td>
+              <td class="num highlight-free">免费</td><td class="num highlight-free">免费</td><td>128K</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <!-- KIMI -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">Kimi K2.5</td>
+              <td>Moonshot AI</td><td>2026.01</td><td>多模态Agent</td>
+              <td class="num">—</td><td class="num">—</td><td>256K</td>
+              <td>—</td><td>—</td><td>✅ Swarm</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+            <!-- MiniMax -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">MiniMax M2.7</td>
+              <td>MiniMax</td><td>2026.03.18</td><td>MoE Agent</td>
+              <td class="num">$0.30</td><td class="num">$1.20</td><td>205K</td>
+              <td>—</td><td>78%</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <!-- MiMo -->
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">MiMo-V2-Pro</td>
+              <td>Xiaomi</td><td>2026.03.18</td><td>通用</td>
+              <td class="num">$1.00</td><td class="num">$3.00</td><td>1M</td>
+              <td>82.8%</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">MiMo-V2-Flash</td>
+              <td>Xiaomi</td><td>2025.12</td><td>高效</td>
+              <td class="num">$0.09</td><td class="num">$0.29</td><td>262K</td>
+              <td>65.6%</td><td>—</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-active">在线</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Pricing Chart -->
+    <section class="section" id="pricing">
+      <h2 class="section-title">旗舰模型价格对比 <small>（每百万 Token，Output）</small></h2>
+      <div class="chart-container">
+        <canvas id="pricingChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Deprecation Timeline -->
+    <section class="section" id="deprecations">
+      <h2 class="section-title">API 弃用时间线</h2>
+      <div class="timeline">
+        <div class="timeline-item timeline-past">
+          <div class="timeline-date">2026.02.13</div>
+          <div class="timeline-content">
+            <strong>GPT-4o / GPT-4.1 / o4-mini</strong> 从 ChatGPT 移除
+          </div>
+        </div>
+        <div class="timeline-item timeline-past">
+          <div class="timeline-date">2026.03.04</div>
+          <div class="timeline-content">
+            <strong>DALL-E 3</strong> 退役 → 替代: gpt-image-1.5
+          </div>
+        </div>
+        <div class="timeline-item timeline-past">
+          <div class="timeline-date">2026.03.24</div>
+          <div class="timeline-content">
+            <strong>GPT-4o Audio/Realtime Preview</strong> 退役 → 替代: gpt-audio / gpt-realtime
+          </div>
+        </div>
+        <div class="timeline-item timeline-past">
+          <div class="timeline-date">2026.03.31</div>
+          <div class="timeline-content">
+            <strong>GPT-4o Standard</strong> API 部署关停 → 替代: gpt-5.1
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.04.03</div>
+          <div class="timeline-content">
+            <strong>GPT-4o</strong> 从所有 ChatGPT 套餐全面退役
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.04.14</div>
+          <div class="timeline-content">
+            <strong>GPT-4.1 nano</strong> 停止新客户接入 → 替代: gpt-5-nano
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.04.15</div>
+          <div class="timeline-content">
+            <strong>gpt-5-chat Preview</strong> 退役 → 替代: gpt-5.3-chat
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.06.01</div>
+          <div class="timeline-content">
+            <strong>Gemini 2.0 Flash</strong> 关停 → 替代: Gemini 2.5 Flash / 3 Flash
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.07.15</div>
+          <div class="timeline-content">
+            <strong>o1</strong> 退役 → 替代: o3
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.10.01</div>
+          <div class="timeline-content">
+            <strong>GPT-4o Provisioned/Global</strong> 全面退役
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Context Window Viz -->
+    <section class="section" id="context">
+      <h2 class="section-title">上下文窗口对比</h2>
+      <div class="context-bars" id="contextBars"></div>
+    </section>
+
+    <!-- Upcoming -->
+    <section class="section" id="upcoming">
+      <h2 class="section-title">未来值得关注</h2>
+      <div class="upcoming-grid">
+        <div class="upcoming-card">
+          <div class="upcoming-when">Q2 2026</div>
+          <h3>Claude Mythos</h3>
+          <p>Anthropic 内部代号，被描述为"能力阶跃式提升"。预测市场认为最可能在4月发布。</p>
+        </div>
+        <div class="upcoming-card">
+          <div class="upcoming-when">Q2 2026</div>
+          <h3>Grok 5</h3>
+          <p>xAI 下一代，传闻 6T 参数。Q2 为共识发布窗口。</p>
+        </div>
+        <div class="upcoming-card">
+          <div class="upcoming-when">5月19-20日</div>
+          <h3>Google I/O 2026</h3>
+          <p>可能发布 Gemini 4 预览版、新 API、Android/Chrome 更深度集成。</p>
+        </div>
+        <div class="upcoming-card">
+          <div class="upcoming-when">待定</div>
+          <h3>DeepSeek V4</h3>
+          <p>多模态（图片、视频、文本），多次跳票。Engram 记忆架构。发布时间不确定。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
+      <p>更新频率：每周四 · 下次更新：2026年4月16日</p>
+    </footer>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
