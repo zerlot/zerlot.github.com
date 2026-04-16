@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年4月9日</title>
+<title>AI 模型周报仪表盘 | 2026年4月16日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年4月9日 · 第15期</span>
+        <span class="header-date">2026年4月16日 · 第16期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -34,7 +34,15 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">重大变动</span>
+            <span class="change-tag tag-breaking">本周·重大变动</span>
+            <h3>Claude Sonnet 4 / Opus 4 宣布弃用</h3>
+            <p>4月14日，Anthropic 将 claude-sonnet-4-20250514 和 claude-opus-4-20250514 标记为 Deprecated，计划 6月15日退役。官方推荐迁移到 4.6 版本。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🔴</div>
+          <div class="change-body">
+            <span class="change-tag tag-breaking">上周·重大变动</span>
             <h3>GPT-4o 全面退役</h3>
             <p>OpenAI 于 4月3日 正式从所有 ChatGPT 套餐中移除 GPT-4o，API Standard 部署已于 3月31日关停。迁移至 GPT-5.x 系列。</p>
           </div>
@@ -61,14 +69,6 @@
             <span class="change-tag tag-update">价格变动</span>
             <h3>Claude 4.6 取消长上下文加价</h3>
             <p>3月中旬，Anthropic 宣布 Opus 4.6 和 Sonnet 4.6 的 1M 上下文窗口不再额外收费，统一按标准费率计价。</p>
-          </div>
-        </div>
-        <div class="change-card change-real">
-          <div class="change-icon">🔵</div>
-          <div class="change-body">
-            <span class="change-tag tag-update">平台变动</span>
-            <h3>Gemini API 免费层限制收紧</h3>
-            <p>4月1日起，Google 免费层仅限 Flash 模型，Pro 需付费。新账户需预付费。强制月度消费上限。</p>
           </div>
         </div>
         <div class="change-card change-real">
@@ -405,13 +405,19 @@
             <strong>GPT-4o Standard</strong> API 部署关停 → 替代: gpt-5.1
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.03</div>
           <div class="timeline-content">
             <strong>GPT-4o</strong> 从所有 ChatGPT 套餐全面退役
           </div>
         </div>
-        <div class="timeline-item timeline-upcoming">
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.04.14</div>
+          <div class="timeline-content">
+            <strong>Claude Sonnet 4 / Opus 4</strong> 标记为 Deprecated → 替代: claude-sonnet-4-6 / claude-opus-4-6（6月15日退役）
+          </div>
+        </div>
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.14</div>
           <div class="timeline-content">
             <strong>GPT-4.1 nano</strong> 停止新客户接入 → 替代: gpt-5-nano
@@ -427,6 +433,12 @@
           <div class="timeline-date">2026.06.01</div>
           <div class="timeline-content">
             <strong>Gemini 2.0 Flash</strong> 关停 → 替代: Gemini 2.5 Flash / 3 Flash
+          </div>
+        </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.06.15</div>
+          <div class="timeline-content">
+            <strong>Claude Sonnet 4 / Opus 4</strong> API 退役 → 替代: claude-sonnet-4-6 / claude-opus-4-6
           </div>
         </div>
         <div class="timeline-item timeline-upcoming">
@@ -480,7 +492,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年4月16日</p>
+      <p>更新频率：每周四 · 下次更新：2026年4月23日</p>
     </footer>
   </main>
 </div>
