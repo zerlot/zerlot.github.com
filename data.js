@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-04-13',
+    updated: '2026-04-20',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -163,17 +163,17 @@ const RESEARCH_DATA = {
         researchPrice: 'H100约145万元($25-30K/卡)；H200约220万元($30-40K/卡)',
         suppliers: ['Dell PowerEdge XE9680', 'HPE ProLiant', 'Supermicro', '联想', '浪潮'],
         trend: '下降',
-        trendNote: '【重大】NVIDIA已停产H200中国版，将TSMC产能转向Vera Rubin；中国200万+订单从未兑现(北京未批准进口)；H100云租赁$2/hr；Blackwell量产持续压低上代价格',
-        source: 'Yahoo/Proactiveinvestors 2026-04, Jarvislabs 2026-01'
+        trendNote: '【重大】NVIDIA停产H200中国版(3月5日Reuters确认)；截至2月底仍未向中国发货(CNBC)；25%关税+案例许可制+年约100万片上限；中国转向华为昇腾替代；H100云租赁$2/hr',
+        source: 'Reuters 2026-03-05, CNBC 2026-02-26, Semiconductors Insight 2026-03'
       },
       {
         name: 'NVIDIA B200 8卡服务器',
         bomPrice: '200–350万元/台',
-        researchPrice: '约325–370万元（OEM $45K-$50K/卡，较上周~$40K涨12-25%；云租赁$5.87-$18.53/hr）',
+        researchPrice: '约325–370万元（OEM $45K-$50K/卡稳定；云租赁$1.71-$9.95/hr，最低价大幅下降）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: 'B200 OEM报价升至$45K-$50K/卡(Northflank/Thunder Compute源)，Blackwell产能售罄至2026年中；关税导致H200出口中国需25%附加税；NVIDIA维持~$40K/GPU定价权(Intellectia)',
-        source: 'Northflank 2026-04, Thunder Compute 2026-04, Tech-Insider, Intellectia 2026-04'
+        trendNote: 'B200 OEM报价稳定$45K-$50K/卡；云租赁价格大幅下降至$1.71/hr(Verda最低，4/19)，Lambda $4.99/hr，CoreWeave $8.60/hr；Blackwell产能售罄至2026年中；NVIDIA数据中心FY2026营收$1940亿(+68%YoY)',
+        source: 'ComputePrices 2026-04-19, Northflank, Barchart 2026-03-17'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -244,8 +244,8 @@ const RESEARCH_DATA = {
         researchPrice: 'VR200 NVL72: $5M-$7M(含$1M存储)；VR300 NVL144: $7M-$8.8M；Kyber NVL576: 600kW/2027',
         suppliers: ['Supermicro', 'HPE', 'Azure', 'Nebius', 'CoreWeave', 'AWS', 'Google Cloud', 'OCI'],
         trend: '上升',
-        trendNote: '【重大延迟】TrendForce下调Rubin 2026高端GPU出货占比从29%→22%；KeyBanc削减产量目标从200万→150万；原因：HBM4验证延迟、CX8→CX9 NIC切换、散热/电力挑战；Blackwell份额上升61%→71%；VR200 NVL72报价$5-7M不变',
-        source: 'TrendForce 2026-04-08, The Register 2026-04-08, Network World, Chosun 2026-04-10'
+        trendNote: '【延迟确认】Rubin 2026出货占比降至22%(TrendForce 4/8)；Blackwell份额升至71%主导市场；NVIDIA年增长率从26.8%微调至26%；GB300/B300系列成主力出货；Rubin仍面临HBM4/CX9/散热挑战',
+        source: 'TrendForce 2026-04-08, Network World 2026-04-09, FuTu News 2026-04-08'
       },
       {
         name: 'NVIDIA Groq 3 LPU（推理协处理器）',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-04-13',
+    updated: '2026-04-20',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -277,8 +277,8 @@ const RESEARCH_DATA = {
         researchPrice: '进口约$500-800/kW(CDU设备本身)；含安装约$2-4K/kW；国产约1100元/kW',
         suppliers: ['Vertiv（维谛）','CoolIT(Ecolab收购)','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
         trend: '上升',
-        trendNote: 'Ecolab $47.5亿CoolIT收购进展中(Q3 2026完成)；CoolIT ~$5.5亿NTM收入，30%利润率，当前仅5%DC采用液冷；全球液冷市场$51亿(2025)→$64.1亿(2026，+25.7% CAGR)→$161.6亿(2030)；Dell\'Oro预测2029年达~$70亿',
-        source: 'Futurum 2026-04, GlobeNewswire 2026-02-04, Dell\'Oro 2026-04'
+        trendNote: '【新入局】Panasonic 3月在欧洲推出400kW/800kW CDU，开发1.2MW+型号(2026秋季欧洲交付)；Ecolab CoolIT $47.5亿收购Q3关闭(29x NTM EBITDA)，CoolIT已覆盖全球10大超算中7家；液冷市场$48亿(2025)→$60亿(2026)→$271亿(2035，18.2% CAGR，GM Insights)；Persistence预测$57亿(2026)→$292亿(2033，26.4% CAGR)',
+        source: 'Panasonic 2026-03-04, DCD 2026-03-13, GM Insights 2026, Persistence 2026-03-25, Futurum 2026-04'
       },
       {
         name: 'NVL72机柜液冷组件套件',
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-04-13',
+    updated: '2026-04-20',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -328,8 +328,8 @@ const RESEARCH_DATA = {
         researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2020年价格上涨60-80%',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '变压器短缺持续恶化：交货期已超4年(高压型号)；美国仅满足20%国内需求；价格自2020年累计涨60-80%；AI数据中心电力需求加剧供需紧张',
-        source: 'Electrical Trader 2026-04, Bloomberg 2026-04'
+        trendNote: '【严峻】美国50%+计划数据中心延迟/取消(Bloomberg 4/1)；仅1/3(约12-16GW中)在建；交货期3-5年(高压)；四大云商AI基建开支2026年>$6500亿；中国进口量从2022<1500台激增至2025.10>8000台；加拿大/墨西哥/韩国成主要替代来源',
+        source: 'Bloomberg 2026-04-01, Tom\'s Hardware 2026-04-03, Energy News Beat 2026-04-14'
       },
       {
         name: '干式变压器 2500kVA',
@@ -361,11 +361,11 @@ const RESEARCH_DATA = {
       {
         name: '磷酸铁锂储能(BESS)',
         bomPrice: '2000–8000万元/套',
-        researchPrice: '电芯0.38-0.40元/Wh(314Ah均价趋稳)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
+        researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
-        trend: '平稳',
-        trendNote: '碳酸锂回落至155,550元/吨(4月10日)，较v1.9的158,500-167,500下降；3月30日16.75万/吨反弹短暂；314Ah电芯稳定0.38-0.40元/Wh；行业向500Ah+过渡(314Ah供应缺口)；中国锂电池出口退税4月起从9%降至6%',
-        source: 'Trading Economics 2026-04-10, Youth-Power 2026-04'
+        trend: '上升',
+        trendNote: '【重大】碳酸锂飙升至169,500元/吨(4月17日)，较v2.0的155,550涨+9.0%；年初至今累计涨40%+、同比+137%；CME锂期货连续月度交易量新高；ESS需求+供应收紧(中国矿关闭/津巴布韦出口禁令)推涨；SQM预期2026全年$15-18/kg区间；314Ah电芯0.38-0.40元/Wh稳定；行业向500Ah+过渡',
+        source: 'Trading Economics 2026-04-17, Fastmarkets 2026-04-15, Mining.com/SQM 2026-04-14, Youth-Power 2026-04'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-04-13',
+    updated: '2026-04-20',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -397,8 +397,8 @@ const RESEARCH_DATA = {
         researchPrice: 'Leaf约80–200万元/台；Spine约300–2000万元/台',
         suppliers: ['Arista','Cisco','华为CloudEngine','Broadcom(芯片)','NVIDIA Spectrum-6'],
         trend: '下降',
-        trendNote: 'Arista 7800R4已出货：576×800G端口；OFC 2026演示102.4T交换(TH6)；800G交换机每年降价约18%',
-        source: 'Arista OFC 2026, network-switch.com, fibermall.com'
+        trendNote: 'Cisco发布Silicon One G300 102.4T交换芯片(2月)，Nexus交换机64端口800G/1.6T双速率；Arista 7800R4出货576×800G端口；Broadcom TH6量产中；800G交换机每年降价约18%',
+        source: 'Cisco Newsroom 2026-02-10, Arista OFC 2026, fibermall.com 2026-04-08'
       },
       {
         name: '400G光模块 OSFP/QSFP-DD',
@@ -433,8 +433,8 @@ const RESEARCH_DATA = {
         researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
         suppliers: ['中际旭创','新易盛','AOI','Coherent','AAOI','Hyper Photonix','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: 'Coherent OFC 2026演示1.6T/3.2T/12.8T+技术，H2 2026量产；AAOI $2亿+量产订单；Hyper Photonix 1.6T SiP 5月量产；硅光子占比60%；价格$1300-1500，2年内降至$1100',
-        source: 'Stock Titan/Coherent OFC 2026, AAOI 2026-03-09, Light Reading 2026-03, Hytoptodevice'
+        trendNote: 'Marvell发布首款1.6T ZR/ZR+ DCI相干模块(OFC 2026)，拓展长距离互联；Marvell 1.6T DSP平台大扩展(3月)，Q2 2026量产；AAOI $2亿+量产订单Q3出货；1.6T初始价$3000+(早期2025)→$1500-2000(2026底)→$1100(2028)；Google预估3-400万只1.6T OSFP/QSFP-DD需求；硅光子占比60%',
+        source: 'Fibre Systems/Marvell OFC 2026-03-06, AAOI 2026-03-09, Hytoptodevice, FB-LINK 2025-11'
       }
     ]
   }
@@ -1978,6 +1978,28 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-04-20',
+    version: 'v2.1',
+    author: '自动调研(周报)',
+    summary: '第6次周度调研更新：碳酸锂飙升至169,500元/吨(+9.0%)；美国50%+数据中心建设延迟(变压器短缺)；B200云租赁价大幅下降至$1.71/hr；Panasonic进入液冷CDU市场；Cisco G300 102.4T芯片；Marvell首款1.6T ZR+ DCI模块',
+    changes: [
+      { category: '计算设备', detail: 'B200 OEM $45-50K/卡稳定；云租赁大幅下降至$1.71/hr(Verda)，Lambda $4.99/hr，较v2.0的$5.87下限降71%', priceChange: '云租赁-71%' },
+      { category: '计算设备', detail: 'NVIDIA仍未向中国发货H200(CNBC 2/26确认)；H200中国版3月5日确认停产(Reuters)', priceChange: '未变' },
+      { category: '计算设备', detail: 'Rubin延迟状态不变：出货占比22%，Blackwell 71%主导；NVIDIA年增长率微调至26%', priceChange: '未变' },
+      { category: '计算设备', detail: 'NVIDIA DC FY2026营收$1940亿(+68% YoY)，Blackwell+Rubin承诺量超$1万亿', priceChange: '更新' },
+      { category: '散热冷却', detail: '【新】Panasonic 3月推出400kW/800kW CDU(欧洲)，开发1.2MW+型号，秋季交付', priceChange: '新入局' },
+      { category: '散热冷却', detail: 'Ecolab CoolIT收购Q3关闭(29x NTM EBITDA)；CoolIT覆盖全球10大超算中7家', priceChange: '更新' },
+      { category: '散热冷却', detail: '液冷市场多源预测：GM Insights $60亿(2026)→$271亿(2035)；Persistence $57亿(2026)→$292亿(2033)', priceChange: '更新' },
+      { category: '电力系统', detail: '【重大】碳酸锂飙升至169,500元/吨(4/17)，较v2.0的155,550涨+9.0%；年初至今+40%；同比+137%', priceChange: '+9.0%' },
+      { category: '电力系统', detail: 'CME锂期货连续月度交易量新高；ESS需求+中国矿关闭+津巴布韦禁令推涨；SQM预期$15-18/kg', priceChange: '上涨因素' },
+      { category: '电力系统', detail: '美国50%+计划数据中心延迟/取消(Bloomberg)；四大云商>$6500亿基建开支vs变压器3-5年交货', priceChange: '恶化' },
+      { category: '电力系统', detail: '中国变压器进口：2022<1500台→2025.10>8000台；加拿大/墨西哥/韩国成替代来源', priceChange: '更新' },
+      { category: '网络设备', detail: 'Cisco Silicon One G300 102.4T芯片发布(2月)，Nexus交换机支持64端口800G/1.6T双速率', priceChange: '新品' },
+      { category: '网络设备', detail: 'Marvell首款1.6T ZR/ZR+ DCI相干模块(OFC 2026)；1.6T DSP平台大扩展，Q2量产', priceChange: '新品' },
+      { category: '网络设备', detail: '1.6T价格趋势：$3000+(早期2025)→$1500-2000(2026底)→$1100(2028)；Google需3-400万只', priceChange: '下降趋势' }
+    ]
+  },
   {
     date: '2026-04-13',
     version: 'v2.0',
