@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年4月16日</title>
+<title>AI 模型周报仪表盘 | 2026年4月23日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年4月16日 · 第16期</span>
+        <span class="header-date">2026年4月23日 · 第17期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -42,7 +42,7 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">上周·重大变动</span>
+            <span class="change-tag tag-breaking">往期·重大变动</span>
             <h3>GPT-4o 全面退役</h3>
             <p>OpenAI 于 4月3日 正式从所有 ChatGPT 套餐中移除 GPT-4o，API Standard 部署已于 3月31日关停。迁移至 GPT-5.x 系列。</p>
           </div>
@@ -58,17 +58,17 @@
         <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-new">新模型</span>
-            <h3>MiniMax M2.7 发布</h3>
-            <p>3月18日。229B/10B MoE，$0.30/$1.20，SWE-bench 78%，100 TPS。性价比极高：仅为 Claude Opus 4.6 的 1/17。</p>
+            <span class="change-tag tag-update">本周·平台/工具更新</span>
+            <h3>Gemini Deep Research agent 新版本上线（含 MCP + File Search）</h3>
+            <p>4月21日，Gemini API 发布 deep-research-preview-04-2026 与 deep-research-max-preview-04-2026：新增协作式规划、可视化支持、MCP server 集成与 File Search。</p>
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🔵</div>
+          <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-update">价格变动</span>
-            <h3>Claude 4.6 取消长上下文加价</h3>
-            <p>3月中旬，Anthropic 宣布 Opus 4.6 和 Sonnet 4.6 的 1M 上下文窗口不再额外收费，统一按标准费率计价。</p>
+            <span class="change-tag tag-breaking">本周·API弃用</span>
+            <h3>Gemini Robotics-ER 1.5 Preview 宣布关停（4月30日）</h3>
+            <p>4月14日，Gemini API 宣布 gemini-robotics-er-1.5-preview 将于 4月30日 9AM PST 关闭，并发布 gemini-robotics-er-1.6-preview 作为更新替代。</p>
           </div>
         </div>
         <div class="change-card change-real">
@@ -107,14 +107,14 @@
               <td>OSWorld-Verified 和 WebArena Verified 基准测试均为记录高分。确实是 OpenAI 首个原生 Computer Use 旗舰模型。</td>
             </tr>
             <tr class="spin-spin">
-              <td>Claude Mythos "10万亿参数"</td>
-              <td><span class="verdict verdict-spin">❌ 营销</span></td>
-              <td>仅来自第三方博客炒作，Anthropic 官方未确认模型名、参数量或发布时间。目前仍为"内部测试中"的传闻。</td>
+              <td>“Deep Research/研究代理”只是换名包装</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>Gemini API 已在 4月21日 直接发布可用的新版本 deep-research-preview-04-2026 / deep-research-max-preview-04-2026，并明确新增 MCP server 集成与 File Search（属于可用能力变更，而非纯宣传）。</td>
             </tr>
             <tr class="spin-real">
-              <td>DeepSeek V3.2 "比 GPT-5 便宜 95%"</td>
-              <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>$0.28/$0.42 vs GPT-5 $1.25/$10。input 便宜 4.5x，output 便宜 24x。MoE 架构+中国运营成本确实支撑低价。</td>
+              <td>GLM-5.1 "长程任务可独立持续工作8小时"</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>智谱官方将其作为旗舰卖点（长任务+tool use），但目前缺少公开第三方基准或可复现实测数据；结论上应按“能力发布已落地，但效果强弱需验证”。</td>
             </tr>
             <tr class="spin-spin">
               <td>DeepSeek V4 "即将发布"</td>
@@ -175,9 +175,9 @@
               <td><span class="status status-active">在线</span></td>
             </tr>
             <tr data-vendor="openai">
-              <td class="sticky-col model-name">GPT-5.4 Thinking</td>
-              <td>OpenAI</td><td>2026.03.05</td><td>深度推理</td>
-              <td class="num">$2.50</td><td class="num">$15.00</td><td>1M</td>
+              <td class="sticky-col model-name">GPT-5.4</td>
+              <td>OpenAI</td><td>—</td><td>旗舰</td>
+              <td class="num">$2.50</td><td class="num">$15.00</td><td>—</td>
               <td>92.8%</td><td>74.9%</td><td>✅</td><td>✅</td><td>❌</td>
               <td><span class="status status-active">在线</span></td>
             </tr>
@@ -411,10 +411,16 @@
             <strong>GPT-4o</strong> 从所有 ChatGPT 套餐全面退役
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.14</div>
           <div class="timeline-content">
-            <strong>Claude Sonnet 4 / Opus 4</strong> 标记为 Deprecated → 替代: claude-sonnet-4-6 / claude-opus-4-6（6月15日退役）
+            <strong>Claude Sonnet 4 / Opus 4</strong> 标记为 Deprecated → 替代: claude-sonnet-4-6 / claude-opus-4-7（6月15日退役）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.04.30</div>
+          <div class="timeline-content">
+            <strong>gemini-robotics-er-1.5-preview</strong> 关停 → 替代: gemini-robotics-er-1.6-preview（9AM PST）
           </div>
         </div>
         <div class="timeline-item timeline-past">
@@ -492,7 +498,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年4月23日</p>
+      <p>更新频率：每周四 · 下次更新：2026年4月30日</p>
     </footer>
   </main>
 </div>
