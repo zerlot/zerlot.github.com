@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年4月23日</title>
+<title>AI 模型周报仪表盘 | 2026年4月30日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年4月23日 · 第17期</span>
+        <span class="header-date">2026年4月30日 · 第18期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -35,8 +35,8 @@
           <div class="change-icon">🔴</div>
           <div class="change-body">
             <span class="change-tag tag-breaking">本周·重大变动</span>
-            <h3>Claude Sonnet 4 / Opus 4 宣布弃用</h3>
-            <p>4月14日，Anthropic 将 claude-sonnet-4-20250514 和 claude-opus-4-20250514 标记为 Deprecated，计划 6月15日退役。官方推荐迁移到 4.6 版本。</p>
+            <h3>DeepSeek-V4 上线，同时宣布 legacy API 名称退役时间</h3>
+            <p>4月24日，DeepSeek 在 API 更新日志中新增 deepseek-v4-pro / deepseek-v4-flash，并宣布 deepseek-chat 与 deepseek-reasoner 将于 2026年7月24日退役（目前分别路由到 V4-Flash 的非思考/思考模式）。</p>
           </div>
         </div>
         <div class="change-card change-real">
@@ -58,25 +58,25 @@
         <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-update">本周·平台/工具更新</span>
-            <h3>Gemini Deep Research agent 新版本上线（含 MCP + File Search）</h3>
-            <p>4月21日，Gemini API 发布 deep-research-preview-04-2026 与 deep-research-max-preview-04-2026：新增协作式规划、可视化支持、MCP server 集成与 File Search。</p>
-          </div>
-        </div>
-        <div class="change-card change-real">
-          <div class="change-icon">🔴</div>
-          <div class="change-body">
-            <span class="change-tag tag-breaking">本周·API弃用</span>
-            <h3>Gemini Robotics-ER 1.5 Preview 宣布关停（4月30日）</h3>
-            <p>4月14日，Gemini API 宣布 gemini-robotics-er-1.5-preview 将于 4月30日 9AM PST 关闭，并发布 gemini-robotics-er-1.6-preview 作为更新替代。</p>
+            <span class="change-tag tag-new">新模型</span>
+            <h3>Kimi K2.6 上线（Workers AI Day 0）</h3>
+            <p>4月20日，Cloudflare Workers AI 上线 @cf/moonshotai/kimi-k2.6：1T MoE（32B active）、262.1k 上下文、Vision、Thinking mode、Multi-turn tool calling，并披露 BrowseComp / SWE-Bench Verified / Terminal-Bench 2.0 等基准成绩。</p>
           </div>
         </div>
         <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-new">新能力</span>
-            <h3>Claude Computer Use 上线</h3>
-            <p>3月23日，Claude Code 和 Cowork 支持操控用户电脑：打开文件、浏览器、运行开发工具。Pro/Max macOS 可用。</p>
+            <span class="change-tag tag-new">新模型</span>
+            <h3>小米 MiMo-V2.5 / V2.5-Pro 开源（MIT License）</h3>
+            <p>4月28日，InfoWorld 报道小米以 MIT License 开源 MiMo-V2.5 与 MiMo-V2.5-Pro：两者均支持 1M 上下文；并披露 MoE 参数规模（V2.5：310B total/15B active；Pro：1.02T total/42B active）。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🟢</div>
+          <div class="change-body">
+            <span class="change-tag tag-update">本周·平台/工具更新</span>
+            <h3>智谱 GLM Coding Plan 老套餐停止自动续订（4月30日生效）</h3>
+            <p>4月29日，智谱发布迁移说明：截至 4月30日（北京时间）仍在使用“老套餐（无周限额版本）且开启自动续订”的用户，将被系统关闭自动续订，并提供赠送新套餐与折扣等迁移补偿。</p>
           </div>
         </div>
       </div>
@@ -112,6 +112,21 @@
               <td>Gemini API 已在 4月21日 直接发布可用的新版本 deep-research-preview-04-2026 / deep-research-max-preview-04-2026，并明确新增 MCP server 集成与 File Search（属于可用能力变更，而非纯宣传）。</td>
             </tr>
             <tr class="spin-real">
+              <td>DeepSeek 宣称“1M 上下文成为默认”</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>DeepSeek 官方公告与 API 更新日志同步说明 V4-Pro/V4-Flash 支持 1M context，并作为官方服务默认；同时给出 legacy 模型名退役时间线，属于可操作的产品变更。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>小米 MiMo-V2.5 “MIT 开源 + 1M 上下文”</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>开源与 1M context（以及 MoE 参数规模）已有第三方媒体转述，但在本期仍建议以官方模型卡/公告页进一步核验定价与可直接调用的 API 细节。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>Kimi K2.6 “对标 GPT-5.4/Opus 4.6 的 Agentic 基准”</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>Cloudflare 上线公告披露了 BrowseComp / SWE-Bench Verified / Terminal-Bench 2.0 分数与参数规模，并可直接调用；但更全面基准仍需更多第三方平台统一口径对照。</td>
+            </tr>
+            <tr class="spin-real">
               <td>GLM-5.1 "长程任务可独立持续工作8小时"</td>
               <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
               <td>智谱官方将其作为旗舰卖点（长任务+tool use），但目前缺少公开第三方基准或可复现实测数据；结论上应按“能力发布已落地，但效果强弱需验证”。</td>
@@ -119,12 +134,12 @@
             <tr class="spin-spin">
               <td>DeepSeek V4 "即将发布"</td>
               <td><span class="verdict verdict-spin">❌ 拖延</span></td>
-              <td>原定2月中旬发布，截至3月23日仍未公开。多次跳票，无确切时间表。但2月11日已悄悄将现有模型上下文扩展到 1M。</td>
+              <td>该条为往期记录：目前 DeepSeek 已于 4月24日上架 V4-Pro/V4-Flash，并给出 legacy 模型名退役时间线。后续关注是否发布更明确的“稳定版/后训练版”与更细的定价说明。</td>
             </tr>
             <tr class="spin-real">
-              <td>Kimi K2.5 "Agent Swarm 100个子代理"</td>
+              <td>Kimi K2.6 "Workers AI Day 0 上线"</td>
               <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>SWE-Bench 多语言超越 GPT-5.2 和 Gemini 3 Pro。Agent Swarm 可同时执行 1500 个工具操作，4.5x 加速。</td>
+              <td>Cloudflare 已提供可直接调用的 @cf/moonshotai/kimi-k2.6，并披露 1T MoE/32B active、262.1k context、multi-turn tool calling，以及 BrowseComp / SWE-Bench Verified / Terminal-Bench 2.0 分数（属于可用能力与接口层面的落地，而非单纯宣传）。</td>
             </tr>
             <tr class="spin-real">
               <td>Zhipu GLM-5.1 "最新旗舰"</td>
@@ -269,25 +284,25 @@
             </tr>
             <!-- DeepSeek -->
             <tr data-vendor="cn-open">
-              <td class="sticky-col model-name">DeepSeek V3.2</td>
-              <td>DeepSeek</td><td>2025.12</td><td>通用</td>
-              <td class="num">$0.14</td><td class="num">$0.28</td><td>164K</td>
-              <td>75.1%</td><td>59.3%</td><td>✅</td><td>❌</td><td>✅</td>
-              <td><span class="status status-active">在线</span></td>
+              <td class="sticky-col model-name">DeepSeek V4 Flash</td>
+              <td>DeepSeek</td><td>2026.04.24</td><td>通用/高吞吐</td>
+              <td class="num">$0.14</td><td class="num">$0.28</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-new">新发布</span></td>
             </tr>
             <tr data-vendor="cn-open">
-              <td class="sticky-col model-name">DeepSeek V3.2 Speciale</td>
-              <td>DeepSeek</td><td>2025.12</td><td>旗舰</td>
-              <td class="num">$0.40</td><td class="num">$1.20</td><td>164K</td>
-              <td>87.1%</td><td>89.6%</td><td>✅</td><td>❌</td><td>✅</td>
-              <td><span class="status status-active">在线</span></td>
+              <td class="sticky-col model-name">DeepSeek V4 Pro</td>
+              <td>DeepSeek</td><td>2026.04.24</td><td>旗舰</td>
+              <td class="num">$0.25</td><td class="num">$0.88</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>✅</td>
+              <td><span class="status status-new">新发布</span></td>
             </tr>
             <tr data-vendor="cn-open">
-              <td class="sticky-col model-name">DeepSeek V4</td>
-              <td>DeepSeek</td><td>—</td><td>多模态</td>
+              <td class="sticky-col model-name">DeepSeek V4（legacy 名称）</td>
+              <td>DeepSeek</td><td>2026.04.24</td><td>API 兼容层</td>
               <td class="num">—</td><td class="num">—</td><td>—</td>
               <td>—</td><td>—</td><td>—</td><td>—</td><td>✅</td>
-              <td><span class="status status-pending">跳票中</span></td>
+              <td><span class="status status-deprecated">将于 2026.07.24 退役</span></td>
             </tr>
             <!-- Qwen -->
             <tr data-vendor="cn-open">
@@ -335,9 +350,9 @@
             </tr>
             <!-- KIMI -->
             <tr data-vendor="cn-open">
-              <td class="sticky-col model-name">Kimi K2.5</td>
-              <td>Moonshot AI</td><td>2026.01</td><td>多模态Agent</td>
-              <td class="num">—</td><td class="num">—</td><td>256K</td>
+              <td class="sticky-col model-name">Kimi K2.6</td>
+              <td>Moonshot AI</td><td>2026.04.20</td><td>多模态Agent</td>
+              <td class="num">—</td><td class="num">—</td><td>262.1K</td>
               <td>—</td><td>—</td><td>✅ Swarm</td><td>❌</td><td>✅</td>
               <td><span class="status status-active">在线</span></td>
             </tr>
@@ -351,8 +366,8 @@
             </tr>
             <!-- MiMo -->
             <tr data-vendor="cn-open">
-              <td class="sticky-col model-name">MiMo-V2-Pro</td>
-              <td>Xiaomi</td><td>2026.03.18</td><td>通用</td>
+              <td class="sticky-col model-name">MiMo-V2.5-Pro</td>
+              <td>Xiaomi</td><td>2026.04.28</td><td>Agent/编码旗舰（开源）</td>
               <td class="num">$1.00</td><td class="num">$3.00</td><td>1M</td>
               <td>82.8%</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
               <td><span class="status status-new">新发布</span></td>
@@ -423,13 +438,19 @@
             <strong>gemini-robotics-er-1.5-preview</strong> 关停 → 替代: gemini-robotics-er-1.6-preview（9AM PST）
           </div>
         </div>
+        <div class="timeline-item timeline-upcoming">
+          <div class="timeline-date">2026.07.24</div>
+          <div class="timeline-content">
+            <strong>deepseek-chat / deepseek-reasoner</strong> 退役 → 替代: deepseek-v4-flash（non-thinking / thinking）
+          </div>
+        </div>
         <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.14</div>
           <div class="timeline-content">
             <strong>GPT-4.1 nano</strong> 停止新客户接入 → 替代: gpt-5-nano
           </div>
         </div>
-        <div class="timeline-item timeline-upcoming">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.15</div>
           <div class="timeline-content">
             <strong>gpt-5-chat Preview</strong> 退役 → 替代: gpt-5.3-chat
@@ -488,9 +509,9 @@
           <p>可能发布 Gemini 4 预览版、新 API、Android/Chrome 更深度集成。</p>
         </div>
         <div class="upcoming-card">
-          <div class="upcoming-when">待定</div>
-          <h3>DeepSeek V4</h3>
-          <p>多模态（图片、视频、文本），多次跳票。Engram 记忆架构。发布时间不确定。</p>
+          <div class="upcoming-when">2026.07.24</div>
+          <h3>DeepSeek legacy 模型名退役</h3>
+          <p>deepseek-chat / deepseek-reasoner 将于 7月24日退役；若仍在使用旧 model 参数（或依赖其语义），需尽快显式切换到 deepseek-v4-flash / deepseek-v4-pro 并完成回归测试。</p>
         </div>
       </div>
     </section>
@@ -498,7 +519,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年4月30日</p>
+      <p>更新频率：每周四 · 下次更新：2026年5月7日</p>
     </footer>
   </main>
 </div>
