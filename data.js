@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-04-27',
+    updated: '2026-05-04',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -169,11 +169,11 @@ const RESEARCH_DATA = {
       {
         name: 'NVIDIA B200 8卡服务器',
         bomPrice: '200–350万元/台',
-        researchPrice: '约325–370万元（OEM $35K-$50K/卡，tech-insider给出$35-40K区间；云租赁$1.71-$14.00/hr）',
+        researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14.00/hr，B300 $2.45-$18/hr）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: 'GB300超越GB200成2026旗舰，份额近80%(TrendForce)，全年出货预计6万机柜+129% YoY；GB300已1000机柜/周；B200云租赁$1.71/hr(Verda 4/26)持稳；Lambda $6.69-$6.99/hr，CoreWeave $8.60/hr，Oracle $14/hr',
-        source: 'TrendForce 2026-03-18, ComputePrices 2026-04-26, Yahoo NVDA Q2'
+        trendNote: 'GB300份额近80%(TrendForce)，2026预计出货6万机柜+129%YoY，目前已1000机柜/周；B300云租赁Spheron $2.45/hr(Spot)、$6.80/hr(Dedicated)，HGX B300 $4.95+，DGX B300 $12-$18；B200云租赁$1.71-$14/hr全区间稳定',
+        source: 'TrendForce 2026-03-18, Spheron 2026-04-16, ComputePrices 2026-04-26'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -181,8 +181,8 @@ const RESEARCH_DATA = {
         researchPrice: '约115–175万元（$10K–$15K/卡）',
         suppliers: ['Dell XE9680', 'HPE', 'Supermicro AS-8125GS'],
         trend: '平稳',
-        trendNote: '已被MI350X/MI400替代为主推；MI350X $25K/卡；MI400系列CES 2026公布，目标推理10x增益；Helios机架7月Computex后"Advancing AI"发布会公布',
-        source: 'AMD CES 2026-01-05, Tech-Insider 2026-04, SLYD'
+        trendNote: 'MI350X $25K/卡稳定；MI400系列CES 2026亮相(MI455X+MI440X+MI430X)，AMD反驳延迟，确认2H 2026出货；MI500系列已展示2027发布(CDNA 6/2nm/HBM4e)，目标比MI300X提升1000x AI性能',
+        source: 'AMD CES 2026-01-05, ServeTheHome 2026-01-07, Next Platform 2026-02-23'
       },
       {
         name: 'AMD MI350X/MI355X 8卡服务器',
@@ -190,8 +190,8 @@ const RESEARCH_DATA = {
         researchPrice: '约180–475万元（MI350X $25K/卡涨70%；HSBC区间$25K–$66K/卡）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想'],
         trend: '上升',
-        trendNote: 'MI350X $25K/卡；MI355X DLC机架128卡/36TB HBM3e/2.6 exaflops；MI400 H2 2026按计划(AMD反驳延迟报告)；MI455X UALoE72机架级量产2027 Q2(SemiAnalysis报告，UALink延迟)',
-        source: 'AMD官网, Tom\'s Hardware 2026-02-17, ISSCC 2026'
+        trendNote: 'MI355X DLC机架128卡/36TB HBM3e/2.6 exaflops；Helios机架18个compute trays×4 MI455X+1 Venice CPU=72 GPUs/18 CPUs，2.9 EFLOPS FP4；MI455X 12个chiplet+12堆36GB HBM4(共432GB)/320亿晶体管；MI455X UALoE72量产推迟至2027 Q2(UALink延迟，SemiAnalysis)',
+        source: 'AMD CES 2026, ServeTheHome 2026-01-07, Next Platform 2026-02'
       },
       {
         name: 'AMD MI450 定制版（Meta）',
@@ -208,8 +208,8 @@ const RESEARCH_DATA = {
         researchPrice: '910C约8.6万元/卡（$12K）；整机约110–150万元',
         suppliers: ['华为Atlas 800T', '高新发展', '华鲲振宇', '中科曙光'],
         trend: '上升',
-        trendNote: '2026计划60万片910C；950PR Q1 2026量产；Atlas 950超节点(950DT) Q4 2026；Atlas 950超集群64节点>52万芯片，524 EFLOPS FP8；中国H200禁令推动昇腾替代加速',
-        source: 'Bloomberg, CFR, Convequity 2025-09'
+        trendNote: '【加速】华为预计2026 AI芯片营收+60%至$120亿(2025年$75亿)；950PR 3月已量产，是2026主要订单来源；今年还推950DT和Atlas 950超节点；NVIDIA H200中国禁令受益最大；910C 2026计划60万片',
+        source: 'FT/DCD 2026-05-01, HuaweiCentral 2026-05-01, Seeking Alpha 2026-05-01'
       },
       {
         name: '华为昇腾950 SuperPoD超节点',
@@ -244,8 +244,8 @@ const RESEARCH_DATA = {
         researchPrice: 'VR200 NVL72: $5M-$7M(含$1M存储)；VR300 NVL144: $7M-$8.8M；Kyber NVL576: 600kW/2027',
         suppliers: ['Supermicro', 'HPE', 'Azure', 'Nebius', 'CoreWeave', 'AWS', 'Google Cloud', 'OCI'],
         trend: '上升',
-        trendNote: '【提前预期】Evercore：Rubin出货可能Q2 2026末提前3-6个月(中国禁令释放产能给全球)；CoWoS 30-35万片(2026)；VR200 NVL72机柜量产3Q26末，2H26出货5000-7000台；HBM4 2Q26开始供货；Quanta预计8月首批客户交付；Rubin 288GB HBM4/22 TB/s/H2 2026出货',
-        source: 'Tom\'s Hardware 2026-02-17, Ming-Chi Kuo 2026-01-06, Barrack 2026-03-14'
+        trendNote: '【全面量产】NVIDIA官宣Rubin已full production(1月新闻发布)，2H26合作伙伴上市；CoWoS 300-350k晶圆(2026)，1Q26试产、2Q26末量产；VR200 NVL72机柜3Q26末进入量产，2H26出货5000-7000台(良率爬坡)；HBM4 22TB/s带宽2.75x B200；GB200 NVL72比价$8.4M/72 GPU(VR200预估5x推理性能)',
+        source: 'NVIDIA 2026-01-05, Ming-Chi Kuo 2026-01-06, Next Platform 2026-01'
       },
       {
         name: 'NVIDIA Groq 3 LPU（推理协处理器）',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-04-27',
+    updated: '2026-05-04',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-04-27',
+    updated: '2026-05-04',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -328,8 +328,8 @@ const RESEARCH_DATA = {
         researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2020年价格上涨60-80%',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '【持续严峻】美国2026年规划12GW容量延迟/取消(Bloomberg)；仅1/3(12-16GW中)在建；高压变压器交货期3-5年(2020前24-30月)；中国控全球60%产能；GE Vernova(收购Prolec后主导)、Siemens Energy($10亿+美国新厂2027投产)受益；GOES电工钢/铜短缺；2025.10前美国进口超8000台中国变压器',
-        source: 'Bloomberg 2026-04-01, Energy News Beat 2026-04-13, X/SOIC 2026-04-11'
+        trendNote: '【危机加剧】2026电力可用性官方升为新建数据中心首要约束(EnkiAI)；美国互连排队等待多年；高压变压器3-5年交货；GE Vernova(Prolec)、Siemens Energy受益；超半数美国规划数据中心延迟/取消(Bloomberg)；中国占全球变压器60%产能',
+        source: 'EnkiAI 2026-02-04, Bloomberg 2026-04-01, Energy News Beat 2026-04'
       },
       {
         name: '干式变压器 2500kVA',
@@ -364,8 +364,8 @@ const RESEARCH_DATA = {
         researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
         trend: '上升',
-        trendNote: '【持续上涨】碳酸锂173,000元/吨(4月24日)，较v2.1的169,500再涨+2.1%(连续两周上涨)；月度+13.4%、年初至今+49%、同比+148%；现货价高达177,000-180,000元/吨；4月VAT出口退税从9%降至6%引发抢出口；Fastmarkets预测2026转为1500吨LCE短缺(2024为15.4万吨过剩)；Benchmark预期$15K-17K/吨区间；314Ah电芯稳定，行业向500Ah+过渡',
-        source: 'Trading Economics 2026-04-24, SunSirs 2026-04-24, Carbon Credits 2026-04-23'
+        trendNote: '【警戒-连续3周累计+14%】碳酸锂现货177,000元/吨(4月30日Trading Economics)，较v2.2的173,000再涨+2.3%；连续3周累计+13.8%(155,550→177,000)，超10%警戒线；广州期货所5月1日触及189,000元/吨高点(+9.85%涨幅触发涨停)；月度+8.59%、同比+163.79%(IMARC东北亚$18.21/kg)；中国矿关闭+津巴布韦禁令+ESS需求；Fastmarkets预2026转短缺',
+        source: 'Trading Economics 2026-04-30, X/Trending 2026-04-30, IMARC 2026-04, Carbon Credits 2026'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-04-27',
+    updated: '2026-05-04',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -415,8 +415,8 @@ const RESEARCH_DATA = {
         researchPrice: '800G SR8/DR8约$360-380；800G LR8约$420-450',
         suppliers: ['中际旭创','新易盛','Coherent','光迅科技','AAOI','Hyper Photonix'],
         trend: '下降',
-        trendNote: 'AAOI 800G订单升至$1.24亿(同一超大客户上调$71M，3月以来累计)，Q2-Q4出货；第二超大客户已开始出货；目标月产50万只800G+1.6T(2026年底)，激光器产能2027年提升350%',
-        source: 'StocksToTrade 2026-04-25, AAOI 2026-03-30, Yahoo 2026-04-03'
+        trendNote: 'AAOI预计2026 Q2 800G成最大数据中心营收线；目标年底月产50万只800G+1.6T；2026全年营收$10亿+(同比+119%)，分析师上看2028 $13亿；激光器产能2027提升350%',
+        source: 'AAOI 2026-03-09, Zacks 2026-03-09, Tickeron 2026-03-31'
       },
       {
         name: 'DAC高速铜缆',
@@ -433,8 +433,8 @@ const RESEARCH_DATA = {
         researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
         suppliers: ['中际旭创','新易盛','AOI','Coherent','AAOI','Hyper Photonix','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: '2025年1.6T出货约270万只→2026预计>500万只(C-LIGHT)；AAOI $2亿+1.6T订单Q3 2026开始出货；Coherent 1.6T OSFP H2 2026量产(OFC 2026)；C-LIGHT率先1月推1.6T-DR8 500m OSFP-RHS；Hyper Photonix 1.6T SiP Q2量产；TSMC COUPE硅光2026量产；硅光占比60%',
-        source: 'C-LIGHT 2026-04-16, StocksToTrade 2026-04-25, Light Reading 2026-03, Coherent OFC'
+        trendNote: '【市场拐点年】2026是"1.6T之年"(Hytoptodevice)；Tier1"接单接到手软"：InnoLight 800G产能1400-1500万只，Eoptolink 800-900万只(均向1.6T转型)；Google预2026需1.6T 300-400万只(OSFP+QSFP-DD)；硅光占比60%；价格$1300-$1500，2年内降至$1100；200G EML芯片严重短缺；Source Photonics(Meta主供)；TSMC COUPE硅光2026量产',
+        source: 'Hytoptodevice 2026-01, QSFPTEK 2026-04-17, LINK-PP 2026-04-16'
       }
     ]
   }
@@ -1978,6 +1978,28 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-05-04',
+    version: 'v2.3',
+    author: '自动调研(周报)',
+    summary: '第8次周度调研更新：碳酸锂连续3周累计+13.8%突破警戒线(177,000元/吨)，期货触及189,000高点；NVIDIA Rubin官宣full production(2H26上市)；华为AI芯片2026营收预增60%至$120亿；AMD反驳MI400延迟，确认2H 2026出货；CDU细分市场详细数据出炉；AAOI Q2 2026 800G成最大营收线',
+    changes: [
+      { category: '计算设备', detail: '【官宣】NVIDIA Rubin进入full production，2H 2026合作伙伴上市；CoWoS 30-35万片，1Q26试产、2Q26末量产，VR200 NVL72 3Q26末机柜量产', priceChange: '量产' },
+      { category: '计算设备', detail: 'GB300份额近80%，2026预计6万机柜+129% YoY，目前1000机柜/周', priceChange: '更新' },
+      { category: '计算设备', detail: 'B300云租赁价区间$2.45/hr(Spheron Spot)-$18/hr(DGX B300)，比H200更便宜', priceChange: '更新' },
+      { category: '计算设备', detail: '【加速】华为预计2026 AI芯片营收+60%至$120亿(2025 $75亿)，950PR成2026主要订单来源', priceChange: '+60%' },
+      { category: '计算设备', detail: 'AMD反驳MI400延迟，确认2H 2026出货；MI455X 12个chiplet/320亿晶体管/432GB HBM4；Helios机柜2.9 EFLOPS FP4', priceChange: '更新' },
+      { category: '计算设备', detail: 'AMD MI500系列2027发布(CDNA 6/2nm/HBM4e)，目标比MI300X提升1000x AI性能', priceChange: '路线图' },
+      { category: '散热冷却', detail: 'CDU市场细分：Rack-Level占41%($7.78亿)，Direct-to-Chip占56%($10.63亿)，200-500kW占48%($9.11亿)', priceChange: '更新' },
+      { category: '散热冷却', detail: '1MW+ CDU为最快增长细分(+23.1% CAGR)，主要受AI/HPC高密度需求驱动', priceChange: '+23.1%' },
+      { category: '电力系统', detail: '【警戒-3周累计+13.8%】碳酸锂现货177,000元/吨(4/30)，较v2.2的173,000再涨+2.3%；3周累计155,550→177,000', priceChange: '+13.8%' },
+      { category: '电力系统', detail: '广州期货所5月1日碳酸锂期货触及189,000元/吨高点(+9.85%涨幅触发涨停)', priceChange: '+5.05%期货' },
+      { category: '电力系统', detail: '碳酸锂月+8.59%/同比+163.79%；IMARC东北亚价$18.21/kg；驱动力：中国矿关闭+津巴布韦禁令+ESS需求+VAT出口退税降至6%', priceChange: '更新' },
+      { category: '电力系统', detail: '2026电力可用性官方升为新建数据中心首要约束(EnkiAI)；美国互连排队等待多年', priceChange: '危机' },
+      { category: '网络设备', detail: 'AAOI 2026 Q2 800G成最大数据中心营收线；目标年底月产50万只；全年营收$10亿+(+119%)', priceChange: '更新' },
+      { category: '网络设备', detail: '2026是"1.6T之年"(Hytoptodevice)；Tier1订单饱和：InnoLight 1400-1500万只800G产能向1.6T转型', priceChange: '里程碑' }
+    ]
+  },
   {
     date: '2026-04-27',
     version: 'v2.2',
