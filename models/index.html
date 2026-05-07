@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年4月30日</title>
+<title>AI 模型周报仪表盘 | 2026年5月7日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年4月30日 · 第18期</span>
+        <span class="header-date">2026年5月7日 · 第19期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -34,25 +34,25 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">本周·重大变动</span>
+            <span class="change-tag tag-breaking">往期·重大变动</span>
             <h3>DeepSeek-V4 上线，同时宣布 legacy API 名称退役时间</h3>
             <p>4月24日，DeepSeek 在 API 更新日志中新增 deepseek-v4-pro / deepseek-v4-flash，并宣布 deepseek-chat 与 deepseek-reasoner 将于 2026年7月24日退役（目前分别路由到 V4-Flash 的非思考/思考模式）。</p>
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🔴</div>
+          <div class="change-icon">🔵</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">往期·重大变动</span>
-            <h3>GPT-4o 全面退役</h3>
-            <p>OpenAI 于 4月3日 正式从所有 ChatGPT 套餐中移除 GPT-4o，API Standard 部署已于 3月31日关停。迁移至 GPT-5.x 系列。</p>
+            <span class="change-tag tag-update">本周·平台/工具更新</span>
+            <h3>Gemini API 上线 Webhooks（替代长任务轮询）</h3>
+            <p>5月4日，Gemini API 新增事件驱动 Webhooks，用于替换 Batch API 与长时间操作的轮询工作流，降低轮询成本与延迟。</p>
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🟢</div>
+          <div class="change-icon">🔵</div>
           <div class="change-body">
-            <span class="change-tag tag-new">新模型</span>
-            <h3>GPT-5.4 mini / nano 发布</h3>
-            <p>3月17日发布。mini: $0.75/$4.50，400K 上下文；nano: $0.20/$1.25。面向高性价比推理场景。</p>
+            <span class="change-tag tag-update">本周·平台/工具更新</span>
+            <h3>Gemini File Search 支持多模态检索（图片可嵌入与搜索）</h3>
+            <p>5月5日，Gemini API 更新 File Search：支持通过 gemini-embedding-2 对图片进行原生嵌入与检索；同时 grounding metadata 增加 media_id 与 page_numbers，便于可追溯引用。</p>
           </div>
         </div>
         <div class="change-card change-real">
@@ -145,6 +145,16 @@
               <td>Zhipu GLM-5.1 "最新旗舰"</td>
               <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
               <td>$1.40/$4.40 定价比 GLM-5 涨 40%，但基准提升幅度不明确。GLM-4.7 仍是性价比最优选。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>Gemini API "File Search 可检索图片"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>变更已出现在 Gemini API 官方更新日志（5月5日），属于可直接使用的工具链能力更新；同时新增视觉引用 media_id 与页码定位信息。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>Gemini API "Webhooks 替代轮询"</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>官方更新日志（5月4日）明确上线 Webhooks，用于替换 Batch API 与长任务轮询，属于工程/平台层面的实用改动。</td>
             </tr>
           </tbody>
         </table>
@@ -432,10 +442,22 @@
             <strong>Claude Sonnet 4 / Opus 4</strong> 标记为 Deprecated → 替代: claude-sonnet-4-6 / claude-opus-4-7（6月15日退役）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.04.30</div>
           <div class="timeline-content">
             <strong>gemini-robotics-er-1.5-preview</strong> 关停 → 替代: gemini-robotics-er-1.6-preview（9AM PST）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.04</div>
+          <div class="timeline-content">
+            <strong>Gemini API</strong> Webhooks 上线（替代 Batch/长任务轮询）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.05</div>
+          <div class="timeline-content">
+            <strong>Gemini API</strong> File Search 支持多模态检索（图片嵌入与搜索）
           </div>
         </div>
         <div class="timeline-item timeline-upcoming">
@@ -519,7 +541,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年5月7日</p>
+      <p>更新频率：每周四 · 下次更新：2026年5月14日</p>
     </footer>
   </main>
 </div>
