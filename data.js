@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-05-04',
+    updated: '2026-05-11',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -163,17 +163,17 @@ const RESEARCH_DATA = {
         researchPrice: 'H100约145万元($25-30K/卡)；H200约220万元($30-40K/卡)',
         suppliers: ['Dell PowerEdge XE9680', 'HPE ProLiant', 'Supermicro', '联想', '浪潮'],
         trend: '下降',
-        trendNote: '【重大】NVIDIA停产H200中国版(3月5日Reuters确认)；截至2月底仍未向中国发货(CNBC)；25%关税+案例许可制+年约100万片上限；中国转向华为昇腾替代；H100云租赁$2/hr',
-        source: 'Reuters 2026-03-05, CNBC 2026-02-26, Semiconductors Insight 2026-03'
+        trendNote: '【重大反转】Trump 1月14日批准H200出口中国(25%关税+案例许可)；中国1月28日批准首批进口(数十万片)，主供3家头部互联网企业；NVIDIA估中国市场年潜力$500亿；中国原下单>200万片(超NVIDIA存货70万)；中国监管部门指示部分企业暂停订单；H100云租赁$2/hr',
+        source: 'CNBC 2026-01-14, Reuters 2026-01-13, CNBC 2026-01-28, Yahoo 2026-01-15'
       },
       {
         name: 'NVIDIA B200 8卡服务器',
         bomPrice: '200–350万元/台',
-        researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14.00/hr，B300 $2.45-$18/hr）',
+        researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14/hr，B300 $2.45-$18/hr）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: 'GB300份额近80%(TrendForce)，2026预计出货6万机柜+129%YoY，目前已1000机柜/周；B300云租赁Spheron $2.45/hr(Spot)、$6.80/hr(Dedicated)，HGX B300 $4.95+，DGX B300 $12-$18；B200云租赁$1.71-$14/hr全区间稳定',
-        source: 'TrendForce 2026-03-18, Spheron 2026-04-16, ComputePrices 2026-04-26'
+        trendNote: 'NVIDIA Blackwell产能逼近100万GPU/月(2026Q1)；Nscale德州104K GPU新园区(240MW)，Microsoft Q3启用，长期1.2GW；GB300份额70-80%(TrendForce)，6万机柜/年+129%YoY；B200云租赁$1.71-$14/hr稳定，B300 $2.45-$18/hr',
+        source: 'Wccftech/Entrelligence 2026-05, TrendForce 2026-03, Spheron 2026-04'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -208,8 +208,8 @@ const RESEARCH_DATA = {
         researchPrice: '910C约8.6万元/卡（$12K）；整机约110–150万元',
         suppliers: ['华为Atlas 800T', '高新发展', '华鲲振宇', '中科曙光'],
         trend: '上升',
-        trendNote: '【加速】华为预计2026 AI芯片营收+60%至$120亿(2025年$75亿)；950PR 3月已量产，是2026主要订单来源；今年还推950DT和Atlas 950超节点；NVIDIA H200中国禁令受益最大；910C 2026计划60万片',
-        source: 'FT/DCD 2026-05-01, HuaweiCentral 2026-05-01, Seeking Alpha 2026-05-01'
+        trendNote: '华为预计2026 AI芯片营收+60%至$120亿；950PR目标年产75万片(SMIC N+3制程7nm级，无EUV)，1月送样、H2全量出货；SMIC 7nm良率低、周期8月(vs TSMC 3月)；950PR或为大芯片但仍可能供不应求；NVIDIA H200批准后中国转向缓和但仍有结构性短缺',
+        source: 'Tom\'s Hardware 2026-05-05, FT/DCD 2026-05-01, Seeking Alpha 2026-05-01'
       },
       {
         name: '华为昇腾950 SuperPoD超节点',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-05-04',
+    updated: '2026-05-11',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-05-04',
+    updated: '2026-05-11',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -328,8 +328,8 @@ const RESEARCH_DATA = {
         researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2020年价格上涨60-80%',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '【危机加剧】2026电力可用性官方升为新建数据中心首要约束(EnkiAI)；美国互连排队等待多年；高压变压器3-5年交货；GE Vernova(Prolec)、Siemens Energy受益；超半数美国规划数据中心延迟/取消(Bloomberg)；中国占全球变压器60%产能',
-        source: 'EnkiAI 2026-02-04, Bloomberg 2026-04-01, Energy News Beat 2026-04'
+        trendNote: '【危机持续】Sightline Climate预2026美国30-50%数据中心因电力延迟；权威认为"电力非芯片"决定下个$1000亿数据中心；高压变压器3-5年交货；GE Vernova(Prolec)、Siemens Energy受益股；中国占全球变压器60%产能；超半数美国规划项目延迟/取消',
+        source: 'EnkiAI 2026-02-04, LinkedIn 2026-04-08, Tech Investments 2026-05-09'
       },
       {
         name: '干式变压器 2500kVA',
@@ -364,8 +364,8 @@ const RESEARCH_DATA = {
         researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
         trend: '上升',
-        trendNote: '【警戒-连续3周累计+14%】碳酸锂现货177,000元/吨(4月30日Trading Economics)，较v2.2的173,000再涨+2.3%；连续3周累计+13.8%(155,550→177,000)，超10%警戒线；广州期货所5月1日触及189,000元/吨高点(+9.85%涨幅触发涨停)；月度+8.59%、同比+163.79%(IMARC东北亚$18.21/kg)；中国矿关闭+津巴布韦禁令+ESS需求；Fastmarkets预2026转短缺',
-        source: 'Trading Economics 2026-04-30, X/Trending 2026-04-30, IMARC 2026-04, Carbon Credits 2026'
+        trendNote: '【警戒升级-4周累计+24.7%】碳酸锂飙至194,000元/吨(5/8 Trading Economics)，单周再涨+9.6%(177,000→194,000)；4周累计155,550→194,000=+24.7%；YTD +50%创2023年来新高；广州期货所2609合约199,060元/吨(+1.52%日)；电池级现货均价190,500元/吨(+3,000)；5月碳酸锂产量11.38万吨环比+3.4%但需求更强；中国矿关闭+ESS+VAT退税6%综合作用',
+        source: 'Trading Economics 2026-05-08, LinkedIn/Ramos 2026-05-08'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-05-04',
+    updated: '2026-05-11',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -433,8 +433,8 @@ const RESEARCH_DATA = {
         researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
         suppliers: ['中际旭创','新易盛','AOI','Coherent','AAOI','Hyper Photonix','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: '【市场拐点年】2026是"1.6T之年"(Hytoptodevice)；Tier1"接单接到手软"：InnoLight 800G产能1400-1500万只，Eoptolink 800-900万只(均向1.6T转型)；Google预2026需1.6T 300-400万只(OSFP+QSFP-DD)；硅光占比60%；价格$1300-$1500，2年内降至$1100；200G EML芯片严重短缺；Source Photonics(Meta主供)；TSMC COUPE硅光2026量产',
-        source: 'Hytoptodevice 2026-01, QSFPTEK 2026-04-17, LINK-PP 2026-04-16'
+        trendNote: 'Coherent进入"1.6T网络超级周期"(COHR 2026 deep-dive，FinancialContent 2/23)；2026是"1.6T之年"；Tier1订单饱和：InnoLight 1400-1500万只800G产能转型，Eoptolink 800-900万只；Google预2026 1.6T需300-400万只；800G+1.6T市场CAGR 14.2%；硅光占比60%；价格$1300-$1500，2年内$1100；200G EML芯片短缺',
+        source: 'FinancialContent/COHR 2026-02-23, DataInsightsReports 2026-02-24, Hytoptodevice 2026-01'
       }
     ]
   }
@@ -1978,6 +1978,24 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-05-11',
+    version: 'v2.4',
+    author: '自动调研(周报)',
+    summary: '第9次周度调研更新：碳酸锂4周累计+24.7%加速上涨至194,000元/吨(单周+9.6%)；NVIDIA H200中国销售1月获Trump批准+中国28日批准首批；NVIDIA Blackwell产能逼近100万GPU/月；Huawei 950PR目标年产75万片(SMIC N+3)；Vertiv MegaMod HDX液冷模块新配置；Coherent进入1.6T网络超级周期',
+    changes: [
+      { category: '计算设备', detail: '【重大反转】Trump 1月14日批准H200出口中国(25%关税)；中国1月28日批准首批数十万片，主供3家头部互联网公司；NVIDIA估中国年潜力$500亿', priceChange: '政策反转' },
+      { category: '计算设备', detail: 'NVIDIA Blackwell产能逼近100万GPU/月(2026 Q1)；Nscale德州104K GPU新园区240MW，Microsoft Q3启用，长期1.2GW', priceChange: '+产能' },
+      { category: '计算设备', detail: 'Huawei 950PR目标年产75万片(SMIC N+3制程7nm级，无EUV)；1月送样、H2全量出货；SMIC周期8月vs TSMC 3月', priceChange: '更新' },
+      { category: '散热冷却', detail: '【新品】Vertiv MegaMod HDX预制化液冷模块新配置：紧凑型13机柜/1.25MW，组合型144机柜/10MW', priceChange: '新品' },
+      { category: '散热冷却', detail: '集成Direct-to-Chip液冷+风冷+APM2 UPS+CoolChip CDU；支持50-100+kW/机柜', priceChange: '更新' },
+      { category: '电力系统', detail: '【警戒升级-4周累计+24.7%】碳酸锂飙至194,000元/吨(5/8 Trading Economics)，单周+9.6%(177,000→194,000)', priceChange: '+9.6%' },
+      { category: '电力系统', detail: '广州期货所2609合约199,060元/吨(+1.52%日)；电池级现货均价190,500元/吨(+3,000/吨)', priceChange: '+期货高点' },
+      { category: '电力系统', detail: 'YTD +50%创2023年来新高；5月产量11.38万吨环比+3.4%但需求更强；中国矿关闭+ESS+VAT退税6%综合', priceChange: '更新' },
+      { category: '电力系统', detail: '【危机持续】Sightline Climate预2026美国30-50%数据中心因电力延迟；权威认为电力非芯片决定下个$1000亿数据中心', priceChange: '危机' },
+      { category: '网络设备', detail: 'Coherent进入"1.6T网络超级周期"(COHR 2026 deep-dive)；800G+1.6T市场CAGR 14.2%', priceChange: '更新' }
+    ]
+  },
   {
     date: '2026-05-04',
     version: 'v2.3',
