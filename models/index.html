@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年5月7日</title>
+<title>AI 模型周报仪表盘 | 2026年5月14日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年5月7日 · 第19期</span>
+        <span class="header-date">2026年5月14日 · 第20期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -40,43 +40,35 @@
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🔵</div>
-          <div class="change-body">
-            <span class="change-tag tag-update">本周·平台/工具更新</span>
-            <h3>Gemini API 上线 Webhooks（替代长任务轮询）</h3>
-            <p>5月4日，Gemini API 新增事件驱动 Webhooks，用于替换 Batch API 与长时间操作的轮询工作流，降低轮询成本与延迟。</p>
-          </div>
-        </div>
-        <div class="change-card change-real">
-          <div class="change-icon">🔵</div>
-          <div class="change-body">
-            <span class="change-tag tag-update">本周·平台/工具更新</span>
-            <h3>Gemini File Search 支持多模态检索（图片可嵌入与搜索）</h3>
-            <p>5月5日，Gemini API 更新 File Search：支持通过 gemini-embedding-2 对图片进行原生嵌入与检索；同时 grounding metadata 增加 media_id 与 page_numbers，便于可追溯引用。</p>
-          </div>
-        </div>
-        <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-new">新模型</span>
-            <h3>Kimi K2.6 上线（Workers AI Day 0）</h3>
-            <p>4月20日，Cloudflare Workers AI 上线 @cf/moonshotai/kimi-k2.6：1T MoE（32B active）、262.1k 上下文、Vision、Thinking mode、Multi-turn tool calling，并披露 BrowseComp / SWE-Bench Verified / Terminal-Bench 2.0 等基准成绩。</p>
+            <span class="change-tag tag-new">本周·新模型（GA）</span>
+            <h3>Gemini 3.1 Flash-Lite 转正（GA）</h3>
+            <p>5月7日，Gemini API 更新日志宣布 gemini-3.1-flash-lite 正式 GA，定位为更强调速度、规模化与成本效率的型号。</p>
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🟢</div>
+          <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-new">新模型</span>
-            <h3>小米 MiMo-V2.5 / V2.5-Pro 开源（MIT License）</h3>
-            <p>4月28日，InfoWorld 报道小米以 MIT License 开源 MiMo-V2.5 与 MiMo-V2.5-Pro：两者均支持 1M 上下文；并披露 MoE 参数规模（V2.5：310B total/15B active；Pro：1.02T total/42B active）。</p>
+            <span class="change-tag tag-breaking">本周·弃用/退役</span>
+            <h3>gemini-3.1-flash-lite-preview：5/11 弃用，5/25 关停</h3>
+            <p>5月7日，Gemini API 官方宣布 gemini-3.1-flash-lite-preview 将于 5月11日弃用、并在 5月25日关停。</p>
           </div>
         </div>
         <div class="change-card change-real">
-          <div class="change-icon">🟢</div>
+          <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-update">本周·平台/工具更新</span>
-            <h3>智谱 GLM Coding Plan 老套餐停止自动续订（4月30日生效）</h3>
-            <p>4月29日，智谱发布迁移说明：截至 4月30日（北京时间）仍在使用“老套餐（无周限额版本）且开启自动续订”的用户，将被系统关闭自动续订，并提供赠送新套餐与折扣等迁移补偿。</p>
+            <span class="change-tag tag-breaking">本周·破坏性变更</span>
+            <h3>Gemini Interactions API schema 变更：5/26 默认切换，6/8 移除旧版</h3>
+            <p>5月6日，Gemini API 预告 Interactions API 请求/响应 schema 将从 outputs → steps 迁移，并调整 response_format；5月26日成为默认，6月8日移除旧 schema。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🔴</div>
+          <div class="change-body">
+            <span class="change-tag tag-breaking">本周·弃用/退役</span>
+            <h3>Kimi：kimi-k2 系列确认 5/25 下线，迁移到 kimi-k2.6</h3>
+            <p>Kimi 官方模型列表页更新：kimi-k2 系列模型将在 2026年5月25日下线，将不再维护与支持，建议直接使用 kimi-k2.6。</p>
           </div>
         </div>
       </div>
@@ -92,19 +84,19 @@
           </thead>
           <tbody>
             <tr class="spin-real">
-              <td>Gemini 3.1 Pro "13/16 基准测试领先"</td>
+              <td>Gemini 3.1 Flash-Lite “GA 发布=可稳定生产可用”</td>
               <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>ARC-AGI-2 77.1%（上代翻倍），GPQA 94.3% 均为第三方可验证分数。$2/$12 定价确实低于同级竞品。</td>
+              <td>官方更新日志明确宣布 gemini-3.1-flash-lite 转正（GA），属于可直接调用的型号变更，而非单纯宣传。</td>
             </tr>
             <tr class="spin-real">
-              <td>MiniMax M2.7 "比 Opus 便宜50倍"</td>
-              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
-              <td>对比的是旧版 Opus 4.1（$15/M）。对比当前 Opus 4.6（$5/M），实际便宜 17 倍 input / 21 倍 output。仍然极具性价比。</td>
-            </tr>
-            <tr class="spin-real">
-              <td>GPT-5.4 "Computer Use 原生支持"</td>
+              <td>Gemini Interactions API “只是文档调整，不影响线上”</td>
               <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>OSWorld-Verified 和 WebArena Verified 基准测试均为记录高分。确实是 OpenAI 首个原生 Computer Use 旗舰模型。</td>
+              <td>更新日志标注 upcoming breaking change：5/26 将新 schema 设为默认、6/8 移除旧 schema；对依赖 outputs/response_format 的调用属于真实迁移成本。</td>
+            </tr>
+            <tr class="spin-spin">
+              <td>“Kimi k2 系列下线只是公告，不会影响存量”</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>Kimi 官方模型列表页给出明确下线日期（2026/5/25）与替代型号（kimi-k2.6）；属于可执行的退役安排，而非模糊预告。</td>
             </tr>
             <tr class="spin-spin">
               <td>“Deep Research/研究代理”只是换名包装</td>
@@ -448,16 +440,40 @@
             <strong>gemini-robotics-er-1.5-preview</strong> 关停 → 替代: gemini-robotics-er-1.6-preview（9AM PST）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.04</div>
           <div class="timeline-content">
             <strong>Gemini API</strong> Webhooks 上线（替代 Batch/长任务轮询）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.05</div>
           <div class="timeline-content">
             <strong>Gemini API</strong> File Search 支持多模态检索（图片嵌入与搜索）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.07</div>
+          <div class="timeline-content">
+            <strong>gemini-3.1-flash-lite</strong> GA 发布
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.11</div>
+          <div class="timeline-content">
+            <strong>gemini-3.1-flash-lite-preview</strong> 弃用（5月25日关停）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.25</div>
+          <div class="timeline-content">
+            <strong>gemini-3.1-flash-lite-preview</strong> 关停
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.05.25</div>
+          <div class="timeline-content">
+            <strong>Kimi kimi-k2 系列</strong> 下线（迁移到 kimi-k2.6）
           </div>
         </div>
         <div class="timeline-item timeline-upcoming">
@@ -541,7 +557,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年5月14日</p>
+      <p>更新频率：每周四 · 下次更新：2026年5月21日</p>
     </footer>
   </main>
 </div>
