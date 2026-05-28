@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年5月21日</title>
+<title>AI 模型周报仪表盘 | 2026年5月28日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年5月21日 · 第21期</span>
+        <span class="header-date">2026年5月28日 · 第22期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -34,6 +34,23 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
+            <span class="change-tag tag-breaking">本周·关停</span>
+            <h3>Google：gemini-3.1-flash-lite-preview 已于 5/25 关停</h3>
+            <p>Gemini API changelog 标注该 preview 模型已于 2026年5月25日关闭，建议迁移到 GA 的 gemini-3.1-flash-lite。</p>
+          </div>
+        </div>
+        <div class="change-card change-real">
+          <div class="change-icon">🟢</div>
+          <div class="change-body">
+            <span class="change-tag tag-new">本周·新模型（企业定向）</span>
+            <h3>智谱：glm-5.1-highspeed 文档上线（200K 上下文 / 128K 输出）</h3>
+            <p>智谱开放文档新增 glm-5.1-highspeed（GLM-5.1-HighSpeed），定位高速旗舰文本模型，标注 200K 上下文与 128K 最大输出，并强调面向部分企业客户开放。</p>
+          </div>
+        </div>
+
+        <div class="change-card change-real">
+          <div class="change-icon">🔴</div>
+          <div class="change-body">
             <span class="change-tag tag-breaking">往期·重大变动</span>
             <h3>DeepSeek-V4 上线，同时宣布 legacy API 名称退役时间</h3>
             <p>4月24日，DeepSeek 在 API 更新日志中新增 deepseek-v4-pro / deepseek-v4-flash，并宣布 deepseek-chat 与 deepseek-reasoner 将于 2026年7月24日退役（目前分别路由到 V4-Flash 的非思考/思考模式）。</p>
@@ -42,7 +59,7 @@
         <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-new">本周·新模型（API）</span>
+            <span class="change-tag tag-new">往期·新模型（API）</span>
             <h3>OpenAI：GPT-5 系列在 API 正式发布（gpt-5 / mini / nano）</h3>
             <p>5月15日，OpenAI 发布 GPT-5 for developers：给出 gpt-5 / gpt-5-mini / gpt-5-nano 的定价与 400K 总上下文上限，并新增 verbosity 与 custom tools（纯文本工具调用）等 API 能力。</p>
           </div>
@@ -50,7 +67,7 @@
         <div class="change-card change-real">
           <div class="change-icon">🟢</div>
           <div class="change-body">
-            <span class="change-tag tag-new">本周·新模型（GA）</span>
+            <span class="change-tag tag-new">往期·新模型（GA）</span>
             <h3>Google：gemini-3.5-flash GA，上线 Managed Agents（公测）</h3>
             <p>5月19日，Gemini API 变更日志发布 gemini-3.5-flash（GA），并在 Gemini API 中推出托管智能体（Managed Agents）与 Antigravity Agent（public preview）。</p>
           </div>
@@ -58,7 +75,7 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">本周·破坏性变更</span>
+            <span class="change-tag tag-breaking">往期·破坏性变更</span>
             <h3>Gemini Interactions API schema 变更：5/26 默认切换，6/8 移除旧版</h3>
             <p>5月6日，Gemini API 预告 Interactions API 请求/响应 schema 将从 outputs → steps 迁移，并调整 response_format；5月26日成为默认，6月8日移除旧 schema。</p>
           </div>
@@ -66,7 +83,7 @@
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">本周·弃用/退役</span>
+            <span class="change-tag tag-breaking">往期·弃用/退役</span>
             <h3>Anthropic：Claude Sonnet 4 / Opus 4 将于 6/15 退役</h3>
             <p>Anthropic 汇总更新页列出：Claude Sonnet 4 与 Opus 4 退役时间为 2026年6月15日，建议迁移到 4.6 线。</p>
           </div>
@@ -81,6 +98,16 @@
         <table class="spin-table">
           <thead>
             <tr><th>声称</th><th>判定</th><th>分析</th></tr>
+            <tr class="spin-real">
+              <td>Gemini 3.1 Flash-Lite preview “仍可继续使用”</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>Gemini API 官方 changelog 明确写明该 preview 模型已于 2026/5/25 关闭，并给出替代型号 gemini-3.1-flash-lite（GA），属于可执行的关停/迁移事件。</td>
+            </tr>
+            <tr class="spin-real">
+              <td>智谱 GLM-5.1-HighSpeed “旗舰能力 + 400 tok/s”</td>
+              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
+              <td>官方文档已给出可调用模型 ID（glm-5.1-highspeed）与 200K 上下文/128K 输出等工程参数，但未提供公开定价与第三方基准；适合作为“已上线的企业定向 SKU”，效果和性价比仍待验证。</td>
+            </tr>
           </thead>
           <tbody>
             <tr class="spin-real">
@@ -335,6 +362,13 @@
             </tr>
             <!-- GLM -->
             <tr data-vendor="cn-open">
+              <td class="sticky-col model-name">GLM-5.1-HighSpeed</td>
+              <td>Zhipu AI</td><td>2026.05.21</td><td>高速/企业定向</td>
+              <td class="num">—</td><td class="num">—</td><td>200K</td>
+              <td>—</td><td>—</td><td>✅ MCP</td><td>❌</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="cn-open">
               <td class="sticky-col model-name">GLM-5.1</td>
               <td>Zhipu AI</td><td>2026.03</td><td>旗舰</td>
               <td class="num">$1.40</td><td class="num">$4.40</td><td>128K</td>
@@ -476,10 +510,10 @@
             <strong>gemini-3.1-flash-lite-preview</strong> 弃用（5月25日关停）
           </div>
         </div>
-        <div class="timeline-item timeline-upcoming">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.25</div>
           <div class="timeline-content">
-            <strong>gemini-3.1-flash-lite-preview</strong> 关停
+            <strong>gemini-3.1-flash-lite-preview</strong> 关停 → 替代: gemini-3.1-flash-lite
           </div>
         </div>
         <div class="timeline-item timeline-upcoming">
@@ -568,9 +602,9 @@
       <h2 class="section-title">未来值得关注</h2>
       <div class="upcoming-grid">
         <div class="upcoming-card">
-          <div class="upcoming-when">2026.05.26</div>
-          <h3>Gemini Interactions API：新 schema 默认切换</h3>
-          <p>未设置 Api-Revision 的 REST 调用将收到新 schema（outputs → steps）。建议提前在 staging 回归测试并显式设置 Api-Revision。</p>
+          <div class="upcoming-when">2026.06.04</div>
+          <h3>OpenAI：DALL·E 2/3 已退役后的迁移回归（图像生成链路）</h3>
+          <p>OpenAI deprecations 页面显示 dall-e-2 与 dall-e-3 已于 2026/5/12 退役；若仍有存量图像生成链路，建议在下次迭代完成 gpt-image-* 替代与成本校准。</p>
         </div>
         <div class="upcoming-card">
           <div class="upcoming-when">2026.06.08</div>
@@ -593,7 +627,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年5月28日</p>
+      <p>更新频率：每周四 · 下次更新：2026年6月4日</p>
     </footer>
   </main>
 </div>

@@ -95,6 +95,7 @@ const contextData = [
   { name: 'MiMo-V2-Flash', tokens: 262000, cls: 'bar-cn' },
   { name: 'MiniMax M2.7', tokens: 205000, cls: 'bar-cn' },
   { name: 'GLM-4.7', tokens: 200000, cls: 'bar-cn' },
+  { name: 'GLM-5.1-HighSpeed', tokens: 200000, cls: 'bar-cn' },
   { name: 'DeepSeek V4', tokens: 1000000, cls: 'bar-cn' },
   { name: 'GPT-5', tokens: 128000, cls: 'bar-openai' },
   { name: 'GLM-5.1', tokens: 128000, cls: 'bar-cn' },
