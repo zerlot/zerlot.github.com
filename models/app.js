@@ -21,7 +21,7 @@ if (ctx) {
     type: 'bar',
     data: {
       labels: [
-        'GPT-5.4\nThinking', 'Claude\nOpus 4.6', 'Gemini\n3.5 Flash', 'GPT-5', 
+        'GPT-5.4\nThinking', 'Claude\nOpus 4.8', 'Gemini\n3.5 Flash', 'GPT-5', 
         'GLM-5.1', 'MiMo-V2.5\nPro', 'GLM-5', 'GLM-4.7',
         'GPT-5\nmini', 'MiniMax\nM2.7', 'DeepSeek\nV4 Flash', 'GPT-5.4\nnano',
         'MiMo-V2\nFlash', 'DeepSeek\nV4 Pro'
@@ -86,14 +86,14 @@ if (ctx) {
 // Context Window Bars
 const contextData = [
   { name: 'GPT-5.4 Pro', tokens: 1100000, cls: 'bar-openai' },
-  { name: 'Claude Opus/Sonnet 4.6', tokens: 1000000, cls: 'bar-anthropic' },
+  { name: 'Claude Opus 4.8', tokens: 1000000, cls: 'bar-anthropic' },
   { name: 'Gemini 3.5 Flash', tokens: 1000000, cls: 'bar-google' },
   { name: 'GPT-5.4 Thinking', tokens: 1000000, cls: 'bar-openai' },
   { name: 'MiMo-V2.5-Pro', tokens: 1000000, cls: 'bar-cn' },
   { name: 'GPT-5.4 mini', tokens: 400000, cls: 'bar-openai' },
   { name: 'Kimi K2.6', tokens: 262100, cls: 'bar-cn' },
   { name: 'MiMo-V2-Flash', tokens: 262000, cls: 'bar-cn' },
-  { name: 'MiniMax M2.7', tokens: 205000, cls: 'bar-cn' },
+  { name: 'MiniMax M3', tokens: 1000000, cls: 'bar-cn' },
   { name: 'GLM-4.7', tokens: 200000, cls: 'bar-cn' },
   { name: 'GLM-5.1-HighSpeed', tokens: 200000, cls: 'bar-cn' },
   { name: 'DeepSeek V4', tokens: 1000000, cls: 'bar-cn' },
