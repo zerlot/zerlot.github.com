@@ -21,7 +21,7 @@ if (ctx) {
     type: 'bar',
     data: {
       labels: [
-        'GPT-5.4\nThinking', 'Claude\nOpus 4.8', 'Gemini\n3.5 Flash', 'GPT-5', 
+        'GPT-5.4\nThinking', 'Claude\nFable 5', 'Gemini\n3.5 Flash', 'GPT-5', 
         'GLM-5.1', 'MiMo-V2.5\nPro', 'GLM-5', 'GLM-4.7',
         'GPT-5\nmini', 'MiniMax\nM2.7', 'DeepSeek\nV4 Flash', 'GPT-5.4\nnano',
         'MiMo-V2\nFlash', 'DeepSeek\nV4 Pro'
@@ -29,7 +29,7 @@ if (ctx) {
       datasets: [
         {
           label: 'Input $/1M tokens',
-          data: [2.50, 5.00, 2.00, 1.25, 1.40, 1.00, 1.00, 0.60, 0.25, 0.30, 0.14, 0.20, 0.09, 0.25],
+          data: [2.50, 10.00, 2.00, 1.25, 1.40, 1.00, 1.00, 0.60, 0.25, 0.30, 0.14, 0.20, 0.09, 0.25],
           backgroundColor: 'rgba(6, 182, 212, 0.7)',
           borderColor: 'rgba(6, 182, 212, 1)',
           borderWidth: 1,
@@ -37,7 +37,7 @@ if (ctx) {
         },
         {
           label: 'Output $/1M tokens',
-          data: [15.00, 25.00, 12.00, 10.00, 4.40, 3.00, 3.20, 2.20, 2.00, 1.20, 0.28, 1.25, 0.29, 0.88],
+          data: [15.00, 50.00, 12.00, 10.00, 4.40, 3.00, 3.20, 2.20, 2.00, 1.20, 0.28, 1.25, 0.29, 0.88],
           backgroundColor: 'rgba(168, 85, 247, 0.7)',
           borderColor: 'rgba(168, 85, 247, 1)',
           borderWidth: 1,
@@ -86,7 +86,7 @@ if (ctx) {
 // Context Window Bars
 const contextData = [
   { name: 'GPT-5.4 Pro', tokens: 1100000, cls: 'bar-openai' },
-  { name: 'Claude Opus 4.8', tokens: 1000000, cls: 'bar-anthropic' },
+  { name: 'Claude Fable 5', tokens: 1000000, cls: 'bar-anthropic' },
   { name: 'Gemini 3.5 Flash', tokens: 1000000, cls: 'bar-google' },
   { name: 'GPT-5.4 Thinking', tokens: 1000000, cls: 'bar-openai' },
   { name: 'MiMo-V2.5-Pro', tokens: 1000000, cls: 'bar-cn' },

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年6月4日</title>
+<title>AI 模型周报仪表盘 | 2026年6月11日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年6月4日 · 第23期</span>
+        <span class="header-date">2026年6月11日 · 第24期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -43,8 +43,8 @@
           <div class="change-icon">🟢</div>
           <div class="change-body">
             <span class="change-tag tag-new">本周·新模型</span>
-            <h3>Anthropic：Claude Opus 4.8 发布（替代 Opus 4.7，定价不变）</h3>
-            <p>Anthropic 公告称 Opus 4.8 为 Opus 4.7 的升级版本，常规/fast mode 价格不变，并强调 tool calling 更高效与 computer-use/browser-agent 能力提升；同时 Messages API 支持在 messages 数组中传入 system 条目。</p>
+            <h3>Anthropic：Claude Fable 5（GA）/ Claude Mythos 5（受限）发布</h3>
+            <p>6月9日，Anthropic 发布 Mythos 级模型：Fable 5 作为可广泛使用版本，Mythos 5 为 Project Glasswing 限定；两者默认 1M context、单次最多 128k 输出，定价为 $10/M input、$50/M output，并强调 memory tool / code execution / programmatic tool calling 等 agent 能力。</p>
           </div>
         </div>
 
@@ -104,9 +104,14 @@
               <td>Gemini API 官方 changelog 明确写明 gemini-2.0-flash / flash-001 / flash-lite / flash-lite-001 已于 2026/6/1 关停，并给出替代型号（gemini-3.5-flash / gemini-3.1-flash-lite）。</td>
             </tr>
             <tr class="spin-real">
-              <td>Anthropic “Opus 4.8 是更强的 computer-use/browser agent”</td>
-              <td><span class="verdict verdict-partial">⚠️ 部分</span></td>
-              <td>官方公告列出多项基准测试与“strongest computer-use/browser-agent”表述，但多为自家评测口径；可确认的是新版本已上线且明确写明定价不变，工程侧变动（tool calling 更少 steps、API 允许 system entries）属可落地更新。</td>
+              <td>Anthropic “Fable 5 / Mythos 5 是 Mythos 级能力，并显著更强”</td>
+              <td><span class="verdict verdict-real">✅ 实质</span></td>
+              <td>可核验的落地更新包括：新模型 ID 已公开（claude-fable-5 / claude-mythos-5），默认 1M context、单次最多 128k 输出，明确 $10/M input、$50/M output；同时文档列出 programmatic tool calling、memory tool、code execution 等可用能力。具体 SOTA/benchmark 强弱仍以官方与合作方口径为主，第三方统一评测待补。</td>
+            </tr>
+            <tr class="spin-spin">
+              <td>“Claude Mythos 5 可以被所有用户直接使用”</td>
+              <td><span class="verdict verdict-spin">❌ 营销</span></td>
+              <td>官方明确写明 Mythos 5 仅在 Project Glasswing 受限开放；绝大多数用户可用的是 Claude Fable 5（GA），不是 Mythos 5。</td>
             </tr>
           </thead>
           <tbody>
@@ -266,6 +271,20 @@
               <td><span class="status status-deprecated">已退役</span></td>
             </tr>
             <!-- Anthropic -->
+            <tr data-vendor="anthropic">
+              <td class="sticky-col model-name">Claude Fable 5</td>
+              <td>Anthropic</td><td>2026.06.09</td><td>Mythos 级旗舰（GA）</td>
+              <td class="num">$10.00</td><td class="num">$50.00</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-new">新发布</span></td>
+            </tr>
+            <tr data-vendor="anthropic">
+              <td class="sticky-col model-name">Claude Mythos 5</td>
+              <td>Anthropic</td><td>2026.06.09</td><td>Mythos 级旗舰（受限）</td>
+              <td class="num">$10.00</td><td class="num">$50.00</td><td>1M</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
+              <td><span class="status status-deprecated">受限（Glasswing）</span></td>
+            </tr>
             <tr data-vendor="anthropic">
               <td class="sticky-col model-name">Claude Opus 4.6</td>
               <td>Anthropic</td><td>2026.02.05</td><td>旗舰推理</td>
@@ -522,22 +541,28 @@
             <strong>Kimi kimi-k2 系列</strong> 下线（迁移到 kimi-k2.6）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.15</div>
           <div class="timeline-content">
             <strong>OpenAI GPT-5</strong> API 发布（gpt-5 / mini / nano）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.19</div>
           <div class="timeline-content">
             <strong>gemini-3.5-flash</strong> GA 发布
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.05.26</div>
           <div class="timeline-content">
             <strong>Gemini Interactions API</strong> 新 schema 默认生效（outputs → steps）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.06.09</div>
+          <div class="timeline-content">
+            <strong>Claude Fable 5 / Claude Mythos 5</strong> 发布（1M context，$10/$50）
           </div>
         </div>
         <div class="timeline-item timeline-upcoming">
@@ -627,7 +652,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年6月11日</p>
+      <p>更新频率：每周四 · 下次更新：2026年6月18日</p>
     </footer>
   </main>
 </div>
