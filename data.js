@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-06-08',
+    updated: '2026-06-15',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -172,8 +172,8 @@ const RESEARCH_DATA = {
         researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14/hr，B300 $2.45-$18/hr）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: '【Computex 2026开幕-6/2】黄仁勋Keynote后Vera Rubin NVL72成全场旗舰：Wiwynn/GIGABYTE/ASRock Rack/MiTAC/Supermicro/LITEON/PEGATRON 7大ODM同步发布机柜级AI基础设施(Note 6/7复盘)；Vera CPU启动Arm架构进军x86主导的DC CPU市场的发令枪；Blackwell Ultra(GB300 NVL72+HGX B300 NVL16)持续上量；B300详规288GB HBM3e+15PFLOPS FP4+1400W TDP；单卡~$53K，DGX B300整机$400-500K；B300云$2.45-$18/hr，B200 $1.71-$14/hr；NVL72 AI Factory：1:1 GPU-to-NIC ConnectX-8 800Gb/s+BlueField-3 480Gb/s',
-        source: 'YouTube/NVIDIA Keynote 2026-06-02, Note Computex复盘 2026-06-07, NVIDIA Blog 2026-05-21'
+        trendNote: '【B200 vs B300买家选择分化-6/12 Ornn】训练用B300：+50%内存+50% FP4算力+2×网络带宽但租金溢价50-100%，仅frontier训练+需288GB场景；推理用B200：192GB足够覆盖70B FP16/130B FP8模型，价格压缩15-40%便宜，性价比好；行业模式：B300新训练集群+B200推理舰队+成本敏感部署；Spheron 6/13 GPU云价格：B300 $2.45-$18/hr，B200 $1.71-$14/hr；Vera Rubin NVL72 Computex 2026 7大ODM机柜级AI产品线落地；B300单卡~$53K，DGX B300整机$400-500K',
+        source: 'Ornn 2026-06-12, Spheron 2026-06-13, NVIDIA Keynote 2026-06-02'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -208,8 +208,8 @@ const RESEARCH_DATA = {
         researchPrice: '910C约8.6万元/卡（$12K）；整机约110–150万元',
         suppliers: ['华为Atlas 800T', '高新发展', '华鲲振宇', '中科曙光'],
         trend: '上升',
-        trendNote: '【华为云8月上线昇腾950DT-6/5官宣】观察者网披露：华为云陈林确认950DT 8月上线，"一年一代、算力翻倍"，原生支持FP8编程更友好；昇腾950PR Q1已量产，单卡推理性能2.87×H20、FP8 1 PFLOPS，部署成本仅H20的1/3；384卡超节点集群vs GB200方案+1.7×总算力；【市场份额突破-6/2新浪】2026Q1中国市场国产AI芯片占比首破52.3%(昇腾37%占国产70%)，NVIDIA从2019年95%暴跌至42.7%，预计年底降至8%；战略领域(政务/能源/航天)昇腾占有率超70%；CANN框架5月全面开源支持43大模型预训练',
-        source: '观察者网/华为云 2026-06-05, 新浪 2026-06-02, 股道榜 2026-06-03'
+        trendNote: '【白皮书公布-6/11】华为昇腾950白皮书发布：950DT 8月上线华为云(提前自Q4)+自研HiZQ 2.0 HBM 144GB+4TB/s带宽(PR的2.5×)，专为推理解码与高强度训练设计；DeepSeek将优先部署+有望8月推V4.2大模型搭载；【HDC 2026-6/12-14】华为开发者大会东莞松山湖召开，鸿蒙7.0 6/13正式发布、Mate 90系列9月首发；昇腾950PR Q1已量产，单卡推理2.87×H20、FP8 1 PFLOPS、成本H20的1/3；384卡超节点vs GB200+1.7×总算力；2026Q1中国市场国产AI芯片首破52.3%(昇腾37%)，NVIDIA从95%暴跌至42.7%',
+        source: '快科技/新浪 2026-06-11, 钜亨号 2026-06-11, 网易/HDC 2026-06-12'
       },
       {
         name: '华为昇腾950 SuperPoD超节点',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-06-08',
+    updated: '2026-06-15',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -277,8 +277,8 @@ const RESEARCH_DATA = {
         researchPrice: '进口约$500-800/kW(CDU设备本身)；含安装约$2-4K/kW；国产约1100元/kW',
         suppliers: ['Vertiv（维谛）','CoolIT(Ecolab收购)','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
         trend: '上升',
-        trendNote: '【Computex 2026新品潮】Delta发布预制AI模块DC(部署时间-60%)+ 800VDC 2.4MW L2L CDU(25kW HVDC泵+N+1+热插拔+1440LPM+650kPa)+ 80kW GoCool L2A CDU(无外水管，PUE<1.19)；Vertiv CoolChip CDU 2300 EMEA上市(6/2-4 Datacloud Cannes首发)+ CoolChip Fluid Network Row Manifolds(液冷分配系统加速器)；Vertiv CoolChip全谱系100kW-2.3MW，支持D2C+RDHx；Arivor 2P DLC双相直液冷机柜方案(BenQ AI IN ACTION展)；DCX 8MW CDU获DCW London 2026创新奖；CDU市场$18.98亿(2026)→$61.13亿(2033)，1MW+ +23.1% CAGR最快',
-        source: 'Delta Computex 2026-06-02, Vertiv/Integrator 2026-06-03, EEJournal 2026-05-27'
+        trendNote: '【Vertiv三连击-6/12】(1)8-K披露$3亿资本投资液冷制造产能翻倍(Q4 2026完成)；(2)完成ThermoKey S.p.A.收购(热交换技术深化)；(3)PurgeRite NearZero流体管理服务发布(闭环水力冷却调试减水量+废水)；季度股息US$0.0625；Simply Wall St：narrative projects营收$222亿+利润$42亿到2029(27%年增长)；Vertiv CoolChip CDU 2300 EMEA上市(Datacloud Cannes首发)；Delta Computex新品潮：800VDC 2.4MW L2L CDU+80kW GoCool L2A CDU+预制AI模块DC(部署-60%)；Arivor 2P DLC双相液冷；CDU市场$18.98亿(2026)→$61.13亿(2033)，1MW+ +23.1% CAGR最快',
+        source: 'AWARE/Vertiv 8-K 2026-06-12, Simply Wall St 2026-06-13, Vertiv 2026-06-12'
       },
       {
         name: 'NVL72机柜液冷组件套件',
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-06-08',
+    updated: '2026-06-15',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -328,8 +328,8 @@ const RESEARCH_DATA = {
         researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2020年价格上涨60-80%',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '【供应吃紧+监管推迟】Yahoo Finance 6/3报道"GE Vernova能否受益全球燃机供应紧缩"；Intellectia 6/7：GE Vernova订单激增遭遇监管推迟阻力(部分项目环保审批延迟)；H级燃气轮机累计400万商业运行小时；SpaceX $28亿采购移动燃机AI DC实证；GE Vernova燃机积压100 GW+Siemens Energy 80 GW；BlackRock预美DC电力2025 19 GW→2030 194 GW(CAGR 59.2%)；GE Vernova Q1订单+80%YoY，2026营收指引$445-455亿；EIG预警$8万亿AI基建押注电网无法承载',
-        source: 'Yahoo Finance 2026-06-03, Intellectia 2026-06-07, Simply Wall St 2026-05-28'
+        trendNote: '【Jefferies 6/11重申买入】GE Vernova报价$940.97(+3.77% 5日)，Jefferies & Co.维持买入评级；H级燃气轮机累计400万商业运行小时；SpaceX $28亿移动燃机AI DC实证；GE Vernova燃机积压100 GW+Siemens Energy 80 GW；BlackRock预美DC电力2025 19 GW→2030 194 GW(CAGR 59.2%)；GE Vernova Q1订单+80%YoY，2026营收指引$445-455亿；EIG预警$8万亿AI基建押注电网无法承载；Siemens 6/12 INR 3,563.00(+1.10%)；监管推迟阻力仍存',
+        source: 'MarketScreener/Jefferies 2026-06-11, Yahoo Finance 2026-06-03, LiveMint/Siemens 2026-06-12'
       },
       {
         name: '干式变压器 2500kVA',
@@ -363,9 +363,9 @@ const RESEARCH_DATA = {
         bomPrice: '2000–8000万元/套',
         researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
-        trend: '下降',
-        trendNote: '【急跌警报-周度-7.4%】碳酸锂6/5电池级163,000元/吨(SMM/长江有色，-5,250至-6,300元/吨日跌，-3.12%日)，工业级159,250元/吨(-5,250元，-3.19%)；vs v2.7的176,000周度-7.4%；价格指数161,927(-6,300元)；现货区间157,000-169,000(SMM)；CIF $20.63/kg(-$0.4)；Trading Economics称"从5/13两年高位200,500大幅回落至170,000，因高价驱动矿企复产"；6/5碳酸锂期货主连下跌；高位价格驱动产能复产+下游采购谨慎(长江有色)；Q3累库压力显现，但Q4出口退税取消或反转',
-        source: 'SMM 2026-06-05, 长江有色 2026-06-05, Trading Economics 2026-06-03, AsianMetal 2026-06-05'
+        trend: '震荡',
+        trendNote: '【V型反弹-单日+3,250元/吨】碳酸锂6/12 Mysteel：电池级169,700-174,000元/吨(+3,250)，工业级165,000-170,900(+3,250)，单日双双拉升+1.94-1.97%；6/12生意社：电池级167,000元/吨(月-3.47%)、工业级164,000(月-6.29%)+日涨1.23%；SMM 6/12美元报价：电池级$22,246.54/吨(+$564.11)，工业级$21,724.63(+$563.1)；含税现货突破$25,138.59/吨(X/Zuleta，YTD+47%、自2024 Grand Bottom +202%)；氢氧化锂电池级155,000元/吨(月-7%)；前期急跌后下游补库+矿端挺价共振反弹',
+        source: 'Mysteel 2026-06-12, 生意社 2026-06-12, SMM 2026-06-12, X/Zuleta+Brave New Coin 2026-06-12'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-06-08',
+    updated: '2026-06-15',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -433,8 +433,8 @@ const RESEARCH_DATA = {
         researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
         suppliers: ['中际旭创','新易盛','AOI','Coherent','AAOI','Hyper Photonix','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: '【光模块狂欢-6/2】Computex 2026 NVIDIA keynote后AI光模块全面起飞：AAOI单日+20%达$190(YTD+439%)、LITE+13%达$914(Q收入$665M +66% YoY+$400M OCS积压)、COHR+16%达$363(Q3 $1.81B +21% YoY)；【NVIDIA-COHR $20亿投资合作】NVIDIA向COHR战略投资$20亿(数据中心光互联深度绑定)；AAOI Q1营收$151.14M +51% YoY+完成首批800G量产交付给Tier1超大规模客户；Marvell Q1 FY27 DC+27% YoY+20+设计赢单；2030产能展望Lumentum 15×($9.0B)、Coherent 34×($4.3B)、Broadcom 8.2×($4.5B)；"1.6T之年"狂奔',
-        source: '24/7 Wall Street 2026-06-02, Yahoo Finance 2026-06-02, Marvell IR 2026-05-28'
+        trendNote: '【CPO时间线争议-6/9】NVIDIA vs SemiAnalysis就CPO量产时点争论引发光模块板块大跌：AAOI -17%、COHR -11%、AXT -13.68%、LITE -8%、GLW -7-9%；6/10快速反弹：AAOI +7%达$174(YTD+367%/+416%)、LITE +5%达$859(YTD+139%，Q3 FY26营收$808M +90% YoY+CPO/OCS积压$400M)、COHR +2%达$363(YTD+101%)、MRVL +5.3%；Lumentum Q3刷新历史营收纪录$808M；AAOI Q1营收$151.14M +51% YoY+数据中心$81.4M (×2)首批800G超大规模量产；CPO 2026非主营、800G+1.6T可插拔仍是当年主线；【LinkedIn 6/10】基本面未变(COHR数据中心+41% YoY)，纯获利了结轮动',
+        source: 'LinkedIn/Pulse 2026-06-10, 24/7 Wall Street 2026-06-10, Kucoin 2026-06-09'
       }
     ]
   }
@@ -1978,6 +1978,26 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-06-15',
+    version: 'v2.9',
+    author: '自动调研(周报)',
+    summary: '第14次周度调研更新：碳酸锂V型反弹+3,250元/吨(电池级169,700-174,000)；含税现货破$25,138.59/吨(YTD+47%)；【光模块CPO争议】6/9大跌AAOI-17%/COHR-11%随后6/10反弹AAOI+7%(YTD+416%)、LITE+5%(Q3$808M历史新高+90%YoY)；【Vertiv三连击】$3亿液冷产能翻倍+ThermoKey收购完成+PurgeRite NearZero流体服务；华为昇腾950白皮书公布(HBM2.0 144GB+4TB/s 带宽PR的2.5×)；AMD Advancing AI 2026锁定7月22-23日Moscone SF (Venice CPU+MI450量产首发)；AMD英国$20亿AI研发承诺；B200 vs B300分化(训练vs推理)',
+    changes: [
+      { category: '计算设备', detail: '【B200 vs B300分化-6/12 Ornn】训练用B300：+50%内存+50% FP4+2×网络但租金溢价50-100%；推理用B200：192GB+15-40%便宜更具性价比；行业模式：B300新训练+B200推理舰队+成本敏感部署', priceChange: '分化' },
+      { category: '计算设备', detail: '【白皮书-6/11】华为昇腾950白皮书公布：950DT 8月华为云上线+自研HiZQ 2.0 HBM 144GB+4TB/s(PR的2.5×)；DeepSeek将优先部署+8月推V4.2大模型', priceChange: '提前' },
+      { category: '计算设备', detail: '【HDC 2026-6/12-14】华为开发者大会东莞松山湖；鸿蒙7.0 6/13正式发布；Mate 90系列9月首发', priceChange: '事件' },
+      { category: '计算设备', detail: '【AMD英国-6/8】AMD承诺英国$20亿加速AI研发；OpenAI+Meta各6GW合约(共12GW)；MI400系列首年营收预测$72亿(占DC 25%)', priceChange: '$20亿' },
+      { category: '计算设备', detail: '【关键日期】Advancing AI 2026 7月22-23日Moscone SF：MI450量产+Venice CPU首发；BofA Vivek Arya目标$560(top CPU pick)；Supermicro Helios 72×MI455X+6th Gen EPYC单rack 3 AI EFLOPS Q3', priceChange: '7月22日' },
+      { category: '散热冷却', detail: '【Vertiv三连击-6/12】8-K披露$3亿资本投资液冷制造产能翻倍(Q4 2026)+完成ThermoKey S.p.A.收购(热交换技术)+PurgeRite NearZero流体管理服务发布', priceChange: '$3亿' },
+      { category: '电力系统', detail: '【V型反弹-单日+3,250】碳酸锂6/12 Mysteel：电池级169,700-174,000元/吨(+3,250)，工业级165,000-170,900(+3,250)；单日+1.94-1.97%', priceChange: '+3,250元/吨' },
+      { category: '电力系统', detail: '【美元报价】SMM 6/12电池级$22,246.54/吨(+$564.11)，工业级$21,724.63(+$563.1)；含税现货突破$25,138.59/吨(YTD+47%、Grand Bottom+202%)', priceChange: '$25K+' },
+      { category: '电力系统', detail: '氢氧化锂电池级155,000元/吨(月-7%)；前期急跌后下游补库+矿端挺价共振反弹', priceChange: '反弹' },
+      { category: '电力系统', detail: '【Jefferies-6/11】重申GE Vernova买入($940.97 +3.77% 5日)；Siemens 6/12 INR 3,563.00(+1.10%)', priceChange: '维持买入' },
+      { category: '网络设备', detail: '【CPO争议-6/9】NVIDIA vs SemiAnalysis CPO时间线争议触发光模块大跌：AAOI-17%/COHR-11%/AXT-13.68%/LITE-8%/GLW-7-9%；纯获利了结', priceChange: '-17%' },
+      { category: '网络设备', detail: '【快速反弹-6/10】AAOI +7%达$174(YTD+416%)、LITE +5%达$859(Q3 FY26$808M +90%YoY历史新高+$400M CPO/OCS积压)、COHR +2%达$363(YTD+101%, DC+41%YoY)；CPO 2026非主营，800G+1.6T可插拔仍是主线', priceChange: '反弹' }
+    ]
+  },
   {
     date: '2026-06-08',
     version: 'v2.8',
