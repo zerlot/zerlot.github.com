@@ -22,7 +22,7 @@ if (ctx) {
     data: {
       labels: [
         'GPT-5.4\nThinking', 'Claude\nFable 5', 'Gemini\n3.5 Flash', 'GPT-5', 
-        'GLM-5.1', 'MiMo-V2.5\nPro', 'GLM-5', 'GLM-4.7',
+        'GLM-5.2', 'MiMo-V2.5\nPro', 'GLM-5', 'GLM-4.7',
         'GPT-5\nmini', 'MiniMax\nM2.7', 'DeepSeek\nV4 Flash', 'GPT-5.4\nnano',
         'MiMo-V2\nFlash', 'DeepSeek\nV4 Pro'
       ],
@@ -94,6 +94,7 @@ const contextData = [
   { name: 'Kimi K2.6', tokens: 262100, cls: 'bar-cn' },
   { name: 'MiMo-V2-Flash', tokens: 262000, cls: 'bar-cn' },
   { name: 'MiniMax M3', tokens: 1000000, cls: 'bar-cn' },
+  { name: 'GLM-5.2', tokens: 1000000, cls: 'bar-cn' },
   { name: 'GLM-4.7', tokens: 200000, cls: 'bar-cn' },
   { name: 'GLM-5.1-HighSpeed', tokens: 200000, cls: 'bar-cn' },
   { name: 'DeepSeek V4', tokens: 1000000, cls: 'bar-cn' },
