@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 模型周报仪表盘 | 2026年6月18日</title>
+<title>AI 模型周报仪表盘 | 2026年6月25日</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#06b6d4"/><path d="M7 14h4l3-7 4 14 3-7h4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo-text">AI 模型周报</span>
         </div>
-        <span class="header-date">2026年6月18日 · 第25期</span>
+        <span class="header-date">2026年6月25日 · 第26期</span>
       </div>
       <div class="header-right">
         <span class="badge badge-live">本周更新</span>
@@ -35,25 +35,25 @@
           <div class="change-icon">🔴</div>
           <div class="change-body">
             <span class="change-tag tag-breaking">本周·关停</span>
-            <h3>Google：Veo 视频模型 6/30 关停；Imagen 4 8/17 关停</h3>
-            <p>Gemini 官方 deprecations 页面列出：veo-2.0/3.0 系列将于 2026年6月30日关停（迁移到 veo-3.1 preview 或企业 GA）；Imagen 4 系列将于 2026年8月17日关停（迁移到 gemini-3.1-flash-image）。</p>
+            <h3>Google：Gemini image preview 模型 6/25 关停（需迁移到 GA）</h3>
+            <p>Gemini 官方 deprecations 页面列出：gemini-3.1-flash-image-preview 与 gemini-3-pro-image-preview 将于 2026年6月25日关停，替代为 gemini-3.1-flash-image 与 gemini-3-pro-image。</p>
           </div>
         </div>
         <div class="change-card change-real">
           <div class="change-icon">🔴</div>
           <div class="change-body">
-            <span class="change-tag tag-breaking">本周·可用性变化</span>
+            <span class="change-tag tag-breaking">往期·可用性变化</span>
             <h3>Anthropic：Claude Fable 5 / Mythos 5 暂停访问（官方 release notes 记录）</h3>
             <p>Claude release notes 记录 2026年6月12日已暂停 Fable 5 与 Mythos 5 访问，并表示将尽快恢复；但未披露是否仅影响订阅端或也影响 API（需后续跟进官方说明）。</p>
           </div>
         </div>
 
         <div class="change-card change-real">
-          <div class="change-icon">🟢</div>
+          <div class="change-icon">🔵</div>
           <div class="change-body">
-            <span class="change-tag tag-new">本周·新模型</span>
-            <h3>智谱：GLM-5.2 发布（Hugging Face 官方博文）</h3>
-            <p>Z.ai 在 Hugging Face 发布 GLM-5.2 官方博文：主打“solid 1M context”，并公布 GPQA-Diamond、SWE-bench Pro 等多项基准结果，且提供 High/Max effort 控制（用于在能力/速度/成本之间权衡）。</p>
+            <span class="change-tag tag-new">本周·能力更新（Computer Use）</span>
+            <h3>Google：Gemini 3.5 Flash 上线 Computer Use（public preview）</h3>
+            <p>Gemini API changelog（2026/6/24）宣布 Gemini 3.5 Flash 支持 Computer Use 工具（public preview）：提供 intent-based actions、支持浏览器/移动/桌面环境，并加入可配置安全策略与更强 prompt injection 检测。</p>
           </div>
         </div>
         <div class="change-card change-real">
@@ -99,14 +99,14 @@
           <thead>
             <tr><th>声称</th><th>判定</th><th>分析</th></tr>
             <tr class="spin-real">
-              <td>Gemini 2.0 Flash/Flash-Lite “仍可继续使用”</td>
+              <td>Gemini 3.5 Flash “Computer Use 已公开可用（public preview）”</td>
               <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>Gemini API 官方 changelog 明确写明 gemini-2.0-flash / flash-001 / flash-lite / flash-lite-001 已于 2026/6/1 关停，并给出替代型号（gemini-3.5-flash / gemini-3.1-flash-lite）。</td>
+              <td>Gemini API 官方 changelog（2026/6/24）明确写明 Computer Use tool 在 Gemini 3.5 Flash 上进入 public preview，并描述支持浏览器/移动/桌面环境、可配置安全策略与 prompt injection 检测；属于可直接集成的能力更新。</td>
             </tr>
             <tr class="spin-real">
-              <td>Anthropic “Fable 5 / Mythos 5 是 Mythos 级能力，并显著更强”</td>
+              <td>Gemini image preview “仍可继续使用”</td>
               <td><span class="verdict verdict-real">✅ 实质</span></td>
-              <td>可核验的落地更新包括：新模型 ID 已公开（claude-fable-5 / claude-mythos-5），默认 1M context、单次最多 128k 输出，明确 $10/M input、$50/M output；同时文档列出 programmatic tool calling、memory tool、code execution 等可用能力。具体 SOTA/benchmark 强弱仍以官方与合作方口径为主，第三方统一评测待补。</td>
+              <td>Gemini API deprecations 页面明确给出 gemini-3.1-flash-image-preview 与 gemini-3-pro-image-preview 将于 2026/6/25 关停，并给出 GA 替代模型；属于明确的弃用时间线，不是营销话术。</td>
             </tr>
             <tr class="spin-real">
               <td>“Claude Fable 5 / Mythos 5 已全面稳定上线”</td>
@@ -318,7 +318,7 @@
               <td class="sticky-col model-name">Gemini 3.5 Flash</td>
               <td>Google</td><td>2026.05.19</td><td>Agent/编码（GA）</td>
               <td class="num">$2.00</td><td class="num">$12.00</td><td>1M</td>
-              <td>—</td><td>—</td><td>✅</td><td>❌</td><td>❌</td>
+              <td>—</td><td>—</td><td>✅</td><td>✅</td><td>❌</td>
               <td><span class="status status-new">新发布</span></td>
             </tr>
             <tr data-vendor="google">
@@ -572,10 +572,16 @@
             <strong>Claude Fable 5 / Claude Mythos 5</strong> 发布（1M context，$10/$50）
           </div>
         </div>
-        <div class="timeline-item timeline-current">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.06.12</div>
           <div class="timeline-content">
             <strong>Claude Fable 5 / Claude Mythos 5</strong> 暂停访问（恢复时间未披露）
+          </div>
+        </div>
+        <div class="timeline-item timeline-current">
+          <div class="timeline-date">2026.06.25</div>
+          <div class="timeline-content">
+            <strong>gemini-3.1-flash-image-preview</strong> / <strong>gemini-3-pro-image-preview</strong> 关停 → 替代: gemini-3.1-flash-image / gemini-3-pro-image
           </div>
         </div>
         <div class="timeline-item timeline-past">
@@ -620,7 +626,7 @@
             <strong>Gemini 2.0 Flash/Flash-Lite 系列</strong> 关停 → 替代: gemini-3.5-flash / gemini-3.1-flash-lite
           </div>
         </div>
-        <div class="timeline-item timeline-upcoming">
+        <div class="timeline-item timeline-past">
           <div class="timeline-date">2026.06.15</div>
           <div class="timeline-content">
             <strong>Claude Sonnet 4 / Opus 4</strong> API 退役 → 替代: claude-sonnet-4-6 / claude-opus-4-6
@@ -677,7 +683,7 @@
     <!-- Footer -->
     <footer class="footer">
       <p>数据来源：各厂商官方文档、API 定价页面、Azure OpenAI 退役公告、第三方基准测试平台</p>
-      <p>更新频率：每周四 · 下次更新：2026年6月25日</p>
+      <p>更新频率：每周四 · 下次更新：2026年7月2日</p>
     </footer>
   </main>
 </div>
