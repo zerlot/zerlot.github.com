@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-06-29',
+    updated: '2026-07-06',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -172,8 +172,8 @@ const RESEARCH_DATA = {
         researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14/hr，B300 $2.45-$18/hr）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: '【FT揭中国黑市再翻倍-6/24】Financial Times援引半导体经销商：DGX B300服务器中国地下市场过去6个月从400万人民币暴涨至800万+(~$1.1M)，已是美国零售价$400K的2.7倍；RTX 6000 Pro黑市最高至13万人民币；【AWS 7/1全面涨价20%-6/26】AWS官宣7月1日起EC2 Capacity Block 20%涨幅：P6-B300 $14.04/hr、P6-B200 $12.355/hr、P5 $5.191/hr(US)、P5e $5.97/hr、P5en $6.865/hr(US)；【云价B300中位下行】Cloud GPUs/AIMultiple 6/27最新：B300 median $7.92(Vast.ai $5.44最低/Oracle $18最高)、B200 median $6.11；GB300刚需 cloud-gpus.com 6/27：$13.31/hr 2 providers；【Reflection独享GB300-6/22】Reflection AI获GB300即刻独家访问权(NVIDIA合作框架)；【MLPerf 6.0-6/17】GB300刷新7项全部基准；MSI GB300工作站CDW $106,408-$125,186；ASUS GB300台式机$100,000；RTX PRO 6000 Blackwell $8,565→$13,250(+54%)',
-        source: 'FT/chosun 2026-06-24, FT/citforum 2026-06-24, Yahoo/AWS 2026-06-26, AIMultiple 2026-06-27, cloud-gpus.com 2026-06-27, GetDeploying 2026-06-25, Roic AI/Reflection 2026-06-22'
+        trendNote: '【Anthropic Claude跑GB300-6/29】Nvidia官宣Anthropic的Claude在Microsoft Azure Foundry上跑NVIDIA GB300 systems，合作规模超普通客户，锁定下一AI收入层级；【AWS 7/1涨价20%生效】P6-B300 $14.04/hr、P6-B200 $12.355/hr、P5 $5.191(US)、P5e $5.97、P5en $6.865(US)；【Voltage Park更名Lightning AI-7/5】B200/B300仅contract only+GB200/GB300联系销售；Spheron B200 SXM6 $9.30/hr, spot $5.34/hr(H100 SXM $1.99/hr无InfiniBand)；【Bit Origin买$11M B300 stack-6/30】Bit Origin收购$1100万NVIDIA Blackwell B300 AI Stack(马来西亚部署)；【NVIDIA股价】NVDA 7/2收$194.83(-1.39%)、6/29收$194.97(距$236.54 52周高点-17.57%)；【FT揭中国黑市再翻倍-6/24】DGX B300中国黑市6个月从400万→800万+人民币($1.1M，美零售$400K的2.7倍)；【AIMultiple 6/27】B300 median $7.92/Oracle $18最高；cloud-gpus.com 6/27 GB300 $13.31/hr 2 providers；MSI GB300工作站CDW $106,408-$125,186',
+        source: 'Nvidia/Seeking Alpha 2026-06-29, Yahoo/AWS 2026-06-26, Spheron 2026-07-05, TheGlobeAndMail/Bit Origin 2026-06-30, MarketScreener/NVDA 2026-07-02, FT/chosun 2026-06-24'
       },
       {
         name: 'AMD MI300X 8卡服务器',
@@ -181,8 +181,8 @@ const RESEARCH_DATA = {
         researchPrice: '约115–175万元（$10K–$15K/卡）',
         suppliers: ['Dell XE9680', 'HPE', 'Supermicro AS-8125GS'],
         trend: '平稳',
-        trendNote: '【MI400全系发布-6/24 DCD】AMD公布完整MI400产品线(MI455X旗舰+MI440X中端+MI430X)，2026下半年商用上市；【Helios双宽机柜】首次亮相机柜级双宽AI系统，72×MI455X+EPYC Venice CPU+3 AI EFLOPS/rack；【Oracle 50,000颗MI450集群-6/24】Oracle宣布部署5万颗AMD Instinct MI450 GPU集群；【OpenAI 6GW合作-6/24】AMD向OpenAI供应6GW GPU，1GW部署2026年启动；【$839亿AI赌注-6/25】MI400被誉为AMD AI芯片回归之作；【MI350发布-6/24】MI350X $25K/卡稳定开卖；【Meta 6GW Q2-6/18】Q2 AI DC单季营收$5.8B、Meta 6GW MI450/$600亿5年合约H2 2026交付；【Citi目标$575】6/12升级买入；MI500 2027目标比MI300X提升1000x；【AMD/Intel ACE替代AMX-6/23】CPU指令架构标准化',
-        source: 'DCD/MI400 2026-06-24, DCD/Oracle MI450 2026-06-24, DCD/OpenAI 6GW 2026-06-24, readthesignal 2026-06-25, Slicast/ACE 2026-06-23, Barchart/Citi 2026-06-17'
+        trendNote: '【Cantor目标价$700-6/30】Cantor Fitzgerald升级AMD目标价至$700(近90%上行)；【AMD股价大幅波动-7月首周】7/2跌5.73%至$464.60、7/5跌6%(创纪录高点回调)；Wild趋势：AMD forward earnings近NVIDIA 3倍(市场分歧极大)；【Advancing AI 7/22-23 Moscone SF确认】主题演讲7/23 Lisa Su亲讲，MI455X vs NVIDIA Vera Rubin对决；Oracle Q3 2026部署50,000卡MI450首发；【MI455X云可用性】2027年初大规模上量；【MI400全系发布-6/24 DCD】MI455X旗舰+MI440X+MI430X，2026下半年商用；Helios双宽机柜72×MI455X+EPYC Venice CPU+3 EFLOPS/rack；【Oracle 50,000 MI450】6/24确认部署；【OpenAI 6GW-6/24】1GW 2026启动；【Meta 6GW Q2-6/18】Q2 AI DC营收$5.8B、Meta $600亿5年合约H2 2026交付；【Versal Premium Gen 2 MoP SoCs】AMD 7/1扩展AI版图；MI350X $25K/卡稳定；MI500 2027目标比MI300X提升1000x',
+        source: 'Boerse Express/Cantor 2026-06-30, Tradingkey 2026-07-05, Yahoo Finance/AMD 2026-07-01, TechTimes/Helios vs Rubin 2026-06-30, DCD/MI400 2026-06-24, Seeking Alpha/AMD 2026-07-02'
       },
       {
         name: 'AMD MI350X/MI355X 8卡服务器',
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-06-29',
+    updated: '2026-07-06',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -277,8 +277,8 @@ const RESEARCH_DATA = {
         researchPrice: '进口约$500-800/kW(CDU设备本身)；含安装约$2-4K/kW；国产约1100元/kW',
         suppliers: ['Vertiv（维谛）','CoolIT(Ecolab收购)','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
         trend: '上升',
-        trendNote: '【Vertiv 6/26单日-6.59%-6/27】VRT股价6/22 $357.93顶峰→6/26 $304.10单周-4.48%、6/26单日-6.59%；市值$116.81B；AI股+数据中心估值再评估引发板块抛售(GE Vernova/Eaton/Quanta同跌)；【但分析师持续看多】Bernstein 6/10起首次覆盖给Outperform/$416目标、TD Cowen $387、共识$326.39/Strong Buy；股价仍12月+138.55%、YTD +87.46%；P/E 76.41，季度股息$0.0625(6/25支付)；【Vertiv浸没式Pod-6/24 DCD】Vertiv正式发布Immersion Cooling Pod；【全球浸没式生态扩张-6/24】(1)UAE-based XDS启动1MW浸没式DC；(2)韩国S-Oil+GST合作浸没式系统；(3)Dataprana启动30MW浸没式加密DC(Texas)；(4)EticaAG发布机柜级浸没式电池系统；(5)燃料商Infinium发布浸没式冷却液；【GRC新品-6/24】GRC发布边缘部署CDU+冷却机柜；【浸没式定价基准】单相浸没槽$5K-15K/42U；两相turnkey $22K-38K/42U；OPEX节40-60%能耗+25-35%人工；【36氪测算】1GW液冷总投资$14.75亿：冷却塔$0.9亿+冷水机$3.6亿+CDU $4.5亿+CRAH $5.75亿',
-        source: 'Quiver Quantitative 2026-06-27, MarketBeat/VRT 2026-06-28, DCD/Vertiv Pod 2026-06-24, DCD/XDS+S-Oil+Dataprana+EticaAG+GRC 2026-06-24, Tickeron/Bernstein 2026-06-26'
+        trendNote: '【Ecolab完成CoolIT收购-7/2】Ecolab正式关闭CoolIT收购交易，扩展AI冷却平台，目标全球高科技业务2030年达$40亿；【Vertiv Bernstein $416重申-7/1】Bernstein Varun Govindaraj维持Buy评级+$416目标；平均券商推荐ABR 1.46(接近Strong Buy)；【VRT一周波动】7/1一度冲$328.44(+7%)但成交量仅60日均量33百分位(缺机构吸筹)；7/2跌至$300.53(-3.51%单日/-1.13% 5日/-7.22%月)；市值$115.44B/EPS $3.49/P/E 73.67；【VRT DCF估值$378】17.7%上行空间；分析师最高目标$416/共识$326.39；【2026指引】Vertiv 2026营收指引$135亿(有机+28-31%)、EPS $6.20+43%YoY(激进管理层)；【NN Inc获NVIDIA液冷订单-6/29】NN Inc宣布获NVIDIA数据中心液冷产品重大新订单；【Trane HSWE磁悬浮冷水机-7/2】Trane发布磁轴承冷水机推进亚太DC冷却；【韩国科技/能源巨头进军DC冷却-7/2】Pulse报道韩国科技+能源巨头目标DC冷却市场；【CDU水泵市场】MarketsandMarkets 6/29：CDU水泵市场2032达$18.4亿；Precedence Research CDU水泵2026-2033 CAGR 18%；【D2C冷却液市场】2032达$13.0亿/CAGR 38.6%；【Vertiv浸没式Pod-6/24】Immersion Cooling Pod发布；UAE-XDS 1MW/S-Oil+GST/Dataprana 30MW Texas/EticaAG/GRC新品扩张；单相浸没槽$5K-15K/42U两相$22K-38K/42U',
+        source: 'Yahoo/Ecolab CoolIT 2026-07-02, TheGlobeAndMail/Bernstein VRT 2026-07-01, Yahoo/VRT DCF 2026-07-02, Yahoo/VRT ABR 2026-07-01, Businessinsider/NN Inc 2026-06-29, Storm/Trane HSWE 2026-07-02, Pulse/Korea 2026-07-02, MarketsandMarkets 2026-06-29, Precedence 2026-07-03'
       },
       {
         name: 'NVL72机柜液冷组件套件',
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-06-29',
+    updated: '2026-07-06',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -328,8 +328,8 @@ const RESEARCH_DATA = {
         researchPrice: '国产400–700万元/台；外资800–1400万元/台；自2020年价格上涨60-80%',
         suppliers: ['特变电工','中国西电','保变电气','ABB/日立能源','西门子','许继电气'],
         trend: '上升',
-        trendNote: '【燃气轮机3年涨300%-6/24 24/7 Wall Street】GE Vernova燃气轮机价格累计涨300% over 3 years，订单售罄至2029年；【微软+Chevron 7台-6/24 CNBC】微软买7台GE Vernova燃气轮机用于Texas Chevron合作AI DC；【股价$1,090.74-6/25】Ad-hoc-news：GE Vernova扩张燃机产能应对AI需求，股价持稳$1,050+；【Quang Trach II订单-6/23】GE Vernova获越南EVN 2台9HA.02燃气轮机+H78发电机订单；HA全球累计运营4M小时(里程碑)；【乌克兰DTEK合作-6/26】GE Vernova与DTEK签MoU推进重大燃气电厂项目；【Sina/新浪-6/28】GE Vernova涡轮机价格暴涨300% 人工智能电力热潮显现；【Jefferies 6/11重申买入】GE Vernova $940.97(+3.77% 5日)；H级燃机累计400万商业运行小时；SpaceX $28亿移动燃机AI DC实证；GE Vernova燃机积压100 GW+Siemens 80 GW；BlackRock预美DC电力2025 19 GW→2030 194 GW(CAGR 59.2%)；GE Vernova Q1订单+80%YoY，2026营收指引$445-455亿；EIG预警$8万亿AI基建押注电网无法承载',
-        source: '24/7 Wall Street 2026-06-24, CNBC/Microsoft 2026-06-24, Ad-hoc-news 2026-06-25, Benzinga/Vietnam 2026-06-23, dtek.com 2026-06-26, finance.sina 2026-06-28, MarketScreener/Jefferies 2026-06-11'
+        trendNote: '【CNBC目标价$1,300-7/3】Club给GE Vernova买入等级+目标$1,300(隐含+14%上行)；GEV不只燃气轮机赢AI热潮；【Russell Top 50入榜+7.3%涨-7/2】Yahoo：GEV因入选Russell Top 50和AI电力订单飙升7.3%；【股价$1,107.98-6/30 CNBC】GEV +5.47(+0.50%)/+57.34(+5.49%)；6/30 +7.3%；【H1 2026红火】GEV上半年表现极佳，下半年动能能否延续；【Seeking Alpha 6/29】GEV显著上行空间但容不下失误；【溢价估值-7/1】GEV当前处于premium valuation，买入/持有/卖出讨论；【燃气轮机3年涨300%-6/24 24/7 Wall Street】订单售罄至2029年；【微软+Chevron 7台-6/24 CNBC】微软买7台GE Vernova燃气轮机用于Texas Chevron合作AI DC；【越南EVN订单-6/23】2台9HA.02+H78发电机；HA全球累计4M小时；【乌克兰DTEK合作-6/26】重大燃气电厂MoU；【Jefferies 6/11重申买入】$940.97(+3.77% 5日)；SpaceX $28亿移动燃机AI DC实证；GE Vernova燃机积压100 GW+Siemens 80 GW；BlackRock预美DC电力2025 19 GW→2030 194 GW(CAGR 59.2%)；GE Vernova Q1订单+80%YoY，2026营收指引$445-455亿；EIG预警$8万亿AI基建押注电网无法承载',
+        source: 'CNBC/Club $1300 2026-07-03, Yahoo/GEV Russell 2026-07-02, TheGlobeAndMail/H1 2026-07-01, Seeking Alpha 2026-06-29, CNBC quotes 2026-06-30, 24/7 Wall Street 2026-06-24, CNBC/Microsoft 2026-06-24'
       },
       {
         name: '干式变压器 2500kVA',
@@ -364,8 +364,8 @@ const RESEARCH_DATA = {
         researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
         trend: '震荡',
-        trendNote: '【MTD暴跌-13.48%-6/26 生意社】碳酸锂(电池级)基准价154,000元/吨，本月初178,000→本月-13.48%；【Mysteel 6/26】电池级146,000-156,100元/吨(日跌4,200)、优质电池级147,400-156,100(日跌4,200)、工业级142,500-152,800(日跌4,200)；【SMM 6/26美元价】Battery-Grade Index $19,811.68/吨(-$514.97)、电池级$19,088-20,517(中位$19,802.46/-$555.96)、工业级$18,569-19,997(中位$19,283.05/-$556.68) - 跌破$20K心理关口；【期货LC2609 6/29】145,000-152,880人民币/吨(开149,000、收150,220)；【Brave New Coin 6/24】Zuleta数据：现货-6.13%至157,000元/吨($21,728)；广期所主力跌2.38%结算161,740；矿端复产传闻引发抛压；Mysteel活跃合约跌6.58%但物理级仅-0.21%(168,800元/吨)；【氢氧化锂6/26】99%含量湖北190元/公斤(-147,810周环比)、工业级109,600元/吨(-38,400)、赣锋155,000(+7,000)；【Fastmarkets 6/26】Li2CO3 CIF中日韩USD/kg官方报价；【利空主导】枧下窝复产+09合约连续跌+多头止盈',
-        source: '生意社/finance.sina 2026-06-26, m.mysteel.com 2026-06-26, www-old.metal.com/Lithium 2026-06-26, Brave New Coin/Zuleta 2026-06-24, tsl.100ppi 2026-06-26'
+        trendNote: '【V型反弹-6/29期货+8.36%】LC2609合约6/29开149,000元/吨、收163,360元/吨、单日+8.36%，日内减仓12,132手至42.5万手；SMM现货基差-470元/吨(电碳均价-期货)；【Gate.com 6/30】电池级碳酸锂涨6,150元/吨至155,950元/吨(单日+4%)；【Mysteel 6/30 SMM】电池级145,500-158,000元/吨(-750)、工业级141,500-154,000(-750)、6%锂精矿$2,180/吨；【生意社 7/1基准价】电池级156,000元/吨、工业级153,000元/吨(5日+7.33%)；【期货7/3】LC2609收168,800元/吨(+2.4%)；【SMM美元价7/3反弹】Battery-Grade Index $21,471.04/吨(+$360.63)、电池级$21,076.57-21,922.24(中位$21,499.4/+$373)、工业级$20,556.16-21,401.83(中位$20,978.99/+$372.63)；【里程碑7/3】广期所碳酸锂期货及期权正式引入境外交易者，中国定价开启全球化；2026以来现货碳酸锂涨幅超67%、期货突破20万元/吨(涨超62%)；【Reuters 7/1】现货已到部分储能项目盈亏平衡点，价格3倍去年中期；【储能SMM 7/3】电池级162,000-168,500元/吨(+2,750)、均价165,250；【氢氧化锂6/29】粗颗粒电池级+4,750至143,750元/吨；【Brave New Coin 6/30】期货+3.34%至153,920，现货-0.46%至$19,696',
+        source: '新浪/finance.sina LC2609 2026-06-30, Gate.com 2026-06-30, Mysteel/SMM 2026-06-30, 100ppi 2026-07-01, 新浪/期货境外 2026-07-03, www-old.metal.com/Lithium 2026-07-03, Reuters 2026-07-01, energy-storage.smm 2026-07-03, Brave New Coin 2026-06-30'
       },
       {
         name: '巴拿马架构DC电源 800VDC',
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-06-29',
+    updated: '2026-07-06',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -433,8 +433,8 @@ const RESEARCH_DATA = {
         researchPrice: '1.6T OSFP/QSFP-DD约$1300-1500(规模量产后)，预测2年内降至$1100；硅光子占比60%',
         suppliers: ['中际旭创','新易盛','AOI','Coherent','AAOI','Hyper Photonix','C-Light','E-Power/Raytel'],
         trend: '下降',
-        trendNote: '【AI光通信集体重挫-6/26】LITE 6/26单日-9-10%、AAOI周内-15%、COHR亦下跌；触发因素：NV要求光模块/PCB压价10%传闻+1.6T下修传言+硅光新进入者(SIVE)估值重塑；【NVIDIA官方辟谣压价-6/23】英伟达投资者关系部正式回应：无统一集采限价、年度框架按原商务价；行业正常技术降价：2026年800G约-10%、1.6T约-10%+(规模效应)；前期市场恐慌"$920压价导致毛利率腰斩"系误读；【准确ASP 6/26 BCC】1.6T光模块单价~$700、800G单价~$350(海外CSP上修需求)；【NPO/NVIDIA上修-6/26】NVIDIA NPO需求指引上修至2500万颗；全球NPO光引擎市场2025年RMB 142亿($19.7亿)→2027年RMB 870亿($120.8亿)，CAGR 19.3%；【出货预测大幅扩张】2026全球光模块出货7000万只(800G+：5200万)：800G 4157万只/1.6T 1119万只；中际旭创1.6T从2025年75万→2026年805万(+10×)；新易盛23万→302万；【NVIDIA Quantum-X CPO实装】Lambda已在机柜级部署Quantum-X Photonics Q3450-LD样机(4U 144×800G 115.2Tb/s)；【InP晶圆涨价250%】中国出口管制后6英寸InP从~$2K涨至~$5K；【AAOI 6英寸升级】Texas工厂4→6英寸晶圆，2H 2026新产能投产，2027月产70万只(800G+1.6T)；【1.6T PCB价值升级】单板$16-22→$40-55(+2.5×)；800G DSP $50-60；1.6T DSP接近$200/颗',
-        source: 'cmnews/LITE 2026-06-26, finance.sina/LITE 2026-06-26, X/dmjk001(NV辟谣) 2026-06-23, BCC.Global Media 2026-06-26, finance.sina/光模块 2026-06-26, Cryptopolitan/AAOI 2026-06-26, blogs.itmedia/Lambda 2026-06-26',
+        trendNote: '【AI光通信7/2再度重挫-7/3 247WallSt】AAOI 7/2单日暴跌17%、COHR/LITE跌10%；光子股集体重估(Corning Glass Bridge引爆CPO卖压6/30 PTT)；【AAOI 6/30反弹+7-10%】盘中$149.27(+10%)/$145.22(+7.02%) - 低档KD金交叉；连续回档后强反弹；【Marvell Ara T™ 1.6T PAM4 DSP with TRO-COMPUTEX 2026】Marvell推首款1.6T+800G相干DSP(2nm)+首款1.6T PAM4 DSP(3nm)含TRO(Transmit Retimed Optics)节能大幅省面积；【白皮书1500万只/45亿$-6/30 新浪】《光模块产业迎黄金窗口期》：2026全球1.6T光模块出货1500万只、市场45亿美元；2027年3.2T规模商用；新建万卡智算中心必须标配800G/1.6T强制标准；2026全球光模块市场预计突破3950亿元；【SuperX AI光通信合资-7/1】SuperX与TFC合建全球AI光通信核心生态；【NVIDIA/Anthropic Claude在GB300上-6/29】Nvidia官方宣布Anthropic Claude部署NVIDIA GB300@Azure Foundry；【机构：CPO/NPO/OIO技术路线尚未收敛-6/30】封装级光连接价值空间打开，但技术路线未完全收敛；【NPO/NVIDIA上修25M-6/26】需求指引上修2500万颗；NPO市场2025 $19.7亿→2027 $120.8亿(CAGR 19.3%)；【出货预测】2026全球光模块7000万只：800G 4157万只/1.6T 1119万只；中际旭创1.6T 75万→805万(+10×)、新易盛23万→302万；【InP晶圆涨250%】6英寸从$2K→$5K；【AAOI Texas 6英寸2H2026产能】2027月产70万只；【1.6T ASP】~$700/单只，800G ~$350；1.6T PCB $40-55(+2.5×)；1.6T DSP接近$200',
+        source: '247WallSt/photonics selloff 2026-07-02, cmoney/AAOI +10% 2026-06-30, finance.sina/AAOI +7% 2026-06-30, Facebook/Marvell ARA T 2026-06-30, finance.sina/光模块黄金 2026-06-30, StockTitan/SuperX 2026-07-01, Seeking Alpha/Anthropic 2026-06-29, 163/CPO NPO OIO 2026-06-30, PTT/Corning卖压 2026-06-30, BCC 2026-06-26',
         source: '21jingji 2026-06-18, 财联社 2026-06-21, 大摩研报 2026-06-20, Radiant 2026-06-16, TechInsights 2026-06-20, ZAKER 2026-06-21, jiepei 2026-06-16'
       }
     ]
@@ -1979,6 +1979,43 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    date: '2026-07-06',
+    version: 'v3.2',
+    author: '自动调研(周报)',
+    summary: '第17次周度调研更新：【锂价V型反弹】6/29期货LC2609+8.36%至163,360元/吨；7/3收168,800(+2.4%)；生意社基准7/1 156,000元/吨(5日+7.33%)；SMM美元价7/3反弹至$21,471.04(+$360.63)；碳酸锂期货7/3正式引入境外交易者，中国定价开启全球化；【AMD Cantor目标$700】Cantor Fitzgerald 6/30升级AMD目标价至$700(+90%上行)；7月首周股价暴跌-回调6%；Advancing AI 7/22-23 Moscone SF确认对决NVIDIA Vera Rubin；【NVIDIA GB300+Anthropic Claude-6/29】Azure Foundry上跑Anthropic Claude超普通客户规模；【Ecolab完成CoolIT收购-7/2】扩展AI冷却平台目标2030年$40亿；【GE Vernova CNBC目标$1,300】Russell Top 50入榜+7.3%涨(6/30)；股价$1,107.98；【AI光通信7/2再度重挫】AAOI单日-17%、COHR/LITE -10%；【Marvell Ara T 1.6T DSP+TRO】首款1.6T PAM4 DSP with TRO 3nm；【白皮书1500万只/45亿$】2026全球1.6T光模块出货1500万只、市场45亿美元；【NN Inc获NVIDIA液冷订单】Voltage Park更名Lightning AI(B200/B300仅contract only)',
+    changes: [
+      { category: '计算设备', detail: '【Anthropic Claude跑GB300-6/29】Nvidia官宣Anthropic Claude在Microsoft Azure Foundry部署NVIDIA GB300 systems，合作规模超普通客户，锁定下一AI收入层级', priceChange: 'GB300落地' },
+      { category: '计算设备', detail: '【AMD Cantor目标$700-6/30】Cantor Fitzgerald升级AMD目标价至$700(近90%上行空间)，最高目标价AMD分析师给出', priceChange: '$700目标' },
+      { category: '计算设备', detail: '【AMD暴涨触及历史新高后回调】7/2跌5.73%至$464.60、7/5跌6%；Wild趋势：AMD forward earnings近NVIDIA 3倍(市场分歧极大)', priceChange: '$464.60' },
+      { category: '计算设备', detail: '【AMD Advancing AI 7/22-23 Moscone SF确认】主题演讲7/23 Lisa Su亲讲，MI455X vs NVIDIA Vera Rubin对决；Oracle Q3 2026部署50,000卡MI450首发', priceChange: '主题7/23' },
+      { category: '计算设备', detail: '【Voltage Park更名Lightning AI-7/5】B200/B300仅contract only；GB200/GB300联系销售；Spheron B200 SXM6 $9.30/hr、spot $5.34/hr；H100 SXM $1.99/hr无InfiniBand', priceChange: '$9.30/hr' },
+      { category: '计算设备', detail: '【Bit Origin买$11M B300 stack-6/30】Bit Origin收购$1100万NVIDIA Blackwell B300 AI Stack(马来西亚部署)', priceChange: '$11M订单' },
+      { category: '计算设备', detail: '【AMD Versal Premium Gen 2 MoP SoCs-7/1】AMD扩展AI版图新的Versal Premium Gen 2 MoP SoCs', priceChange: '新品发布' },
+      { category: '散热冷却', detail: '【Ecolab完成CoolIT收购-7/2】Ecolab关闭CoolIT交易，扩展AI冷却平台，目标2030年高科技业务$40亿；DC液冷市场新玩家', priceChange: '收购完成' },
+      { category: '散热冷却', detail: '【Vertiv Bernstein $416重申-7/1】Bernstein Varun Govindaraj维持Buy评级+$416目标；ABR 1.46/共识$326.39；DCF估值$378(+17.7%上行)', priceChange: '$416' },
+      { category: '散热冷却', detail: '【VRT一周波动-7/2】7/1一度冲$328.44(+7%)但成交量仅60日均量33百分位；7/2跌至$300.53(-3.51%单日/-1.13% 5日/-7.22%月)；市值$115.44B', priceChange: '$300.53' },
+      { category: '散热冷却', detail: '【VRT 2026指引】营收$135亿(有机+28-31%)、EPS $6.20+43%YoY；EPS Zacks Consensus $6.36/+51.43% vs 2025', priceChange: '+43% EPS' },
+      { category: '散热冷却', detail: '【NN Inc获NVIDIA液冷订单-6/29】NN Inc宣布获NVIDIA数据中心液冷产品重大新订单', priceChange: '新订单' },
+      { category: '散热冷却', detail: '【Trane HSWE磁悬浮冷水机-7/2】Trane发布HSWE Magnetic Bearing Chiller推进亚太DC冷却', priceChange: '新产品' },
+      { category: '散热冷却', detail: '【韩国科技/能源巨头进军DC冷却-7/2】Pulse报道韩国科技+能源巨头目标DC冷却市场', priceChange: '新玩家' },
+      { category: '散热冷却', detail: '【CDU水泵市场】MarketsandMarkets 6/29：CDU水泵市场2032年达$18.4亿；Precedence CAGR 18%(2026-2033)', priceChange: '$18.4亿/2032' },
+      { category: '散热冷却', detail: '【D2C冷却液市场2032达$13.0亿】CAGR 38.6%；液对空CDU全球市场CAGR 18.0%(2026-2032)', priceChange: 'CAGR 38.6%' },
+      { category: '电力系统', detail: '【锂价V型反弹-6/29】LC2609合约+8.36%至163,360元/吨；日内减仓12,132手；SMM现货基差-470元/吨', priceChange: '+8.36%' },
+      { category: '电力系统', detail: '【生意社 7/1基准】电池级碳酸锂156,000元/吨(5日+7.33%)、工业级153,000元/吨；Gate.com 6/30电池级+6,150至155,950(单日+4%)', priceChange: '156,000' },
+      { category: '电力系统', detail: '【期货7/3】LC2609收168,800元/吨(+2.4%)；SMM美元价7/3反弹至Battery-Grade Index $21,471.04/吨(+$360.63)、电池级中位$21,499.4/+$373', priceChange: '+$360.63' },
+      { category: '电力系统', detail: '【里程碑7/3】广期所碳酸锂期货及期权正式引入境外交易者，中国定价开启全球化；2026以来现货涨超67%、期货涨超62%', priceChange: '境外开放' },
+      { category: '电力系统', detail: '【Reuters 7/1】现货已到部分储能项目盈亏平衡点，价格3倍去年中期；电池金属复苏遇EV市场停停走走', priceChange: '3×基准' },
+      { category: '电力系统', detail: '【GE Vernova CNBC目标$1,300-7/3】Club给买入等级+目标$1,300(隐含+14%上行)；GEV不只燃气轮机赢AI热潮；Q4 India结果Q4 Results 2026', priceChange: '$1,300' },
+      { category: '电力系统', detail: '【GEV Russell Top 50入榜+7.3%-7/2】Yahoo：GEV因入选Russell Top 50和AI电力订单飙升7.3%；股价$1,107.98(6/30)/+5.47/+0.50%', priceChange: '+7.3%' },
+      { category: '网络设备', detail: '【AI光通信7/2再度重挫】AAOI单日-17%、COHR/LITE跌10%；Corning Glass Bridge引爆CPO卖压(6/30 PTT)；估值再度重置', priceChange: '-10~-17%' },
+      { category: '网络设备', detail: '【AAOI 6/30反弹+7-10%】盘中$149.27(+10%)/$145.22(+7.02%) - 低档KD金交叉；连续回档后强反弹', priceChange: '+7-10%' },
+      { category: '网络设备', detail: '【Marvell Ara T™ 1.6T DSP+TRO-COMPUTEX 2026】Marvell推首款1.6T+800G相干DSP(2nm)+首款1.6T PAM4 DSP(3nm)含TRO(Transmit Retimed Optics)节能省面积', priceChange: '新旗舰' },
+      { category: '网络设备', detail: '【1.6T白皮书1500万只/45亿$-6/30 新浪】2026全球1.6T光模块出货1500万只、市场45亿美元；2027年3.2T规模商用；万卡智算中心必须标配800G/1.6T；2026全球光模块市场突破3950亿元', priceChange: '1500万只' },
+      { category: '网络设备', detail: '【SuperX AI光通信合资-7/1】SuperX与TFC合建全球AI光通信核心生态', priceChange: '新合资' },
+      { category: '网络设备', detail: '【CPO/NPO/OIO技术路线未收敛-6/30】机构报告：封装级光连接价值空间打开，但技术路线未完全收敛，2026英伟芯NPO-CPO-OIO全阶梯技术适配', priceChange: '技术观察' }
+    ]
+  },
   {
     date: '2026-06-29',
     version: 'v3.1',
