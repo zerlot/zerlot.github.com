@@ -137,7 +137,7 @@ function getSystemTotals() {
 const RESEARCH_DATA = {
   compute: {
     title: '计算设备',
-    updated: '2026-07-20',
+    updated: '2026-07-27',
     items: [
       {
         name: 'NVIDIA GB200 NVL72 超节点',
@@ -172,7 +172,7 @@ const RESEARCH_DATA = {
         researchPrice: '约325–370万元（OEM $35K-$50K/卡；B200云租赁$1.71-$14/hr，B300 $2.45-$18/hr）',
         suppliers: ['Dell', 'HPE', 'Supermicro', '联想', '浪潮'],
         trend: '上升',
-        trendNote: '【GPU Finder B300 6个月低点-7/19】gpufinder.dev汇总5家云商：B300 on-demand低$6.94/hr(Runpod Community)/spot低$4.30/hr(Nebius)/spot中位$4.23/hr(39%低于on-demand)；6月区间$6.94-$7.39/hr(近6个月低点、月度-6%)；AWS p6-b300.48xlarge最贵$142.42/hr(8 GPUs)/spot $33.85-$43.44；【GridStackHub 7/15】B300大范围：Corvex $4.48/hr(最低)、CoreWeave HGX_B300_x8 spot $4.48/hr($35.84 8-node)、Lambda $4.95/hr、Shadeform $4.95/hr、TensorDock $4.99/hr；【GPUSmith 7/15硬件价】单颗B300 $45,000-$50,000/单颗B200 $35-40K/H100 $18-22K；DGX B300(8卡) $300-500K；DGX Station GB300(桌上)$80-125K；GB300 NVL72满机柜~$3-4M；【Neysa 7/15】B200 5 PFLOPS FP8/$37.5K/$7,500每PFLOP、B300 5 PFLOPS FP8/$47.5K/$9,500每PFLOP(标准FP8精度B200每美元赢)；【Verda 7/17】B200 $6.11/hr、GB300 $8.62/hr；【Oracle 7/19】GB200 $16/hr、GB300 $18/hr、HGX B300 $15/hr(最贵)；【AIMultiple 7/16】B300 median $8.23、B200 median $6.25；【价格趋势】GB300 6个月内已从$13.31/hr峰跌至$6.94/hr在线floor(-48%)',
+        trendNote: '【GPU Finder 7/22 B300新低】Verda $7.50/hr on-demand最低/$2.63/hr spot最低；Nebius $7.85/hr on-demand/spot $4.30；AWS p6-b300.48xlarge $142.42/hr(8 GPUs)；Cheapest confirmed in-stock Nebius $7.85/hr；【Cloud GPUs 7/24】GB300 on-demand $13.31/hr/spot $3.02/reserved $8.32；B300 on-demand $12.38/hr/spot $2.63/reserved $7.24；AMD MI355X $5.60/hr(2 providers)；【GPUaaS.com】B300 median $8.23-$9.16/hr；wholesale $7-$8.50；36-mo reservation $3.27/hr；【NVIDIA Vera Rubin NVL72已发货 7/21】Google/Azure/Oracle/CoreWeave首批交付，Chosun 7/22报道；10x perf/watt vs Grace Blackwell；VR200 NVL144整柜~$5-7M；【价格阶梯】GB300 on-demand >B300 on-demand>MI355X；spot市场B300降至$2.63最低点',
         source: 'gpufinder.dev/B300 2026-07-19, GridStackHub 2026-07-15, GPUSmith/GPU Price Index 2026-07-14, Neysa/GB300 2026-07-15, Compute Prices/Verda 2026-07-17, Compute Prices/Oracle 2026-07-19, AIMultiple 2026-07-16, cloud-gpus.com 2026-07-19'
       },
       {
@@ -181,7 +181,7 @@ const RESEARCH_DATA = {
         researchPrice: '约115–175万元（$10K–$15K/卡）',
         suppliers: ['Dell XE9680', 'HPE', 'Supermicro AS-8125GS'],
         trend: '平稳',
-        trendNote: '【Q1 2026数据中心营收$5.8B-7/14 DCD】AMD Q1 2026数据中心业务营收$5.8B(创单季新高)，预计到2030年服务器CPU收入达$12B/年；【分析师谨慎-7/13 TechTimes】TechTimes 7/13报道：AMD股价接近历史高点但Zen 6发布和Q2财报前分析师保持谨慎；共识目标价约$516(当前股价上方)；反弹遇分析师"警戒墙"；【Advancing AI 7/22-23 Moscone SF明日开幕】主题演讲7/23 Lisa Su亲讲，MI455X vs NVIDIA Vera Rubin对决；Oracle Q3 2026部署50,000卡MI450首发；【前值参考-Goldman目标$640/Stifel $635/Cantor $700】Goldman 7/10/Stifel 7/12/Cantor 6/30分别$640/$635/$700；【Q2营收指引】AMD管理层指引Q2营收约$11.2B、毛利率~56%(逐季继续爬升)；服务器CPU营收增速>70% YoY；【MI400全系-6/24 DCD】MI455X+MI440X+MI430X；Helios双宽机柜72×MI455X+EPYC Venice+3 EFLOPS/rack；【OpenAI 6GW-6/24】1GW 2026启动；【Meta $600亿5年合约H2 2026交付】；MI350X $25K/卡稳定；MI500 2027目标比MI300X提升1000x',
+        trendNote: '【Advancing AI 2026收官-7/22-23 Moscone SF】Lisa Su 7/23主题演讲重磅：Helios AI机架进入full production/单柜$5.0-5.5M(Mitrade 7/26)/Q3 2026启动出货；Helios规格：72×MI455X+18×Zen 6 EPYC Venice+Pensando+ROCm 7；2.9 EFLOPS FP4/1.4 EFLOPS FP8；31TB HBM4；scale-up 260TB/s；scale-out 43TB/s(Tech Insider)；【Anthropic $50亿AI基建大合作-7/23 Lumien】Anthropic 2GW MI450部署+AMD $50亿股权投资Anthropic；H1 2027启动；【OpenAI Helios Q4 2026+Meta 6GW】首批部署确认；MI500 2027/MI600 2028年度节奏；MI355X现在出货；【MI455X具体规格】单卡432GB HBM4/19.6 TB/s带宽/CDNA 5架构；vs MI355X吞吐提升34倍；【经济性宣称】每美元token吞吐比NVIDIA高30%；CPU TAM 2030提高到$2000亿，AMD目标>50%份额；【股价表现】$539.51 -2.32% 收盘→盘后+3.57%至$558.95(Nasdaq 7/23)；【Q1 DC营收$5.8B持续增长】前值参考：Q1 2026 DC $5.8B创新高，2030服务器CPU目标$120亿',
         source: 'DCD/AMD Q1 $5.8B 2026-07-14, TechTimes/Zen 6 caution 2026-07-13, Yahoo/Goldman 2026-07-10, Facebook/Stifel 2026-07-12, Boerse Express/Cantor 2026-06-30, Investing.com/Helios 2026-07-10'
       },
       {
@@ -208,7 +208,7 @@ const RESEARCH_DATA = {
         researchPrice: '910C约8.6万元/卡（$12K）；整机约110–150万元',
         suppliers: ['华为Atlas 800T', '高新发展', '华鲲振宇', '中科曙光'],
         trend: '上升',
-        trendNote: '【Atlas 950 SuperPoD WAIC 2026首发-7/17 agenccy】Atlas 950 SuperPoD正式在上海WAIC展示：8,192颗Ascend芯片，声称对比NVIDIA GB300 NVL144达到6.7×性能倍数(系统级)；【China Daily 7/18】华为在WAIC推出Advanced Atlas 950 SuperPoD；【Xi Jinping WAIC主题演讲-7/17 Reuters/Noqta】习近平在上海WAIC论坛发表AI外交愿景主题演讲，华为Atlas 950与"无NVIDIA"信号形成对比；【Techdailycare 7/17】"演示但未完全出货"：Atlas 950 SuperPoD最初于Huawei Connect 2025-09-18公告，Q4 2026 GA目标；每颗Ascend 950DT约1 PFLOPS FP8 vs Nvidia GB300 ~5 PFLOPS FP8，系统级6.7×比原始芯片数更诚实；【yicaiglobal 7/15】华为将首发旗舰超节点；【SUPERCRZY 7/14】WAIC 2026将呈现中国AI硬件栈落地；【eu.36kr 7/15】WAIC 2026完整预览108颗芯片+261大模型展示；【Rival AI Governance Bloc-7/17 techtimes】中国借WAIC 2026开幕组建对抗性AI治理集团+300产品发布；【前值参考】华为宣布Ascend AI三款新芯片年度发布节奏(DCD 7/9)；2026Q4进军韩国AI芯片市场，Atlas 950首次挑战NVIDIA中国以外市场；950PR单卡功耗600W、定价~7万元(H200的1/3)',
+        trendNote: '【SAIL大奖WAIC 2026顶奖-7/17】华为Atlas 950 SuperPoD荣获WAIC 2026 Super AI Leader(SAIL)最高奖；【完整规格公开-7/17 华为官网】1,024卡演示/8,192卡完整配置；1 EFLOPS FP8/2 EFLOPS FP4；256TB统一内存；3μs RTT；4,096根光缆@800G；【零美国部件-Wion】"统一总线2.0"架构，完全去美化设计；【6.7×NVL144 + 15×内存 - aifriends.jp 7/24】系统级性能宣称6.7倍于NVL144且内存15倍；【1024卡液冷架构 - french.shanghai】1024颗Ascend卡完整液冷方案；【Atlas 950 SuperCluster扩展至50万处理器-TrendForce 7/20】更大规模节点级联；【时间线】Ascend 950 8月云端上线；SuperPoD Q4 2026 GA；【中国SuperNode推进】WAIC 2026以华为主导+MiniMax M3+Unitree机器人为主线的中国"超节点"战略；【前值参考】950PR单卡功耗600W、定价约7万元(H200的1/3)；下代芯片年度节奏(DCD 7/9)',
         source: 'agenccy/6.7x NVL144 2026-07-17, China Daily 2026-07-18, Reuters/Xi Shanghai 2026-07-16, Noqta 2026-07-17, techdailycare 2026-07-17, Yicaichina 2026-07-15, SUPERCRZY 2026-07-14, eu.36kr 2026-07-15, techtimes/300 products 2026-07-17, DCD/annual cadence 2026-07-09'
       },
       {
@@ -260,7 +260,7 @@ const RESEARCH_DATA = {
   },
   cooling: {
     title: '散热冷却',
-    updated: '2026-07-20',
+    updated: '2026-07-27',
     items: [
       {
         name: '磁悬浮变频冷水机组 5-8MW',
@@ -277,7 +277,7 @@ const RESEARCH_DATA = {
         researchPrice: '进口约$500-800/kW(CDU设备本身)；含安装约$2-4K/kW；国产约1100元/kW',
         suppliers: ['Vertiv（维谛）','CoolIT(Ecolab收购)','LiquidStack','英维克','曙光数创','比赫','纬地','台达','尼得科','LG','DCX'],
         trend: '上升',
-        trendNote: '【VRT周内暴跌回调-7/17】VRT 7/17收$288.79(-1.81%单日)；周内自$305.16(7/16 Baird初始日)下探；7/18盘后$288.63；较52周高$379.93回撤-24%；市值$110.93B/P/E 72.56；YTD自$162.22开+78.0%(2026年内)；【Baird初始覆盖-7/16 Blockonomi/tipranks】Robert W. Baird以Outperform+目标$370(41.6%上行)启动VRT覆盖；【RBC下调-7/16 MarketBeat】RBC Capital将VRT目标价$435→$418(仍Outperform，隐含40.8%上行)；【Q2 2026新指引】Vertiv正式Q2 EPS指引$1.370-$1.430(共识$1.43)、Q2营收$3.25-3.45B、FY EPS $6.30-6.40(共识$6.38)；Q2财报7/29；【券商目标价扇形分布】BofA $440(高)/Loop Capital $500(高)/RBC $418/Bernstein $416/Citi $414/BNP Paribas $380/Baird $370/Morgan Stanley $350/Oppenheimer $353/StockAnalysis均$380/MarketBeat均$342.73/Public.com $343.70/tipranks均$392.38；【VRT新Q2指引-Simply Wall St】GAAP EPS $1.22/GAAP净利$477.2M/GAAP运营$639.6M；FY GAAP EPS $5.60-5.70；美国投资~$5000万扩建Ohio Ironton/Westerville，液冷+冷冻水能力+45%；【谷歌33,000台液冷CDU大单-7/16 新浪】Google Cloud 33,000台液冷CDU订单落地，A股核心供应链(英维克/申菱环境等)迎爆发拐点，需求翻倍超预期；【Supermicro扩产DCBBS液冷+10款RDHx up to 120kW-7/15】Supermicro发布10款后门热交换器(RDHx)最高120kW；【Vertiv新推液冷服务-7/14 DCD】面向AI+高密算力发布液冷服务组合；【Tecnair推新CDU-7/15 DCNN】发布数据中心冷却新CDU；【DCX三款CDU 600kW-2.6MW-7/14 DCD】新CDU容量600kW-2.6MW；【Nidec 300kW in-rack CDU-7/14 DCD】300kW in-rack CDU研发完成；【Accelsius 300MW订单-7/14 DCD】加拿大新运营商声称300MW液冷客户，双相直接芯片浸没；【CoolIT $4.75B阈值-7/17 TechReaderDaily】$4.75亿收购证明液冷跨越超大规模阈值；【Schneider Electric液冷】高密度AI DC液冷方案',
+        trendNote: '【VRT Q2 2026即将发布-7/29】共识EPS $1.43(+50.53% YoY)/营收$3.379B(+28.4%)；指引EPS $1.37-1.43/营收$3.25-3.45B；backlog $150亿；FY指引EPS $6.30-6.40；【VRT股价$290-302-7/25 247wallst】过去1个月-8.24%；共识目标$342.73；Zacks Rank #2 Buy；【Vertiv CoolChip CDU 2300 EMEA发布-7/24 Channelwise】2.3MW液对液CDU，range 100kW-2.3MW；【Schneider Motivair MCDU-45/55 全球发布-7月】MCDU-55额定2.7MW(GlobeNewswire 7/23)；【Accelsius NeuCool MR250】row-based CDU 250kW/rack，45°C设施水；【LG电子600kW CDU】NVIDIA AI Factory DSX认证即将7/20(asiae)；【Nidec 300kW in-rack CDU】商用发布约2027；【Rayonnant/Compal CDU 7/23】+全球泰克 Taiwan 7/21量产(Taipei Times)；【Vertiv "Extreme"机架发布 - DCD】面向AI/HPC；【CDU市场2034 $39亿-GlobeNewswire】21.8% CAGR(2025-2034)；【前值参考】谷歌33,000台液冷CDU大单、Supermicro DCBBS+120kW RDHx、CoolIT $47.5亿收购',
         source: 'MarketBeat/VRT 288.79 2026-07-17, Blockonomi/Baird 2026-07-16, MarketBeat/RBC 2026-07-16, tipranks/Baird 2026-07-17, Simply Wall St/Q2 guide 2026-07-16, 新浪/Google 33K CDU 2026-07-16, StorageReview/Supermicro 2026-07-15, DCD/Vertiv liquid cooling 2026-07-14, DCNN/Tecnair 2026-07-15, DCD/DCX 2026-07-14, DCD/Nidec 2026-07-14, DCD/Accelsius 2026-07-14, TechReaderDaily 2026-07-17'
       },
       {
@@ -320,7 +320,7 @@ const RESEARCH_DATA = {
   },
   power: {
     title: '电力系统',
-    updated: '2026-07-20',
+    updated: '2026-07-27',
     items: [
       {
         name: '110kV主变压器 63MVA',
@@ -364,7 +364,7 @@ const RESEARCH_DATA = {
         researchPrice: '电芯0.38-0.40元/Wh(314Ah均价)；系统0.55-0.60元/Wh(DC侧0.48-0.50)',
         suppliers: ['宁德时代','比亚迪','亿纬锂能','国轩高科','赣锋锂电','中车株洲所','上能电气','许继电气'],
         trend: '震荡',
-        trendNote: '【生意社基准 7/20】电池级碳酸锂基准价151,000元/吨(0%日涨)，与月初156,000元/吨相比-3.21%；【Yicai iFind 7/16】电池级碳酸锂现货报14.89万元/吨(148,900)单日-2.62%；最近一周累计-9,500元/吨(-6%)；LC2609收15.17万/LC2612 15.15万；【期货LC2609震荡-7/15】收149,240元/吨(-2.57%)，持仓+0.43万手至41.87万手；SMM电池级碳酸锂均价154,000元/吨(持平)，基差+4,760；【新浪7/17】昨日LC2609+0.07%至151,660元/吨；SMM电池级平均价-3,000至151,000元/吨；工业级-3,000至147,000元/吨；氢氧化锂粗颗粒-2,650至137,850元/吨；仓单-1,189吨至41,231吨；【Mysteel 7/16早盘】现货价格指数150,474元/吨(-2,250)；优质电池级149,100-154,200元/吨(中位151,650)；电池级147,700-154,200元/吨(中位150,950)；【Mysteel 7/15晚盘】电池级149,700-154,700(152,200/-1,750)；【Mysteel 7/14日评】电池级150,700-157,200(+500)；优质电池级152,100-157,200(+500)；工业级147,200-153,900(+500)；【S&P Global Platts 7/10】电池级碳酸锂DDP中国151,000元/吨($22,209)/-15,000元周环比；电池级碳酸锂CIF+氢氧化锂CIF $19,200/$17,700/吨；【SunSirs 7/14】电池级碳酸锂基准153,000元/吨，较月初161,000元/吨-5%；【周环比 -10.18%】LC2609周跌-10.18%至151,600元/吨；电碳现货周-5,000至155,000元/吨；工碳同步；氢氧化锂-13,000价差；【SMM美元7/17】Battery-Grade Index $19,741.2/吨；电池级$19,031.31-20,595.52(中位$19,813.41)；【Trading Economics 7/16】锂价151,000元/吨(接近4个月低点)；【空头逻辑扭转】Ningde时代江夏窝锂矿获安全许可，长期停产结束；澳矿商恢复运营；【Fastmarkets】99.5% Li2CO3 CIF China/Japan/Korea $/kg；【7月上半月区间】14.96-17.7万元/吨(2026H1运行区间)',
+        trendNote: '【LC2609 5.61%单日暴跌-7/22 Mysteel】主力合约收143,900元/吨(-5.61%)；盘中最低141,400元/吨；LC2701一度触及跌停-10%至140,000下方；Mysteel现货150,050元/吨(-2,500)；【5个月低点136,800元-7/22 Reuters/economictimes】盘中触及5个月低点136,800元/吨(自2月10日以来最低)；收盘141,280-144,000(-4.45~4.95%)；7/23再度-0.7%至143,000元/吨；【自5/13 20万高点-30%累计跌幅-Sina 7/25】7月下旬碳酸锂稳定在14.5万元/吨，自5月13日20万元/吨阶段高点累计下跌接近30%；库存去化加速；【Mysteel 7/24现货】优质电池级144,200-146,100元/吨(-950)；电池级142,500-146,100(-1,100)；工业级139,500-143,100(-700)；【Trading Economics 7/22】5个月低点<145,000；4个月低点151,000；测试3月低点；【SMM美元7/9】Battery-Grade Index $20,545.27(-$614.56)/吨；Battery-Grade CIF $19,979-21,146/吨；【2027过剩预期-fetradeworld】重启产能推高2027过剩担忧驱动价格跳水；【本周核心变化】v3.4 151,000元→v3.5 143,900元(-4.7%周)；14.5万元或成新平衡；LC2609已跌破关键支撑；【连续5次下行】-30%大顶级熊市已确认',
         source: '新浪/生意社 2026-07-20, 新浪/Yicai iFind 2026-07-17, 新浪/LC2609 2026-07-15, 新浪/7-17 2026-07-17, Mysteel/mmlc 2026-07-16, Mysteel/晚盘 2026-07-15, 100ppi/生意社 2026-07-14, S&P Global Platts 2026-07-14, SunSirs 2026-07-15, 新浪/-10.18% 2026-07-15, www-old.metal.com 2026-07-17, Trading Economics 2026-07-16'
       },
       {
@@ -389,7 +389,7 @@ const RESEARCH_DATA = {
   },
   network: {
     title: '网络设备',
-    updated: '2026-07-20',
+    updated: '2026-07-27',
     items: [
       {
         name: '51.2T AI交换机(Spine-Leaf)',
@@ -415,7 +415,7 @@ const RESEARCH_DATA = {
         researchPrice: '800G SR8/DR8约$360-380；800G LR8约$420-450',
         suppliers: ['中际旭创','新易盛','Coherent','光迅科技','AAOI','Hyper Photonix'],
         trend: '下降',
-        trendNote: 'AAOI预计2026 Q2 800G成最大数据中心营收线；目标年底月产50万只800G+1.6T；2026全年营收$10亿+(同比+119%)，分析师上看2028 $13亿；激光器产能2027提升350%',
+        trendNote: '【中际旭创HK IPO 7/30挂牌-Sina 7/22】港股首日5,450万H股@HK$1,010定价上限=HK$550亿融资规模；29家基石认购$34.5亿，Temasek/HHLR/BlackRock/JPM/Alibaba/Tencent参与；A股7/22收1,060.80元(-6.66%)/市值1.18万亿；3.2T+CPO/NPO投入190亿港币R&D+163亿港币扩产至9,000万只/年 by 2029；【H1 2026出货估算-Sina 7/23】Q1 800G 300万+/1.6T 100万+；Q2 800G 300-400万/1.6T~200万；NVIDIA 1.6T需求450万/Google 240-250万/Microsoft 150万/Meta 80万/Amazon 60万=总1,000万只；【800G/1.6T价格-Sina 7/23】800G $350-430/只；1.6T $850-1,050/只；1.6T EML比硅光贵$100；800G EML比硅光贵$50；国内比北美低10%；【新易盛H1业绩预告 7/19-ofweek】归母70-80亿元(+77.56~102.93% YoY)；Q2单季47.2亿创新高(+69.8% QoQ)；全球首批1.6T量产/首推LPO规模量产；2026-28营收565.4/1094.1/1462.9亿+归母219.3/419.9/567.6亿；【天孚通信H1-Sina 7/21】归母11.24-13.04亿(+25-48% YoY)；Q2单季7.22亿(+46.7% QoQ)；【Jefferies 7/15预测 - ofweek 7/24】2026全球光模块翻倍/2027翻三倍；800G 2026出货4,000-4,200万/需求4,500万+(缺口10%)；800G 2027 8,000万；1.6T 2026出货1,800万/需求2,600万(**缺口30%**)；1.6T 2027 5,500万出货/需求7,500万；2028 1.6T过1亿/3.2T 250万小批；【NPO超节点商用-7/21】腾讯云Q4 2026部署NPO超节点(Sina 7/23)；华为OPEN NPO项目20+伙伴发起国内首个NPO MSA；6.4T/12.8T国际标准会议；NPO+CPO市场2025 $1亿→2030 $390亿；NVL576 $80-120亿=1,000-1,200万颗3.2T光引擎需求；【AAOI Pearland Texas-Zacks 7/22】800G+1.6T月产能65万by 2026 end/93万by 2027 end；40万sq ft扩产；Q2营收指引$180-198M；【Photonics回调】LITE 52周+910%/YTD +142.53%；COHR YTD +130.54%；Alphabet CapEx +100% YoY $44.92B Q2引发反弹；【DSP瓶颈】1.6T 3nm DSP由Broadcom+Marvell垄断；200G EML由Lumentum+Broadcom+Sumitomo Electric掌控；东山精密2026H2量产200G EML',
         source: 'AAOI 2026-03-09, Zacks 2026-03-09, Tickeron 2026-03-31'
       },
       {
@@ -1979,6 +1979,18 @@ const SUPPLIER_DATA = {
 
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
+  {
+    version: 'v3.5',
+    date: '2026-07-27',
+    highlights: [
+      'AMD Advancing AI 2026收官(7/22-23 Moscone SF)：Helios AI机架进入full production/$5.0-5.5M单柜/Q3 2026启动出货；Anthropic 2GW MI450部署+$50亿AMD股权投资；OpenAI Helios Q4 2026;MI455X 432GB HBM4/19.6TB/s',
+      '华为Atlas 950 SuperPoD获WAIC 2026 SAIL最高奖：1 EFLOPS FP8/2 EFLOPS FP4/256TB内存/3μs RTT/4,096根800G光缆/6.7×NVL144宣称/零美国部件；Ascend 950 8月云端上线',
+      'B300价格再下探：Verda $7.50/hr on-demand创新低(-4%周)；Cloud GPUs GB300 $13.31/B300 $12.38/AMD MI355X $5.60/hr(2 providers)；NVIDIA Vera Rubin NVL72已启动交付Google/Azure/Oracle/CoreWeave',
+      '碳酸锂5个月低点：LC2609 7/22暴跌-5.61%至143,900；盘中低点136,800(自5/13 20万高点累计-30%)；Mysteel现货142,500-146,100；14.5万元或成新平衡；2027过剩预期',
+      'Vertiv Q2财报7/29(EPS共识$1.43)+CoolChip CDU 2300发布(2.3MW)；Schneider Motivair MCDU-55(2.7MW)+Accelsius NeuCool MR250+LG 600kW CDU全部登场；CDU市场2034 $39亿',
+      '中际旭创HK IPO 7/30挂牌(HK$550亿融资)；800G $350-430/只+1.6T $850-1,050/只；Jefferies预测2026光模块翻倍/1.6T需求缺口30%；新易盛H1净利70-80亿(+77~103% YoY)；NPO超节点腾讯Q4 2026部署'
+    ]
+  },
   {
     date: '2026-07-20',
     version: 'v3.4',
