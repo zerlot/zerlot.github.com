@@ -1980,17 +1980,39 @@ const SUPPLIER_DATA = {
 /* ---------- 更新日志 ---------- */
 const UPDATE_LOG = [
   {
-    version: 'v3.6',
     date: '2026-08-03',
-    highlights: [
-      'Vertiv Q2 2026超预期但股价-17.26%：EPS $1.52(+60% YoY)/营收$3.274B(+24%但差$100M共识)；FY指引大幅上修至EPS $6.65-6.75/营收$13.8-14.2B/FCF $2.4-2.6B；ThermoKey+Strategic Thermal Labs收购完成',
-      'AMD Helios开始出货(7/28 The GPU Trade)+Vultr首批集成MI455X GPU(7/30 bebeez)+AMD Core Scientific $140亿超级大单(1.9GW锁定至2028末)',
-      'AWS EC2 Capacity Blocks GPU 7/1起+20%：P6-B300新价$14.04/加速器·小时；单柜8卡约$112/hr起；P5 H100 US $5.191/其他$4.72/加速器·小时',
-      '华为Atlas 950 SuperPod Q4 2026大规模商用交付确认(7/30 WindowsForum)；Ascend 910C 2026产量翻倍至60万颗；CloudMatrix 384持续供应；中国“人海战术”两条路线并行',
-      '碳酸锂再破低点：LC2609 7/31跌至139,780元/吨(-3.44%单日/-2.9%周)；13万关口成关键；供给宽松+储能钠电分流+美国7/30锂废料出口限制令三重复杂化',
-      '中际旭创港股上市首日破发：03308.HK 7/30挂牌港交所$980HK定价，收$960 (-2.04%)/盘中-10%；A股-9.15%到-15.77%区间；33家基石浮亏；募资HK$534亿=近7年港股最大IPO；董事长提议40-80亿A股回购',
-      'LG 600kW CDU获NVIDIA AI Factory认证(7/27)：韩国首家/全球少数通过；LG目标全年AIDC冷却订单万亿韩元；1MW/2.5MW/4MW认证陆续推进',
-      'GE Vernova燃机backlog 116GW(季增16GW)/$176B总backlog/2031年订单50%已预售+新易盛H1净利70-80亿(+77-103% YoY)'
+    version: 'v3.6',
+    author: '自动调研(周报)',
+    summary: '第21次周度调研更新：【AWS EC2 Capacity Blocks全线+20% 7/1生效-ecorpit 7/29】P6-B300新价$14.04/加速器·小时(非GovCloud)，单柜8卡Block约$112/hr起；P5 H100 US $5.191/其他区域$4.72；覆盖P6-B200/P5/P5e/P5en/P4de全线；【AMD Helios开始出货-The GPU Trade 7/28】Vultr云平台首批集成AMD Instinct MI455X GPU(7/30 bebeez)；AMD Core Scientific $140亿超级大单(2.5%年递增+30M CS股票权证+锁定额外1.9GW容量至2028末)；Futurum估算Helios每柜$5.0-5.5M vs Vera Rubin $3.5-4.0M(AMD贵约40%)；【Samsung SDS B300 GPUaaS全面商用-techtimes 7/30】外部云营收飙升；【B300云端现价-GPU Finder 7/29】Verda $7.50/hr on-demand最低/Nebius $7.85；Cloud GPUs B300 288GB 4卡$12.38；【华为Atlas 950 SuperPod Q4 2026大规模商用交付确认-WindowsForum 7/30】完整8,192颗Ascend芯片；Ascend 910C 2026产量翻倍至60万颗(Daum 7/29)；CloudMatrix 384持续供应；【Vertiv Q2 2026-投资者关系 7/29】营收$3.274B(+24%但差$100M共识$3.38B)导致股价-17.26%；EPS $1.52(+60% YoY)超预期$1.42达7%；调整后运营利润$738M(+51%)/margin 22.6%(+410bps)；FY指引大幅上修：营收$13.8-14.2B/EPS $6.65-6.75/FCF $2.4-2.6B；ThermoKey+Strategic Thermal Labs收购完成；【LG 600kW CDU获NVIDIA AI Factory认证-Chosun 7/27】韩国首家/全球少数通过100+项验证；±0.25°C精度DTC直液冷；LG上半年AIDC冷却订单60亿韩元/目标全年万亿韩元；1MW/2.5MW/4MW认证陆续推进；Otech Carrier CDU 65LL过NVIDIA Marketplace(7/27 asiae)；高澜股份规模化CDU 0.5-1.1MW(7/30 财闻网)；【碳酸锂再破低点-CCMN 7/31】LC2609 7/31跌至139,780元/吨(-3.44%单日/-2.9%周)；13万关口成关键；本周振幅剧烈151,500→144,280(周-3.9%)；Mysteel 7/28电池级141,500-148,100(-900)；供给宽松+储能钠电分流+美国7/30锂废料出口限制令三重复杂化；【GE Vernova燃机backlog 116GW-EnergyReader 7/28】季增16GW=+16%；总backlog $176B(季增$13B)；2031年订单50%已预售by年底；目标125GW by 2026末(从110GW上修)；FCF 2026指引升至$11.5-12.5B；【中际旭创港股上市首日破发-凤凰 7/30】03308.HK发行价HK$980(低于HK$1,010上限)；开盘HK$971(-0.92%)/盘中最低HK$880-901.5(-8~10%)/收HK$960(-2.04%)；A股同步暴跌-9.15%到-15.77%区间；募资HK$534亿=近7年港股最大IPO(自2019阿里巴巴)；总市值1.12万亿港元；33家基石浮亏(Sina 7/30)；中际旭创40-80亿A股回购提振(7/28)；【新易盛H1净利70-80亿-香港商报 7/28】+77.56~102.93% YoY；Q2单季42.2-52.2亿(+78-102% YoY)；800G主力/1.6T放量提速；【天孚通信H1 11.24-13.04亿-Sina 7/29】+25-45% YoY；【Coherent 800G ZR/ZR+价格-ascentoptics 7/30】800G ZR $8,000-16,000+/ZR+ $12,000-20,000+；早期1.6T模块$1,300-1,500，2年内$1,100左右(Fibermall 7/29)',
+    changes: [
+      { category: '计算设备', detail: '【AWS EC2 Capacity Blocks全线+20% 7/1生效-ecorpit 7/29】P6-B300新价$14.04/加速器·小时(非GovCloud)；单柜8卡Block约$112/hr起(不含存储/网络/流出)；P5 H100 US $5.191/其他区域$4.72/加速器·小时；覆盖P6-B200/P5/P5e/P5en/P4de全线跟涨', priceChange: '+20%全线' },
+      { category: '计算设备', detail: '【AMD Helios开始出货-The GPU Trade 7/28】首批Helios AI机架进入客户交付阶段；Futurum估算Helios每柜$5.0-5.5M vs Vera Rubin $3.5-4.0M(AMD贵约40%)；Helios参数：72×MI455X + EPYC + Pensando，1.4 EFLOPS FP8/2.9 EFLOPS FP4/31TB HBM4', priceChange: '$5.0-5.5M/柜' },
+      { category: '计算设备', detail: '【Vultr首批集成AMD MI455X-bebeez 7/30】Vultr云平台成为首批部署AMD Instinct MI455X GPU的公有云；MI455X 40 PFLOPS FP4/432GB HBM4/19.6TB/s带宽', priceChange: '新品上线' },
+      { category: '计算设备', detail: '【AMD Core Scientific $140亿超级大单-techtimes 7/28】基础合约$14B + 2.5%年递增 + 30M CS股票权证 + 锁定额外1.9GW容量至2028末；直接对标NVIDIA AI基础设施主导地位', priceChange: '$14B/1.9GW' },
+      { category: '计算设备', detail: '【Samsung SDS B300 GPUaaS全面商用-techtimes 7/30】Samsung SDS外部云业务营收因B300 GPUaaS全面商用而飙升；韩国AI云服务重要里程碑', priceChange: 'GA上线' },
+      { category: '计算设备', detail: '【B300云端现价-GPU Finder 7/29】Verda $7.50/hr on-demand最低/$2.63/hr spot最低；Nebius $7.85/hr；Enverge 10卡B300 @ $7.50/hr(GetDeploying 8/2)；Cloud GPUs B300 288GB 4卡 $12.38 on-demand/$2.63 spot(7/29)', priceChange: '$7.50最低' },
+      { category: '计算设备', detail: '【华为Atlas 950 SuperPod Q4 2026大规模商用交付确认-WindowsForum 7/30】完整8,192颗Ascend芯片系统；将成为中国"人海战术"数量堆叠的旗舰产品', priceChange: 'Q4 GA确认' },
+      { category: '计算设备', detail: '【Ascend 910C 2026产量翻倍至60万颗-Daum/조선일보 7/29】华为将910C 2026年产量扩大到2倍；CloudMatrix 384(384×910C)持续供应中国客户；Q4推出WAIC展示的Atlas 950量产版本', priceChange: '60万颗' },
+      { category: '计算设备', detail: '【华为智能驾驶Yinwang近200万单元-KrASIA 7/29】华为智能驾驶业务Yinwang出货接近200万单元，展示AI+汽车领域快速渗透', priceChange: '200万单元' },
+      { category: '散热冷却', detail: '【Vertiv Q2 2026超预期但股价-17.26%-投资者关系 7/29】营收$3.274B(+24% YoY，有机+18%)略差$100M共识$3.38B；EPS $1.52(+60% YoY)超预期$1.42达7%；调整后运营利润$738M(+51%)/margin 22.6%(+410bps)；FCF $925M(+234% YoY)；流动性$56亿净现金位', priceChange: 'EPS +60%' },
+      { category: '散热冷却', detail: '【Vertiv FY指引大幅上修】营收$13.8-14.2B(前值$13.5-14.0B)/有机+30-32%/EPS $6.65-6.75(前值$6.30-6.40)/FCF $2.4-2.6B；股价-17.26%(YTD仍+66%/12月+89%)；Americas +29%/APAC +29%/EMEA +2%回正', priceChange: 'FY $6.70' },
+      { category: '散热冷却', detail: '【Vertiv ThermoKey+Strategic Thermal Labs收购完成-7/29】扩展至直液冷+冷板产品线；进一步强化端到端液冷组合', priceChange: '收购完成' },
+      { category: '散热冷却', detail: '【LG 600kW CDU获NVIDIA AI Factory认证-Chosun 7/27】韩国首家/全球少数通过100+项技术验证；±0.25°C精度DTC直液冷；上半年AIDC冷却订单60亿韩元，目标全年万亿韩元；1MW/2.5MW/4MW认证陆续申请', priceChange: 'NV认证' },
+      { category: '散热冷却', detail: '【Otech Carrier CDU 65LL过NVIDIA Marketplace-asiae 7/27】韩国Otech Carrier CDU 65LL通过NVIDIA Marketplace认证，年内量产就绪', priceChange: '新品认证' },
+      { category: '散热冷却', detail: '【高澜股份规模化CDU 0.5-1.1MW-财闻网 7/30】国内液冷厂商高澜股份实现CDU产品0.5-1.1MW规模化量产覆盖', priceChange: '0.5-1.1MW' },
+      { category: '电力系统', detail: '【碳酸锂LC2609 7/31跌至139,780元/吨新低-CCMN 7/31】-3.44%单日/-2.9%周；13万关口成关键支撑位；周振幅剧烈151,500→144,280(周-3.9%)；最高154,800/最低136,800(cngold 7/28)', priceChange: '139,780/-2.9%' },
+      { category: '电力系统', detail: '【Mysteel现货7/28】优质电池级143,200-148,100(-900)；电池级141,500-148,100(-900)；工业级138,500-145,100(-900)；LC2609 7/30收141,060元/吨(-3.75%，Sina 7/31)', priceChange: '-900元' },
+      { category: '电力系统', detail: '【美国7/30签署行政令】限制含锂战略矿产废料出口；【钠离子电池2026规模化落地元年】分流低端锂盐需求；供给宽松+储能钠电分流+美国出口限制令三重复杂化', priceChange: '出口限制' },
+      { category: '电力系统', detail: '【GE Vernova燃机backlog 116GW-EnergyReader 7/28】季增16GW=+16%；总backlog $176B(季增$13B，Tradingnews 7/31)；2031年订单50%已预售by年底；管理层目标125GW by 2026末(从110GW上修)', priceChange: '116GW' },
+      { category: '电力系统', detail: '【GE Vernova FCF 2026指引升至$11.5-12.5B】前值$6.5-7.5B；三季度将实现20GW年出货节奏，2028达24GW，2030目标30GW；stock -9%尽管数据亮眼', priceChange: 'FCF $12B' },
+      { category: '网络设备', detail: '【中际旭创港股上市首日破发-凤凰 7/30】03308.HK 7/30挂牌港交所主板；发行价HK$980(低于HK$1,010上限)；开盘HK$971(-0.92%)/盘中最低HK$880-901.5(-8~10%)/收HK$960(-2.04%)；A股同步暴跌-9.15%到-15.77%区间；单日A股成交额近600亿创历史新高', priceChange: 'HK$960/-2.04%' },
+      { category: '网络设备', detail: '【募资规模HK$534亿=近7年港股最大IPO-中新社 7/30】自2019阿里巴巴以来最大IPO；全额行使超额配售权可达HK$614亿；总市值1.12万亿港元；港交所同步推出股票期权+纳入可卖空名单', priceChange: 'HK$534亿' },
+      { category: '网络设备', detail: '【33家基石浮亏-Sina 7/30】Temasek/HHLR/BlackRock/JPM/Alibaba/Tencent等基石开盘即浮亏；中际旭创40-80亿A股回购提振(7/28 Futunn)：董事长刘圣提议40-80亿元回购A股用于股权激励；订单排到2027年', priceChange: '基石亏' },
+      { category: '网络设备', detail: '【新易盛H1净利70-80亿-香港商报 7/28】+77.56~102.93% YoY；Q2单季42.2-52.2亿(+78.1-102.3% YoY)/环比+51.8-87.77%；800G主力/1.6T放量提速/首推LPO规模量产；明确澄清"1.6T订单下修"传言', priceChange: '+77~103%' },
+      { category: '网络设备', detail: '【天孚通信H1归母11.24-13.04亿-Sina 7/29】+25-45% YoY；Q2单季环比放量', priceChange: '+25-45%' },
+      { category: '网络设备', detail: '【Coherent 800G ZR/ZR+价格-ascentoptics 7/30】800G ZR $8,000-$16,000+/ZR+ $12,000-$20,000+；400G ZR QSFP-DD $4,000-$6,500', priceChange: '$8-16K' },
+      { category: '网络设备', detail: '【Fibermall 1.6T预期-7/29】早期1.6T模块$1,300-1,500/2年内跌至$1,100左右(体量与良率驱动)；1.6T仍处高溢价上升期', priceChange: '$1,300-1,500' },
+      { category: '网络设备', detail: '【AMD MI455X token吞吐是MI355X的34倍-Globe & Mail 7/31】MI350P每美元token是竞品4.2倍；AI推理经济性显著提升', priceChange: '34×吞吐' }
     ]
   },
   {
